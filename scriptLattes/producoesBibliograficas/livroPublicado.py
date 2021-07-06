@@ -143,7 +143,7 @@ class LivroPublicado:
     def html(self, listaDeMembros):
         s = self.autores + '. <b>' + self.titulo + '</b>. '
         s+= self.edicao + ' ed. '       if not self.edicao==''  else ''
-        s += self.editora + ', ' if not self.editora == ''  else ''
+        s += str(self.editora) + ', ' if not self.editora == ''  else ''
         s += str(self.ano) + '. ' if str(self.ano).isdigit() else ''
 
         s+= 'v. ' + self.volume + ', '  if not self.volume== '' else ''

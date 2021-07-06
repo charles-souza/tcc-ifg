@@ -188,7 +188,7 @@ class Membro:
 
 
     def carregarDadosCVLattes(self):
-        cvPath = self.diretorioCache + '/' + self.idLattes
+        cvPath = self.diretorioCache + '/' + self.idLattes + '.xml'
 
         if 'xml' in cvPath:
             arquivoX = open(cvPath)
@@ -521,7 +521,7 @@ class Membro:
             s += "\n- Softwares sem registro de patente           : " + str(len(self.listaSoftwareSemPatente))
             s += "\n- Produtos tecnológicos                       : " + str(len(self.listaProdutoTecnologico))
             s += "\n- Processos ou técnicas                       : " + str(len(self.listaProcessoOuTecnica))
-            s += "\n- Trabalhos técnicos                          : " + str(len(self.listaTrabalhoTecnico))
+            s += "\n- trabalhos técnicos                          : " + str(len(self.listaTrabalhoTecnico))
             s += "\n- Demais tipos de produção técnica            : " + str(len(self.listaOutroTipoDeProducaoTecnica))
             s += "\n- Patente                                     : " + str(len(self.listaPatente))
             s += "\n- Programa de computador                      : " + str(len(self.listaProgramaComputador))

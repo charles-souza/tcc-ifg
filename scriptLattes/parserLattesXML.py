@@ -43,6 +43,12 @@ from producoesBibliograficas.artigoAceito import *
 from producoesBibliograficas.apresentacaoDeTrabalho import *
 from producoesBibliograficas.outroTipoDeProducaoBibliografica import *
 from orientacoes.orientacaoConcluida import *
+from producoesTecnicas.produtoTecnologico import *
+from producoesTecnicas.outroTipoDeProducaoTecnica import *
+from producoesTecnicas.softwareComPatente import *
+from scriptLattes.patentesRegistros.patente import Patente
+from scriptLattes.producoesTecnicas.processoOuTecnica import ProcessoOuTecnica
+from scriptLattes.producoesTecnicas.softwareSemPatente import SoftwareSemPatente
 
 
 class ParserLattesXML(HTMLParser):
@@ -57,6 +63,8 @@ class ParserLattesXML(HTMLParser):
 	textoResumo = ''
 	idLattes = ''
 	url = ''
+
+	relevante = None
 
 	listaIDLattesColaboradores = []
 	listaFormacaoAcademica = []
@@ -114,12 +122,15 @@ class ParserLattesXML(HTMLParser):
 	achouApresentacaoDeTrabalho = None # 
 	achouOutroTipoDeProducaoBibliografica = None #
 
+	achouSoftware = None
 	achouSoftwareComPatente = None
 	achouSoftwareSemPatente = None
 	achouProdutoTecnologico = None
 	achouProcessoOuTecnica = None
 	achouTrabalhoTecnico = None
 	achouOutroTipoDeProducaoTecnica = None
+
+	achouPatente = None
 
 	achouProducaoArtistica = None
 	achouTrabalhoEmEvento = None
@@ -163,6 +174,11 @@ class ParserLattesXML(HTMLParser):
 		self.listaOutroTipoDeProducaoTecnica = []
 		self.listaProducaoArtistica = []
 
+		# Patentes e registros
+		self.listaPatente = []
+		self.listaProgramaComputador = []
+		self.listaDesenhoIndustrial = []
+
 		self.listaOASupervisaoDePosDoutorado = []
 		self.listaOATeseDeDoutorado = []
 		self.listaOADissertacaoDeMestrado = []
@@ -178,6 +194,10 @@ class ParserLattesXML(HTMLParser):
 		self.listaOCTCC = []
 		self.listaOCIniciacaoCientifica = []
 		self.listaOCOutroTipoDeOrientacao = []
+
+		# Eventos
+		self.listaParticipacaoEmEvento = []
+		self.listaOrganizacaoDeEvento = []
 
 		# inicializacao 
 		self.idLattes = ''
@@ -319,6 +339,75 @@ class ParserLattesXML(HTMLParser):
 
 
 		# ----------------------------------------------------------------------
+
+		if tag=='produto-tecnologico':
+			self.achouProdutoTecnologico = 1
+			self.autoresLista = list(['']*150)
+			self.autores  = ''
+			self.titulo   = ''
+			self.ano      = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'apresentacao-de-trabalho':
+			self.achouOutroTipoDeProducaoTecnica = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'trabalho-tecnico':
+			self.achouTrabalhoTecnico = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'trabalho-tecnico':
+			self.achouTrabalhoTecnico = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'software':
+			self.achouSoftware = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'patente':
+			self.achouPatente = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag=='processos-ou-tecnicas':
+			self.achouProcessoOuTecnica = 1
+			self.autoresLista = list(['']*150)
+			self.autores  = ''
+			self.titulo   = ''
+			self.ano      = ''
+			self.natureza = ''
+
 		# ----------------------------------------------------------------------
 		if tag=='orientacoes-concluidas-para-pos-doutorado':
 			self.achouOCSupervisaoDePosDoutorado = 1
@@ -617,6 +706,179 @@ class ParserLattesXML(HTMLParser):
 
 
 		# ----------------------------------------------------------------------
+
+		if self.achouProdutoTecnologico:
+			if tag=='autores':
+				for name, value in attributes:
+					if name=='nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name=='ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag=='dados-basicos-do-produto-tecnologico':
+				for name, value in attributes:
+					if name=='titulo-do-produto':
+						self.titulo = value
+					if name=='ano':
+						self.ano = value
+					if name=='natureza':
+						self.natureza = value.capitalize()
+
+		# ----------------------------------------------------------------------
+
+		if self.achouOutroTipoDeProducaoTecnica:
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag == 'dados-basicos-de-apresentacao-de-trabalho':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+					if name == 'natureza':
+						self.natureza = value.capitalize()
+
+		# ----------------------------------------------------------------------
+
+		if self.achouOutroTipoDeProducaoTecnica:
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag == 'dados-basicos-de-cursos-curta-duracao-ministrado':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-de-cursos-curta-duracao-ministrado':
+				for name, value in attributes:
+					if name == 'instituicao-promotora-do-curso':
+						self.instituicao = value
+
+		# ----------------------------------------------------------------------
+
+		if self.achouTrabalhoTecnico:
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag == 'dados-basicos-do-trabalho-tecnico':
+				for name, value in attributes:
+					if name == 'titulo-do-trabalho-tecnico':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+					if name == 'natureza':
+						self.natureza = value.capitalize()
+
+		# ----------------------------------------------------------------------
+
+		if self.achouSoftware:
+			if tag == 'dados-basicos-do-software':
+				for name, value in attributes:
+					if name == 'titulo-do-software':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+					if name == 'natureza':
+						self.natureza = value.capitalize()
+
+			if tag == 'detalhamento-do-software':
+				for name, value in attributes:
+					if name == 'finalidade':
+						self.natureza = value.capitalize()
+					if name == 'titulo-do-software':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag == 'registro-ou-patente':
+				self.achouSoftwareComPatente = 1
+				for name, value in attributes:
+					if name == 'titulo-patente':
+						self.titulo = value
+
+		# ----------------------------------------------------------------------
+
+		if self.achouPatente:
+			if tag == 'dados-basicos-da-patente':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano-desenvolvimento':
+						self.ano = value
+
+			if tag == 'detalhamento-da-patente':
+				for name, value in attributes:
+					if name == 'finalidade':
+						self.titulo = value
+					if name == 'instituicao-financiadora':
+						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag == 'registro-ou-patente':
+				for name, value in attributes:
+					if name == 'titulo-patente':
+						self.titulo = value
+
+		# ----------------------------------------------------------------------
+
+		if self.achouProcessoOuTecnica:
+			if tag == 'dados-basicos-do-processos-ou-tecnicas':
+				for name, value in attributes:
+					if name == 'titulo-do-processo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-do-processos-ou-tecnicas':
+				for name, value in attributes:
+					#if name == 'finalidade':
+					#	self.titulo = value
+					if name == 'instituicao-financiadora':
+						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
 		# ----------------------------------------------------------------------
 		# ----------------------------------------------------------------------
 		if self.achouOCSupervisaoDePosDoutorado:
@@ -867,6 +1129,141 @@ class ParserLattesXML(HTMLParser):
 			self.listaOutroTipoDeProducaoBibliografica.append(pub)
 
 		# ----------------------------------------------------------------------
+
+		if tag == 'produto-tecnologico':
+			self.achouProdutoTecnologico = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = OutroTipoDeProducaoBibliografica(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.natureza = self.editora + '. (' + self.natureza + ')'
+			pub.chave = self.autores
+			self.listaProdutoTecnologico.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'apresentacao-de-trabalho':
+			self.achouOutroTipoDeProducaoTecnica = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ApresentacaoDeTrabalho(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.natureza = self.nomeEvento + '. (' + self.natureza + ')'
+			pub.chave = self.autores
+			self.listaOutroTipoDeProducaoTecnica.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'curso-de-curta-duracao-ministrado':
+			self.achouOutroTipoDeProducaoTecnica = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ApresentacaoDeTrabalho(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.natureza = self.nomeEvento + '. (' + self.natureza + ')'
+			pub.chave = self.autores
+			self.listaOutroTipoDeProducaoTecnica.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'trabalho-tecnico':
+			self.achouTrabalhoTecnico = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ApresentacaoDeTrabalho(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			#pub.natureza = self.nomeEvento + '. (' + self.natureza + ')'
+			pub.chave = self.autores
+			self.listaTrabalhoTecnico.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'software':
+			self.achouSoftware = 0
+			#self.achouSoftwareComPatente = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			if self.achouSoftwareComPatente:
+				pub = SoftwareComPatente(self.idMembro)
+				pub.autores = self.autores
+				pub.titulo = stripBlanks(self.titulo)
+				pub.ano = self.ano
+				pub.chave = self.autores
+				self.listaSoftwareComPatente.append(pub)
+				self.achouSoftwareComPatente = 0
+
+			if self.achouSoftwareSemPatente:
+				pub = SoftwareSemPatente(self.idMembro)
+				pub.autores = self.autores
+				pub.titulo = stripBlanks(self.titulo)
+				pub.ano = self.ano
+				pub.chave = self.autores
+				self.listaSoftwareSemPatente.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'patente':
+			self.achouPatente = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = Patente(self.idMembro) #ApresentacaoDeTrabalho(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaPatente.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'processos-ou-tecnicas':
+			self.achouProcessoOuTecnica = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ProcessoOuTecnica(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaProcessoOuTecnica.append(pub)
+
+		# ----------------------------------------------------------------------
+
 		if tag=='orientacoes-concluidas-para-pos-doutorado':
 			self.achouOCSupervisaoDePosDoutorado = 0
 

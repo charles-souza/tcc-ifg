@@ -41,37 +41,38 @@ class Patente:
     numeroRegistro = None
     dataDeposito = None
 
-    def __init__(self, idMembro, partesDoItem, relevante):
+    def __init__(self, idMembro, partesDoItem = '', relevante = ''):
         # partesDoItem[0]: Numero (NAO USADO)
         # partesDoItem[1]: Descricao (DADO BRUTO)
         self.idMembro = set([])
         self.idMembro.add(idMembro)
 
-        self.relevante = relevante
-        self.item = partesDoItem[1]
+        if not partesDoItem == '':
+            self.relevante = relevante
+            self.item = partesDoItem[1]
 
-        # Dividir o item na suas partes constituintes
-        partes = self.item.partition(" . ")
-        self.autores = partes[0].strip()
+            # Dividir o item na suas partes constituintes
+            partes = self.item.partition(" . ")
+            self.autores = partes[0].strip()
 
-        try:
-            partes = partes[2]
-            partes = partes.partition(", ")
-            self.titulo = partes[0][0: len(partes[0]) - 5]
-            self.ano = str(int(partes[0][len(partes[0]) - 4: len(partes[0])]))
+            try:
+                partes = partes[2]
+                partes = partes.partition(", ")
+                self.titulo = partes[0][0: len(partes[0]) - 5]
+                self.ano = str(int(partes[0][len(partes[0]) - 4: len(partes[0])]))
 
-            partes = partes[2].split(".");
+                partes = partes[2].split(".");
 
-            self.pais = partes[0];
-            self.tipoPatente = partes[1].split(":")[1].strip();
-            self.numeroRegistro = partes[2].split(":")[1].split(",")[0].strip();
-            self.dataDeposito = partes[2].split(":")[2].split(",")[0].strip();
-        except:
-            print "Erro no registro ", self.item
+                self.pais = partes[0];
+                self.tipoPatente = partes[1].split(":")[1].strip();
+                self.numeroRegistro = partes[2].split(":")[1].split(",")[0].strip();
+                self.dataDeposito = partes[2].split(":")[2].split(",")[0].strip();
+            except:
+                print "Erro no registro ", self.item
 
-        self.chave = self.autores  # chave de comparação entre os objetos
+            self.chave = self.autores  # chave de comparação entre os objetos
 
-        print self.__str__
+            print self.__str__
 
     def compararCom(self, objeto):
         if self.idMembro.isdisjoint(objeto.idMembro) and similaridade_entre_cadeias(self.titulo, objeto.titulo):

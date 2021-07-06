@@ -214,15 +214,15 @@ class GeradorDePaginasWeb:
             s += '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
 
 
-            # s+='</ul> <h3 id="patenteRegistro">Patente e Registro</h3> <ul>'.decode("utf8")
-        #if self.nPR0>0:
-        #	s+= '<li> <a href="PR0-0'+self.extensaoPagina+'">Patente</a> '.decode("utf8")+'('+str(self.nPR0)+')'
-        # if self.nPR1>0:
-        #	s+= '<li> <a href="PR1-0'+self.extensaoPagina+'">Programa de computador</a> '.decode("utf8")+'('+str(self.nPR1)+')'
-        #if self.nPR2>0:
-        #	s+= '<li> <a href="PR2-0'+self.extensaoPagina+'">Desenho industrial</a> '.decode("utf8")+'('+str(self.nPR2)+')'
-        #if self.nPR0 == 0 and self.nPR1 == 0 and self.nPR2 == 0:
-        #	s+= '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
+        s+='</ul> <h3 id="patenteRegistro">Patente e Registro</h3> <ul>'.decode("utf8")
+        if self.nPR0>0:
+        	s+= '<li> <a href="PR0-0'+self.extensaoPagina+'">Patente</a> '.decode("utf8")+'('+str(self.nPR0)+')'
+        if self.nPR1>0:
+        	s+= '<li> <a href="PR1-0'+self.extensaoPagina+'">Programa de computador</a> '.decode("utf8")+'('+str(self.nPR1)+')'
+        if self.nPR2>0:
+        	s+= '<li> <a href="PR2-0'+self.extensaoPagina+'">Desenho industrial</a> '.decode("utf8")+'('+str(self.nPR2)+')'
+        if self.nPR0 == 0 and self.nPR1 == 0 and self.nPR2 == 0:
+        	s+= '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
 
 
         s += '</ul> <h3 id="producaoArtistica">Produção artística</h3> <ul>'.decode("utf8")
@@ -465,15 +465,15 @@ class GeradorDePaginasWeb:
         self.nPR2 = 0
         self.nPR = 0
 
-        # if self.grupo.obterParametro('relatorio-incluir_patente'):
+        if self.grupo.obterParametro('relatorio-incluir_patente'):
 
-        #	self.nPR0 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPatente, "Patente", "PR0")
-        #	self.nPR1 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaProgramaComputador, "Programa de computador", "PR1")
-        #	self.nPR2 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaDesenhoIndustrial, "Desenho industrial", "PR2")
+            self.nPR0 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPatente, "Patente", "PR0")
+            self.nPR1 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaProgramaComputador, "Programa de computador", "PR1")
+            self.nPR2 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaDesenhoIndustrial, "Desenho industrial", "PR2")
 
         # Total de produções técnicas
 
-    #self.nPR = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPR, "Total de patentes e registros", "PR")
+            self.nPR = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPR, "Total de patentes e registros", "PR")
 
 
     def gerarPaginasDeOrientacoes(self):

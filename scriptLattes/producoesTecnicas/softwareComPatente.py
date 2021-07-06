@@ -38,41 +38,42 @@ class SoftwareComPatente:
     chave = None
 
 
-    def __init__(self, idMembro, partesDoItem, relevante):
+    def __init__(self, idMembro, partesDoItem = '', relevante = ''):
         # partesDoItem[0]: Numero (NAO USADO)
         # partesDoItem[1]: Descricao (DADO BRUTO)
         self.idMembro = set([])
         self.idMembro.add(idMembro)
 
-        self.relevante = relevante
-        self.item = partesDoItem[1]
+        if not partesDoItem == '':
+            self.relevante = relevante
+            self.item = partesDoItem[1]
 
-        # Dividir o item na suas partes constituintes
-        #if " . " in self.item:
-        #    partes = self.item.partition(" . ")
-        #else:
-        #    partes = self.item.partition(".. ")
+            # Dividir o item na suas partes constituintes
+            #if " . " in self.item:
+            #    partes = self.item.partition(" . ")
+            #else:
+            #    partes = self.item.partition(".. ")
 
-        if " . " in self.item and len(self.item.partition(" . ")[2])>=30:
-            partes = self.item.partition(" . ")
-        elif (".. " in self.item) and len(self.item.partition(".. ")[2])>=30:
-            partes = self.item.partition(".. ")
-        else: 
-            partes = self.item.partition(". ")
+            if " . " in self.item and len(self.item.partition(" . ")[2])>=30:
+                partes = self.item.partition(" . ")
+            elif (".. " in self.item) and len(self.item.partition(".. ")[2])>=30:
+                partes = self.item.partition(".. ")
+            else:
+                partes = self.item.partition(". ")
 
-        self.autores = partes[0].strip()
-        partes = partes[2]
+            self.autores = partes[0].strip()
+            partes = partes[2]
 
-        aux = re.findall(u' ((?:19|20)\d\d)\\b', partes)
-        if len(aux)>0:
-            self.ano = aux[-1] #.strip().rstrip(".").rstrip(",")
-            partes = partes.rpartition(" ")
-            partes = partes[0]
-        else:
-            self.ano = ''
+            aux = re.findall(u' ((?:19|20)\d\d)\\b', partes)
+            if len(aux)>0:
+                self.ano = aux[-1] #.strip().rstrip(".").rstrip(",")
+                partes = partes.rpartition(" ")
+                partes = partes[0]
+            else:
+                self.ano = ''
 
-        self.titulo = partes.strip().rstrip(".").rstrip(",")
-        self.chave = self.autores # chave de comparação entre os objetos
+            self.titulo = partes.strip().rstrip(".").rstrip(",")
+            self.chave = self.autores # chave de comparação entre os objetos
 
 
     def compararCom(self, objeto):
