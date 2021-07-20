@@ -70,6 +70,7 @@ class Grupo:
     matrizApresentacaoDeTrabalho = None
     matrizCursoDeCurtaDuracaoMinistrado = None
     matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
+    matrizOrganizacaoDeEvento = None
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -587,6 +588,7 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaApresentacaoDeTrabalho, 'PT6', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaCursoDeCurtaDuracaoMinistrado, 'PT7', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional, 'PT8', 'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaOrganizacaoDeEvento, 'PT9', 'Numero de producoes tecnicas')
 
         gBarra.criarGrafico(self.compilador.listaCompletaPatente, 'PR0', 'Numero de patentes')
         gBarra.criarGrafico(self.compilador.listaCompletaProgramaComputador, 'PR1', 'Numero de programa de computador')
@@ -620,7 +622,7 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaOC, 'OC', 'Numero de orientacoes concluidas')
 
         gBarra.criarGrafico(self.compilador.listaCompletaParticipacaoEmEvento, 'Ep', 'Numero de Eventos')
-        gBarra.criarGrafico(self.compilador.listaCompletaOrganizacaoDeEvento, 'Eo', 'Numero de Eventos')
+        #gBarra.criarGrafico(self.compilador.listaCompletaOrganizacaoDeEvento, 'Eo', 'Numero de Eventos')
 
         prefix = self.obterParametro('global-prefixo') + '-' if not self.obterParametro('global-prefixo') == '' else ''
         self.salvarVetorDeProducoes(gBarra.obterVetorDeProducoes(), prefix + 'vetorDeProducoes.txt')
@@ -745,6 +747,7 @@ class Grupo:
         self.listaDeParametros.append(['relatorio-incluir_outro_tipo_de_producao_tecnica', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_curso_de_curta_duracao_ministrado', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional', 'sim'])
+        self.listaDeParametros.append(['relatorio-incluir_organizacao_de_evento', 'sim'])
 
         self.listaDeParametros.append(['relatorio-incluir_patente', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_programa_computador', 'sim'])
@@ -772,7 +775,7 @@ class Grupo:
         self.listaDeParametros.append(['relatorio-incluir_projeto', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_premio', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_participacao_em_evento', 'sim'])
-        self.listaDeParametros.append(['relatorio-incluir_organizacao_de_evento', 'sim'])
+        #self.listaDeParametros.append(['relatorio-incluir_organizacao_de_evento', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_internacionalizacao', 'nao'])
 
         self.listaDeParametros.append(['grafo-mostrar_grafo_de_colaboracoes', 'sim'])
@@ -799,6 +802,7 @@ class Grupo:
         self.listaDeParametros.append(['grafo-incluir_outro_tipo_de_producao_tecnica', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_curso_de_curta_duracao_ministrado', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_desenvolvimento_de_material_didatico_ou_instrucional', 'sim'])
+        self.listaDeParametros.append(['grafo-incluir_organizacao_de_evento', 'sim'])
 
         self.listaDeParametros.append(['grafo-incluir_patente', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_programa_computador', 'sim'])

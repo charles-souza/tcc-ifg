@@ -53,13 +53,14 @@ from producoesTecnicas.processoOuTecnica import *
 from producoesTecnicas.trabalhoTecnico import *
 from producoesTecnicas.outroTipoDeProducaoTecnica import *
 from producoesTecnicas.cursoDeCurtaDuracaoMinistrado import *
+from producoesTecnicas.organizacaoDeEvento import *
 
 from producoesArtisticas.producaoArtistica import *
 
 from orientacoes.orientacaoEmAndamento import *
 from orientacoes.orientacaoConcluida import *
 
-from eventos.organizacaoDeEvento import *
+#from eventos.organizacaoDeEvento import *
 from eventos.participacaoEmEvento import *
 from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucional import \
     DesenvolvimentoDeMaterialDidaticoOuInstrucional
@@ -146,6 +147,7 @@ class ParserLattes(HTMLParser):
     achouApresentacaoDeTrabalho = None
     achouCursoDeCurtaDuracaoMinistrado = None
     achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
+    achouOrganizacaoDeEvento = None
 
     achouPatente = None
     achouProgramaComputador = None
@@ -166,7 +168,7 @@ class ParserLattes(HTMLParser):
     achouOutroTipoDeOrientacao = None
 
     achouParticipacaoEmEvento = None
-    achouOrganizacaoDeEvento = None
+    #achouOrganizacaoDeEvento = None
 
     procurarCabecalho = None
     partesDoItem = []
@@ -197,6 +199,7 @@ class ParserLattes(HTMLParser):
     listaApresentacaoDeTrabalho = []
     listaCursoDeCurtaDuracaoMinistrado = []
     listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+    listaOrganizacaoDeEvento = []
 
     listaPatente = []
     listaProgramaComputador = []
@@ -224,7 +227,7 @@ class ParserLattes(HTMLParser):
 
     # Eventos
     listaParticipacaoEmEvento = []
-    listaOrganizacaoDeEvento = []
+    #listaOrganizacaoDeEvento = []
 
     # auxiliares
     doi = ''
@@ -272,6 +275,7 @@ class ParserLattes(HTMLParser):
         self.listaApresentacaoDeTrabalho = []
         self.listaCursoDeCurtaDuracaoMinistrado = []
         self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+        self.listaOrganizacaoDeEvento = []
 
         self.listaPatente = []
         self.listaProgramaComputador = []
@@ -296,7 +300,7 @@ class ParserLattes(HTMLParser):
         self.listaOCOutroTipoDeOrientacao = []
 
         self.listaParticipacaoEmEvento = []
-        self.listaOrganizacaoDeEvento = []
+        #self.listaOrganizacaoDeEvento = []
 
 
         # inicializacao para evitar a busca exaustiva de algumas palavras-chave
@@ -685,6 +689,11 @@ class ParserLattes(HTMLParser):
                                                                          self.relevante)
                                 self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional.append(iessimoItem)
 
+                            if self.achouOrganizacaoDeEvento:
+                                iessimoItem = OrganizacaoDeEvento(self.idMembro, self.partesDoItem,
+                                                                         self.relevante)
+                                self.listaOrganizacaoDeEvento.append(iessimoItem)
+
                         if self.achouProducaoArtisticaCultural:
                             if self.achouOutraProducaoArtisticaCultural:
                                 iessimoItem = ProducaoArtistica(self.idMembro, self.partesDoItem, self.relevante)
@@ -697,8 +706,8 @@ class ParserLattes(HTMLParser):
                         if self.achouParticipacaoEmEvento:
                             self.listaParticipacaoEmEvento.append(ParticipacaoEmEvento(self.idMembro, self.partesDoItem))
 
-                        if self.achouOrganizacaoDeEvento:
-                            self.listaOrganizacaoDeEvento.append(OrganizacaoDeEvento(self.idMembro, self.partesDoItem))
+                        #if self.achouOrganizacaoDeEvento:
+                        #    self.listaOrganizacaoDeEvento.append(OrganizacaoDeEvento(self.idMembro, self.partesDoItem))
 
 
                     if self.achouOrientacoes:
@@ -797,8 +806,8 @@ class ParserLattes(HTMLParser):
             #	self.achouProducaoArtisticaCultural = 1
             if u'Bancas'==dado:
                 self.achouBancas = 1
-            if u'Eventos'==dado:
-                self.achouEventos = 1
+            #if u'Eventos'==dado:
+            #    self.achouEventos = 1
             if u'Orientações'==dado:
                 self.achouOrientacoes = 1
             if u'Patentes e registros'== dado:
@@ -973,6 +982,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Programas de computador sem registro de patente'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -984,6 +994,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Apresentações de Trabalho'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -995,6 +1006,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Produtos tecnológicos'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1006,6 +1018,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Processos ou técnicas'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1017,6 +1030,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Trabalhos técnicos'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1028,6 +1042,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Demais tipos de produção técnica'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1039,6 +1054,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Apresentações de Trabalho'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1050,6 +1066,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 1
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Cursos de curta duração'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1061,6 +1078,7 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 1
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 0
                 if u'Desenvolvimento de material didático'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1072,6 +1090,19 @@ class ParserLattes(HTMLParser):
                     self.achouApresentacaoDeTrabalho = 0
                     self.achouCursoDeCurtaDuracaoMinistrado = 0
                     self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 1
+                    self.achouOrganizacaoDeEvento = 0
+                if u'Organização de evento'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                    self.achouOrganizacaoDeEvento = 1
     
             if self.achouProducaoArtisticaCultural:
                 #if u'Produção artística/cultural'==dado:
@@ -1089,10 +1120,10 @@ class ParserLattes(HTMLParser):
                 self.salvarItem = 1
                 self.achouParticipacaoEmEvento  = 1
                 self.achouOrganizacaoDeEvento = 0
-            if u'Organização de eventos, congressos, exposições e feiras'==dado:
-                self.salvarItem = 1
-                self.achouParticipacaoEmEvento  = 0
-                self.achouOrganizacaoDeEvento = 1
+            #if u'Organização de eventos, congressos, exposições e feiras'==dado:
+            #    self.salvarItem = 1
+            #    self.achouParticipacaoEmEvento  = 0
+            #    self.achouOrganizacaoDeEvento = 1
 
         if self.achouOrientacoes:
             if u'Orientações e supervisões em andamento'==dado:

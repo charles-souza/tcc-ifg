@@ -50,6 +50,7 @@ from scriptLattes.patentesRegistros.patente import Patente
 from scriptLattes.producoesTecnicas.cursoDeCurtaDuracaoMinistrado import cursoDeCurtaDuracaoMinistrado
 from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucional import \
 	DesenvolvimentoDeMaterialDidaticoOuInstrucional
+from scriptLattes.producoesTecnicas.organizacaoDeEvento import OrganizacaoDeEvento
 from scriptLattes.producoesTecnicas.processoOuTecnica import ProcessoOuTecnica
 from scriptLattes.producoesTecnicas.softwareSemPatente import SoftwareSemPatente
 
@@ -95,6 +96,7 @@ class ParserLattesXML(HTMLParser):
 	listaApresentacaoDeTrabalho = []
 	listaCursoDeCurtaDuracaoMinistrado = []
 	listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+	listaOrganizacaoDeEvento = []
 	listaProducaoArtistica = []
 
 	# Orientaççoes em andamento (OA)
@@ -136,6 +138,7 @@ class ParserLattesXML(HTMLParser):
 	achouApresentacaoDeTrabalho = None
 	achouCursoDeCurtaDuracaoMinistrado = None
 	achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
+	achouOrganizacaoDeEvento = None
 
 	achouPatente = None
 
@@ -181,6 +184,7 @@ class ParserLattesXML(HTMLParser):
 		self.listaApresentacaoDeTrabalho = []
 		self.listaCursoDeCurtaDuracaoMinistrado = []
 		self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+		self.listaOrganizacaoDeEvento = []
 
 		self.listaProducaoArtistica = []
 
@@ -207,7 +211,7 @@ class ParserLattesXML(HTMLParser):
 
 		# Eventos
 		self.listaParticipacaoEmEvento = []
-		self.listaOrganizacaoDeEvento = []
+		#self.listaOrganizacaoDeEvento = []
 
 		# inicializacao 
 		self.idLattes = ''
@@ -414,6 +418,16 @@ class ParserLattesXML(HTMLParser):
 
 		if tag == 'desenvolvimento-de-material-didatico-ou-instrucional':
 			self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'organizacao-de-evento':
+			self.achouOrganizacaoDeEvento = 1
 			self.autoresLista = list([''] * 150)
 			self.autores = ''
 			self.titulo = ''
@@ -922,6 +936,29 @@ class ParserLattesXML(HTMLParser):
 				self.autoresLista[int(autorOrdem)] = autorNome
 
 		# ----------------------------------------------------------------------
+
+		if self.achouOrganizacaoDeEvento:
+			if tag == 'dados-basicos-da-organizacao-de-evento':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-da-organizacao-de-evento':
+				for name, value in attributes:
+					 if name == 'instituicao-promotora':
+						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+		# ----------------------------------------------------------------------
 		# ----------------------------------------------------------------------
 		if self.achouOCSupervisaoDePosDoutorado:
 			if tag=='dados-basicos-de-orientacoes-concluidas-para-pos-doutorado':
@@ -1302,6 +1339,23 @@ class ParserLattesXML(HTMLParser):
 			pub.ano = self.ano
 			pub.chave = self.autores
 			self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'organizacao-de-evento':
+			self.achouOrganizacaoDeEvento = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = OrganizacaoDeEvento(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaOrganizacaoDeEvento.append(pub)
 
 		# ----------------------------------------------------------------------
 

@@ -83,8 +83,8 @@ class GeradorDePaginasWeb:
         if self.grupo.obterParametro('relatorio-incluir_participacao_em_evento'):
             self.gerarPaginasDeParticipacaoEmEventos()
 
-        if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
-            self.gerarPaginasDeOrganizacaoDeEventos()
+        #if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
+        #    self.gerarPaginasDeOrganizacaoDeEventos()
 
         if self.grupo.obterParametro('grafo-mostrar_grafo_de_colaboracoes'):
             self.gerarPaginaDeGrafosDeColaboracoes()
@@ -176,9 +176,9 @@ class GeradorDePaginasWeb:
         if self.nPB7 > 0:
             s += '<li> <a href="PB7-0' + self.extensaoPagina + '">Artigos aceitos para publicação </a> '.decode(
                 "utf8") + '(' + str(self.nPB7) + ')'
-        if self.nPB8 > 0:
-            s += '<li> <a href="PB8-0' + self.extensaoPagina + '">Apresentações de trabalho </a> '.decode(
-                "utf8") + '(' + str(self.nPB8) + ')'
+        #if self.nPB8 > 0:
+        #    s += '<li> <a href="PB8-0' + self.extensaoPagina + '">Apresentações de trabalho </a> '.decode(
+        #        "utf8") + '(' + str(self.nPB8) + ')'
         if self.nPB9 > 0:
             s += '<li> <a href="PB9-0' + self.extensaoPagina + '">Demais tipos de produção bibliográfica </a> '.decode(
                 "utf8") + '(' + str(self.nPB9) + ')'
@@ -216,6 +216,9 @@ class GeradorDePaginasWeb:
         if self.nPT8 > 0:
             s += '<li> <a href="PT8-0' + self.extensaoPagina + '">Desenvolvimento de material didático </a> '.decode(
                 "utf8") + '(' + str(self.nPT8) + ')'
+        if self.nPT9 > 0:
+            s += '<li> <a href="PT9-0' + self.extensaoPagina + '">Organização de evento </a> '.decode(
+                "utf8") + '(' + str(self.nPT9) + ')'
         if self.nPT > 0:
             s += '<li> <a href="PT-0' + self.extensaoPagina + '">Total de produção técnica</a> '.decode(
                 "utf8") + '(' + str(self.nPT) + ')'
@@ -330,14 +333,14 @@ class GeradorDePaginasWeb:
                 s += '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
             s += '</ul>'
 
-        if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
-            s += '</ul> <h3 id="eventos">Organização de eventos</h3> <ul>'.decode("utf8")
-            if self.nEo > 0:
-                s += '<li> <a href="Eo-0' + self.extensaoPagina + '">Total de organização de eventos</a> '.decode(
-                    "utf8") + '(' + str(self.nEo) + ')'
-            else:
-                s += '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
-            s += '</ul>'
+        #if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
+        #    s += '</ul> <h3 id="eventos">Organização de eventos</h3> <ul>'.decode("utf8")
+        #    if self.nEo > 0:
+        #        s += '<li> <a href="Eo-0' + self.extensaoPagina + '">Total de organização de eventos</a> '.decode(
+        #            "utf8") + '(' + str(self.nEo) + ')'
+        #    else:
+        #        s += '<i>Nenhum item achado nos currículos Lattes</i>'.decode("utf8")
+        #    s += '</ul>'
 
         if self.grupo.obterParametro('grafo-mostrar_grafo_de_colaboracoes'):
             s += '</ul> <h3 id="grafo">Grafo de colaborações</h3> <ul>'.decode("utf8")
@@ -434,6 +437,7 @@ class GeradorDePaginasWeb:
         self.nPT6 = 0
         self.nPT7 = 0
         self.nPT8 = 0
+        self.nPT9 = 0
         self.nPT = 0
 
         if self.grupo.obterParametro('relatorio-incluir_software_com_patente'):
@@ -463,6 +467,9 @@ class GeradorDePaginasWeb:
         if self.grupo.obterParametro('relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
             self.nPT8 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
                                                        "Desenvolvimento de material didático", "PT8")
+        if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
+            self.nPT9 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaOrganizacaoDeEvento,
+                                                       "Cursos de curta duracao", "PT9")
         # Total de produções técnicas
         self.nPT = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPT, "Total de produção técnica",
                                                   "PT")
@@ -585,10 +592,10 @@ class GeradorDePaginasWeb:
         self.nEp = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaParticipacaoEmEvento,
                                                   "Total de participação em eventos", "Ep")
 
-    def gerarPaginasDeOrganizacaoDeEventos(self):
-        self.nEo = 0
-        self.nEo = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaOrganizacaoDeEvento,
-                                                  "Total de organização de eventos", "Eo")
+    #def gerarPaginasDeOrganizacaoDeEventos(self):
+    #    self.nEo = 0
+    #    self.nEo = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaOrganizacaoDeEvento,
+    #                                              "Total de organização de eventos", "Eo")
 
     def gerarPaginasDeInternacionalizacao(self):
         self.nIn0 = 0
@@ -1207,7 +1214,8 @@ class GeradorDePaginasWeb:
                                         len(membro.listaTrabalhoTecnico),
                                         len(membro.listaOutroTipoDeProducaoTecnica),
                                         len(membro.listaCursoDeCurtaDuracaoMinistrado),
-                                        len(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional)]
+                                        len(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional),
+                                        len(membro.listaOrganizacaoDeEvento)]
 
             quantitativo_artistica   = [len(membro.listaProducaoArtistica)]
 
@@ -1578,7 +1586,8 @@ class GeradorDePaginasWeb:
         (nPT5, lista_PT5, titulo_PT5) = self.gerar_lista_de_producoes_de_membro( membro.listaOutroTipoDeProducaoTecnica, u"Demais tipos de produção técnica" )
         (nPT6, lista_PT6, titulo_PT6) = self.gerar_lista_de_producoes_de_membro( membro.listaApresentacaoDeTrabalho, u"Apresentações de trabalho")
         (nPT7, lista_PT7, titulo_PT7) = self.gerar_lista_de_producoes_de_membro( membro.listaCursoDeCurtaDuracaoMinistrado, u"Cursos de curta duração")
-        (nPT8, lista_PT8, titulo_PT8) = self.gerar_lista_de_producoes_de_membro( membro.listaCursoDeCurtaDuracaoMinistrado, u"Desenvolvimento de material didático")
+        (nPT8, lista_PT8, titulo_PT8) = self.gerar_lista_de_producoes_de_membro( membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional, u"Desenvolvimento de material didático")
+        (nPT9, lista_PT9, titulo_PT9) = self.gerar_lista_de_producoes_de_membro( membro.listaOrganizacaoDeEvento, u"Organização de evento")
 
         (nPA0, lista_PA0, titulo_PA0) = self.gerar_lista_de_producoes_de_membro( membro.listaProducaoArtistica, u"Total de produção artística" )
 
@@ -1601,7 +1610,7 @@ class GeradorDePaginasWeb:
         (nPj0, lista_Pj0, titulo_Pj0) = self.gerar_lista_de_producoes_de_membro( membro.listaProjetoDePesquisa, u"Total de projetos de pesquisa" )
         (nPm0, lista_Pm0, titulo_Pm0) = self.gerar_lista_de_producoes_de_membro( membro.listaPremioOuTitulo, u"Total de prêmios e títulos" )
         (nEp0, lista_Ep0, titulo_Ep0) = self.gerar_lista_de_producoes_de_membro( membro.listaParticipacaoEmEvento, u"Total de participação em eventos" )
-        (nEo0, lista_Eo0, titulo_Eo0) = self.gerar_lista_de_producoes_de_membro( membro.listaOrganizacaoDeEvento, u"Total de organização de eventos" )
+        #(nEo0, lista_Eo0, titulo_Eo0) = self.gerar_lista_de_producoes_de_membro( membro.listaOrganizacaoDeEvento, u"Total de organização de eventos" )
 
         if self.grupo.obterParametro('grafo-mostrar_grafo_de_colaboracoes'):
             (nCE, lista_CE, titulo_CE, lista_CE_detalhe)    = self.gerar_lista_de_colaboracoes (membro, u'Colaborações endôgenas')
@@ -1627,6 +1636,7 @@ class GeradorDePaginasWeb:
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT6', titulo_PT6, nPT6)
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT7', titulo_PT7, nPT7)
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT8', titulo_PT8, nPT8)
+        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT9', titulo_PT9, nPT9)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PA0', titulo_PA0, nPA0 )
@@ -1659,7 +1669,7 @@ class GeradorDePaginasWeb:
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'Ep0', titulo_Ep0, nEp0 )
         s += u'</ul>'
         s += u'<h3>Organização de eventos</h3> <ul>'
-        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'Eo0', titulo_Eo0, nEo0 )
+        #s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'Eo0', titulo_Eo0, nEo0 )
         s += u'</ul>'
         #-------- 
         if self.grupo.obterParametro('grafo-mostrar_grafo_de_colaboracoes'):
@@ -1690,6 +1700,7 @@ class GeradorDePaginasWeb:
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT6', titulo_PT6, nPT6, lista_PT6)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT7', titulo_PT7, nPT7, lista_PT7)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT8', titulo_PT8, nPT8, lista_PT8)
+        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT9', titulo_PT9, nPT9, lista_PT9)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PA0', titulo_PA0, nPA0, lista_PA0)
@@ -1722,7 +1733,7 @@ class GeradorDePaginasWeb:
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'Ep0', titulo_Ep0, nEp0, lista_Ep0)
         s += u'</ul>'
         s += u'<h3>Organização de eventos</h3> <ul>'
-        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'Eo0', titulo_Eo0, nEo0, lista_Eo0)
+        #s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'Eo0', titulo_Eo0, nEo0, lista_Eo0)
         s += u'</ul>'
         
         if self.grupo.obterParametro('grafo-mostrar_grafo_de_colaboracoes'):

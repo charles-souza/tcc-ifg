@@ -92,6 +92,7 @@ class Membro:
     listaApresentacaoDeTrabalho = []
     listaCursoDeCurtaDuracaoMinistrado = []
     listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+    listaOrganizacaoDeEvento = []
 
     # Patentes e registros
     listaPatente = []
@@ -126,7 +127,7 @@ class Membro:
 
     # Eventos
     listaParticipacaoEmEvento = []
-    listaOrganizacaoDeEvento = []
+    #listaOrganizacaoDeEvento = []
 
     rotuloCorFG = ''
     rotuloCorBG = ''
@@ -278,6 +279,7 @@ class Membro:
         self.listaApresentacaoDeTrabalho = parser.listaApresentacaoDeTrabalho
         self.listaCursoDeCurtaDuracaoMinistrado = parser.listaCursoDeCurtaDuracaoMinistrado
         self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = parser.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional
+        self.listaOrganizacaoDeEvento = parser.listaOrganizacaoDeEvento
 
         # Patentes e registros
         self.listaPatente = parser.listaPatente
@@ -307,7 +309,7 @@ class Membro:
 
         # Eventos
         self.listaParticipacaoEmEvento = parser.listaParticipacaoEmEvento
-        self.listaOrganizacaoDeEvento = parser.listaOrganizacaoDeEvento
+        #self.listaOrganizacaoDeEvento = parser.listaOrganizacaoDeEvento
 
         # -----------------------------------------------------------------------------------------
         nomePrimeiraGrandeArea = ""
@@ -358,6 +360,7 @@ class Membro:
         self.listaApresentacaoDeTrabalho = self.filtrarItems(self.listaApresentacaoDeTrabalho)
         self.listaCursoDeCurtaDuracaoMinistrado = self.filtrarItems(self.listaCursoDeCurtaDuracaoMinistrado)
         self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.filtrarItems(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
+        self.listaOrganizacaoDeEvento = self.filtrarItems(self.listaOrganizacaoDeEvento)
 
         self.listaPatente = self.filtrarItems(self.listaPatente)
         self.listaProgramaComputador = self.filtrarItems(self.listaProgramaComputador)
@@ -385,7 +388,7 @@ class Membro:
         self.listaProjetoDePesquisa = self.filtrarItems(self.listaProjetoDePesquisa)
 
         self.listaParticipacaoEmEvento = self.filtrarItems(self.listaParticipacaoEmEvento)
-        self.listaOrganizacaoDeEvento = self.filtrarItems(self.listaOrganizacaoDeEvento)
+        #self.listaOrganizacaoDeEvento = self.filtrarItems(self.listaOrganizacaoDeEvento)
 
 
     def filtrarItems(self, lista):
@@ -531,6 +534,7 @@ class Membro:
             s += "\n- Apresentações de Trabalho                   : " + str(len(self.listaApresentacaoDeTrabalho))
             s += "\n- Cursos de curta duração                     : " + str(len(self.listaCursoDeCurtaDuracaoMinistrado))
             s += "\n- Desenvolvimento de material didático        : " + str(len(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional))
+            s += "\n- Organização de Evento                       : " + str(len(self.listaOrganizacaoDeEvento))
             s += "\n- Patente                                     : " + str(len(self.listaPatente))
             s += "\n- Programa de computador                      : " + str(len(self.listaProgramaComputador))
             s += "\n- Desenho industrial                          : " + str(len(self.listaDesenhoIndustrial))
@@ -554,7 +558,7 @@ class Membro:
             s += "\n- Projetos de pesquisa                        : " + str(len(self.listaProjetoDePesquisa))
             s += "\n- Prêmios e títulos                           : " + str(len(self.listaPremioOuTitulo))
             s += "\n- Participação em eventos                     : " + str(len(self.listaParticipacaoEmEvento))
-            s += "\n- Organização de eventos                      : " + str(len(self.listaOrganizacaoDeEvento))
+            #s += "\n- Organização de eventos                      : " + str(len(self.listaOrganizacaoDeEvento))
             s += "\n\n"
         return s
 

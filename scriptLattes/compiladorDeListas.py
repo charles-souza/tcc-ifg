@@ -46,6 +46,7 @@ class CompiladorDeListas:
     matrizApresentacaoDeTrabalho = None
     matrizCursoDeCurtaDuracaoMinistrado = None
     matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
+    matrizOrganizacaoDeEvento = None
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -81,6 +82,7 @@ class CompiladorDeListas:
         self.listaCompletaApresentacaoDeTrabalho = {}
         self.listaCompletaCursoDeCurtaDuracaoMinistrado = {}
         self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = {}
+        self.listaCompletaOrganizacaoDeEvento = {}
 
         self.listaCompletaPatente = {}
         self.listaCompletaProgramaComputador = {}
@@ -108,7 +110,7 @@ class CompiladorDeListas:
         self.listaCompletaProjetoDePesquisa = {}
 
         self.listaCompletaParticipacaoEmEvento = {}
-        self.listaCompletaOrganizacaoDeEvento = {}
+        #self.listaCompletaOrganizacaoDeEvento = {}
 
         # compilamos as producoes de todos os membros (separados por tipos)
         for membro in grupo.listaDeMembros:
@@ -148,7 +150,8 @@ class CompiladorDeListas:
             self.listaCompletaCursoDeCurtaDuracaoMinistrado = self.compilarLista(membro.listaCursoDeCurtaDuracaoMinistrado,
                                                                               self.listaCompletaCursoDeCurtaDuracaoMinistrado)
             self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.compilarLista(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
-                self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
+                                                                                    self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
+            self.listaCompletaOrganizacaoDeEvento = self.compilarLista(membro.listaOrganizacaoDeEvento, self.listaCompletaOrganizacaoDeEvento)
 
             self.listaCompletaPatente = self.compilarLista(membro.listaPatente, self.listaCompletaPatente)
             self.listaCompletaProgramaComputador = self.compilarLista(membro.listaProgramaComputador,
@@ -195,8 +198,8 @@ class CompiladorDeListas:
 
             self.listaCompletaParticipacaoEmEvento = self.compilarLista(membro.listaParticipacaoEmEvento,
                                                                         self.listaCompletaParticipacaoEmEvento)
-            self.listaCompletaOrganizacaoDeEvento = self.compilarLista(membro.listaOrganizacaoDeEvento,
-                                                                       self.listaCompletaOrganizacaoDeEvento)
+            #self.listaCompletaOrganizacaoDeEvento = self.compilarLista(membro.listaOrganizacaoDeEvento,
+            #                                                           self.listaCompletaOrganizacaoDeEvento)
 
         # ---------------------------------------------------------------------------
         # compilamos as producoes de todos os tipos
@@ -251,6 +254,9 @@ class CompiladorDeListas:
                                                                 self.listaCompletaPT)
         if self.grupo.obterParametro('relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
             self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
+                                                                self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaOrganizacaoDeEvento,
                                                                 self.listaCompletaPT)
 
         if self.grupo.obterParametro('relatorio-incluir_patente'):
@@ -333,6 +339,7 @@ class CompiladorDeListas:
                 self.adicionarCoautorNaLista(self.listaCompletaApresentacaoDeTrabalho, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaCursoDeCurtaDuracaoMinistrado, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaOrganizacaoDeEvento, membro)
 
                 self.adicionarCoautorNaLista(self.listaCompletaPatente, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaProgramaComputador, membro)
@@ -448,6 +455,8 @@ class CompiladorDeListas:
             self.matrizesCursoDeCurtaDuracaoMinistrado = self.criarMatrizes(self.listaCompletaCursoDeCurtaDuracaoMinistrado)
         if self.grupo.obterParametro('grafo-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
             self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.criarMatrizes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
+        if self.grupo.obterParametro('grafo-incluir_organizacao_de_evento'):
+            self.matrizesOrganizacaoDeEvento = self.criarMatrizes(self.listaCompletaOrganizacaoDeEvento)
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             self.matrizesPatente = self.criarMatrizes(self.listaCompletaPatente)
@@ -601,6 +610,10 @@ class CompiladorDeListas:
             matriz1 += self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[0]
             matriz2 += self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[1]
             colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[2])
+        if self.grupo.obterParametro('grafo-incluir_organizacao_de_evento'):
+            matriz1 += self.matrizesOrganizacaoDeEvento[0]
+            matriz2 += self.matrizesOrganizacaoDeEvento[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesOrganizacaoDeEvento[2])
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             matriz1 += self.matrizesPatente[0]
@@ -662,6 +675,8 @@ class CompiladorDeListas:
         print self.matrizCursoDeCurtaDuracaoMinistrado
         print "\nDesenvolvimento de material didático"
         print self.matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional
+        print "\nOrganização de Evento"
+        print self.matrizOrganizacaoDeEvento
 
         print "\nPatente"
         print self.matrizPatente
@@ -715,6 +730,8 @@ class CompiladorDeListas:
         self.imprimirListaProducoes(self.listaCompletaCursoDeCurtaDuracaoMinistrado)
         print "\nDesenvolvimento de material didático"
         self.imprimirListaProducoes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
+        print "\nOrganização de Evento"
+        self.imprimirListaProducoes(self.listaCompletaOrganizacaoDeEvento)
         print "\nTOTAL DE PT"
         self.imprimirListaProducoes(self.listaCompletaPT)
 
@@ -774,7 +791,7 @@ class CompiladorDeListas:
         self.imprimirListaPremios(self.listaCompletaPremioOuTitulo)
 
         print "\n[LISTA COMPILADA DE PARTICIPACAO EM EVENTOS] ..."
-        print "\n[LISTA COMPILADA DE ORGANIZACAO DE EVENTOS] ..."
+        #print "\n[LISTA COMPILADA DE ORGANIZACAO DE EVENTOS] ..."
 
     def imprimirListaProducoes(self, listaCompleta):
         print "---------------------------------------------------------------------------"
