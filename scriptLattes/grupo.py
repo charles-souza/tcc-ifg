@@ -73,6 +73,7 @@ class Grupo:
     matrizOrganizacaoDeEvento = None
     matrizProgramaDeRadioOuTv = None
     matrizRelatorioDePesquisa = None
+    matrizCartaMapaOuSimilar = None
 
     matrizProducaoArtistica = None
 
@@ -594,6 +595,7 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaOrganizacaoDeEvento, 'PT9', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaProgramaDeRadioOuTv, 'PT10', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaRelatorioDePesquisa, 'PT11', 'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaCartaMapaOuSimilar, 'PT12', 'Numero de producoes tecnicas')
 
         gBarra.criarGrafico(self.compilador.listaCompletaPatente, 'PR0', 'Numero de patentes')
         gBarra.criarGrafico(self.compilador.listaCompletaProgramaComputador, 'PR1', 'Numero de programa de computador')
@@ -755,6 +757,7 @@ class Grupo:
         self.listaDeParametros.append(['relatorio-incluir_organizacao_de_evento', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_programa_de_radio_ou_tv', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_relatorio_de_pesquisa', 'sim'])
+        self.listaDeParametros.append(['relatorio-incluir_carta-mapa-ou-similar', 'sim'])
 
         self.listaDeParametros.append(['relatorio-incluir_patente', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_programa_computador', 'sim'])
@@ -812,6 +815,7 @@ class Grupo:
         self.listaDeParametros.append(['grafo-incluir_organizacao_de_evento', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_programa_de_radio_ou_tv', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_relatorio_de_pesquisa', 'sim'])
+        self.listaDeParametros.append(['grafo-incluir_carta-mapa-ou-similar', 'sim'])
 
         self.listaDeParametros.append(['grafo-incluir_patente', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_programa_computador', 'sim'])

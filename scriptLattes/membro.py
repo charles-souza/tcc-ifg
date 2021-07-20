@@ -95,6 +95,7 @@ class Membro:
     listaOrganizacaoDeEvento = []
     listaProgramaDeRadioOuTv = []
     listaRelatorioDePesquisa = []
+    listaCartaMapaOuSimilar = []
 
     # Patentes e registros
     listaPatente = []
@@ -284,6 +285,7 @@ class Membro:
         self.listaOrganizacaoDeEvento = parser.listaOrganizacaoDeEvento
         self.listaProgramaDeRadioOuTv = parser.listaProgramaDeRadioOuTv
         self.listaRelatorioDePesquisa = parser.listaRelatorioDePesquisa
+        self.listaCartaMapaOuSimilar = parser.listaCartaMapaOuSimilar
 
         # Patentes e registros
         self.listaPatente = parser.listaPatente
@@ -367,6 +369,7 @@ class Membro:
         self.listaOrganizacaoDeEvento = self.filtrarItems(self.listaOrganizacaoDeEvento)
         self.listaProgramaDeRadioOuTv = self.filtrarItems(self.listaProgramaDeRadioOuTv)
         self.listaRelatorioDePesquisa = self.filtrarItems(self.listaRelatorioDePesquisa)
+        self.listaCartaMapaOuSimilar = self.filtrarItems(self.listaCartaMapaOuSimilar)
 
         self.listaPatente = self.filtrarItems(self.listaPatente)
         self.listaProgramaComputador = self.filtrarItems(self.listaProgramaComputador)
@@ -543,6 +546,7 @@ class Membro:
             s += "\n- Organização de Evento                       : " + str(len(self.listaOrganizacaoDeEvento))
             s += "\n- Programa de rádio ou TV                     : " + str(len(self.listaProgramaDeRadioOuTv))
             s += "\n- Relatório de pesquisa                       : " + str(len(self.listaRelatorioDePesquisa))
+            s += "\n- Cartas, mapas ou similares                  : " + str(len(self.listaCartaMapaOuSimilar))
             s += "\n- Patente                                     : " + str(len(self.listaPatente))
             s += "\n- Programa de computador                      : " + str(len(self.listaProgramaComputador))
             s += "\n- Desenho industrial                          : " + str(len(self.listaDesenhoIndustrial))

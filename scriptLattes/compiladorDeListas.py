@@ -49,6 +49,7 @@ class CompiladorDeListas:
     matrizOrganizacaoDeEvento = None
     matrizProgramaDeRadioOuTv = None
     matrizRelatorioDePesquisa = None
+    matrizCartaMapaOuSimilar = None
 
     matrizProducaoArtistica = None
 
@@ -88,6 +89,7 @@ class CompiladorDeListas:
         self.listaCompletaOrganizacaoDeEvento = {}
         self.listaCompletaProgramaDeRadioOuTv = {}
         self.listaCompletaRelatorioDePesquisa = {}
+        self.listaCompletaCartaMapaOuSimilar = {}
 
         self.listaCompletaPatente = {}
         self.listaCompletaProgramaComputador = {}
@@ -161,6 +163,8 @@ class CompiladorDeListas:
                                                                             self.listaCompletaProgramaDeRadioOuTv)
             self.listaCompletaRelatorioDePesquisa = self.compilarLista(membro.listaRelatorioDePesquisa,
                                                                        self.listaCompletaRelatorioDePesquisa)
+            self.listaCompletaCartaMapaOuSimilar = self.compilarLista(membro.listaCartaMapaOuSimilar,
+                                                                       self.listaCompletaCartaMapaOuSimilar)
 
             self.listaCompletaPatente = self.compilarLista(membro.listaPatente, self.listaCompletaPatente)
             self.listaCompletaProgramaComputador = self.compilarLista(membro.listaProgramaComputador,
@@ -273,6 +277,9 @@ class CompiladorDeListas:
         if self.grupo.obterParametro('relatorio-incluir_relatorio_de_pesquisa'):
             self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaRelatorioDePesquisa,
                                                                 self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_carta-mapa-ou-similar'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaCartaMapaOuSimilar,
+                                                                self.listaCompletaPT)
 
         if self.grupo.obterParametro('relatorio-incluir_patente'):
             self.listaCompletaPR = self.compilarListasCompletas(self.listaCompletaPatente, self.listaCompletaPR)
@@ -357,6 +364,7 @@ class CompiladorDeListas:
                 self.adicionarCoautorNaLista(self.listaCompletaOrganizacaoDeEvento, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaProgramaDeRadioOuTv, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaRelatorioDePesquisa, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaCartaMapaOuSimilar, membro)
 
                 self.adicionarCoautorNaLista(self.listaCompletaPatente, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaProgramaComputador, membro)
@@ -478,6 +486,8 @@ class CompiladorDeListas:
             self.matrizesProgramaDeRadioOuTv = self.criarMatrizes(self.listaCompletaProgramaDeRadioOuTv)
         if self.grupo.obterParametro('grafo-incluir_relatorio_de_pesquisa'):
             self.matrizesRelatorioDePesquisa = self.criarMatrizes(self.listaCompletaRelatorioDePesquisa)
+        if self.grupo.obterParametro('grafo-incluir_carta-mapa-ou-similar'):
+            self.matrizesCartaMapaOuSimilar = self.criarMatrizes(self.listaCompletaCartaMapaOuSimilar)
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             self.matrizesPatente = self.criarMatrizes(self.listaCompletaPatente)
@@ -643,6 +653,10 @@ class CompiladorDeListas:
             matriz1 += self.matrizesRelatorioDePesquisa[0]
             matriz2 += self.matrizesRelatorioDePesquisa[1]
             colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesRelatorioDePesquisa[2])
+        if self.grupo.obterParametro('grafo-incluir_carta-mapa-ou-similar'):
+            matriz1 += self.matrizesCartaMapaOuSimilar[0]
+            matriz2 += self.matrizesCartaMapaOuSimilar[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesCartaMapaOuSimilar[2])
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             matriz1 += self.matrizesPatente[0]
@@ -710,6 +724,8 @@ class CompiladorDeListas:
         print self.matrizesProgramaDeRadioOuTv
         print "\nRelatório de pesquisa"
         print self.matrizesRelatorioDePesquisa
+        print "\nCartas, mapas ou similares"
+        print self.matrizesCartaMapaOuSimilar
 
         print "\nPatente"
         print self.matrizPatente
@@ -769,6 +785,8 @@ class CompiladorDeListas:
         self.imprimirListaProducoes(self.listaCompletaProgramaDeRadioOuTv)
         print "\nRelatório de pesquisa"
         self.imprimirListaProducoes(self.listaCompletaRelatorioDePesquisa)
+        print "\nCartas, mapas ou similares"
+        self.imprimirListaProducoes(self.listaCompletaCartaMapaOuSimilar)
         print "\nTOTAL DE PT"
         self.imprimirListaProducoes(self.listaCompletaPT)
 

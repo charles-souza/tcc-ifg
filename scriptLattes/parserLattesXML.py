@@ -47,6 +47,7 @@ from producoesTecnicas.produtoTecnologico import *
 from producoesTecnicas.outroTipoDeProducaoTecnica import *
 from producoesTecnicas.softwareComPatente import *
 from scriptLattes.patentesRegistros.patente import Patente
+from scriptLattes.producoesTecnicas.cartaMapaOuSimilar import CartaMapaOuSimilar
 from scriptLattes.producoesTecnicas.cursoDeCurtaDuracaoMinistrado import cursoDeCurtaDuracaoMinistrado
 from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucional import \
 	DesenvolvimentoDeMaterialDidaticoOuInstrucional
@@ -101,6 +102,7 @@ class ParserLattesXML(HTMLParser):
 	listaOrganizacaoDeEvento = []
 	listaProgramaDeRadioOuTv = []
 	listaRelatorioDePesquisa = []
+	listaCartaMapaOuSimilar = []
 
 	listaProducaoArtistica = []
 
@@ -146,6 +148,7 @@ class ParserLattesXML(HTMLParser):
 	achouOrganizacaoDeEvento = None
 	achouProgramaDeRadioOuTv = None
 	achouRelatorioDePesquisa = None
+	achouCartaMapaOuSimilar = None
 
 	achouPatente = None
 
@@ -464,6 +467,17 @@ class ParserLattesXML(HTMLParser):
 			self.natureza = ''
 
 		# ----------------------------------------------------------------------
+
+		if tag == 'carta-mapa-ou-similar':
+			self.achouCartaMapaOuSimilar = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+			self.tema = ''
+
+		# ----------------------------------------------------------------------
 		if tag=='orientacoes-concluidas-para-pos-doutorado':
 			self.achouOCSupervisaoDePosDoutorado = 1
 			self.nome = ''
@@ -757,29 +771,6 @@ class ParserLattesXML(HTMLParser):
 						self.natureza = value.capitalize()
 
 		# ----------------------------------------------------------------------
-
-		if self.achouOutroTipoDeProducaoTecnica:
-			if tag == 'autores':
-				for name, value in attributes:
-					if name == 'nome-para-citacao':
-						autorNome = value.split(';')[0]
-					if name == 'ordem-de-autoria':
-						autorOrdem = value
-				self.autoresLista[int(autorOrdem)] = autorNome
-
-			if tag == 'dados-basicos-de-cursos-curta-duracao-ministrado':
-				for name, value in attributes:
-					if name == 'titulo':
-						self.titulo = value
-					if name == 'ano':
-						self.ano = value
-
-			if tag == 'detalhamento-de-cursos-curta-duracao-ministrado':
-				for name, value in attributes:
-					if name == 'instituicao-promotora-do-curso':
-						self.instituicao = value
-
-		# ----------------------------------------------------------------------
 		if self.achouApresentacaoDeTrabalho:
 			if tag=='autores':
 				for name, value in attributes:
@@ -839,8 +830,8 @@ class ParserLattesXML(HTMLParser):
 				for name, value in attributes:
 					if name == 'finalidade':
 						self.natureza = value.capitalize()
-					if name == 'titulo-do-software':
-						self.titulo = value
+					#if name == 'titulo-do-software':
+					#	self.titulo = value
 					if name == 'ano':
 						self.ano = value
 
@@ -997,10 +988,10 @@ class ParserLattesXML(HTMLParser):
 					if name == 'ano':
 						self.ano = value
 
-			if tag == 'detalhamento-do-programa-de-radio-ou-tv':
-				for name, value in attributes:
-					 if name == 'tema':
-						self.titulo = value
+			#if tag == 'detalhamento-do-programa-de-radio-ou-tv':
+			#	for name, value in attributes:
+			#		 if name == 'tema':
+			#		 	self.titulo = value
 
 			if tag == 'autores':
 				for name, value in attributes:
@@ -1024,6 +1015,31 @@ class ParserLattesXML(HTMLParser):
 				for name, value in attributes:
 					 if name == 'nome-do-projeto':
 						self.titulo = value
+					 if name == 'instituicao-financiadora':
+						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+		# ----------------------------------------------------------------------
+
+		if self.achouCartaMapaOuSimilar:
+			if tag == 'dados-basicos-de-carta-mapa-ou-similar':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-de-carta-mapa-ou-similar':
+				for name, value in attributes:
+					 if name == 'tema-da-carta-mapa-ou-similar':
+						self.tema = value
 					 if name == 'instituicao-financiadora':
 						self.instituicao = value
 
@@ -1467,6 +1483,24 @@ class ParserLattesXML(HTMLParser):
 			pub.ano = self.ano
 			pub.chave = self.autores
 			self.listaRelatorioDePesquisa.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'carta-mapa-ou-similar':
+			self.achouCartaMapaOuSimilar = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = CartaMapaOuSimilar(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			pub.tema = self.tema
+			self.listaCartaMapaOuSimilar.append(pub)
 
 		# ----------------------------------------------------------------------
 

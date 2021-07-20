@@ -225,6 +225,9 @@ class GeradorDePaginasWeb:
         if self.nPT11 > 0:
             s += '<li> <a href="PT11-0' + self.extensaoPagina + '">Relatório de pesquisa </a> '.decode(
                 "utf8") + '(' + str(self.nPT11) + ')'
+        if self.nPT12 > 0:
+            s += '<li> <a href="PT12-0' + self.extensaoPagina + '">Cartas, mapas ou similares </a> '.decode(
+                "utf8") + '(' + str(self.nPT12) + ')'
         if self.nPT > 0:
             s += '<li> <a href="PT-0' + self.extensaoPagina + '">Total de produção técnica</a> '.decode(
                 "utf8") + '(' + str(self.nPT) + ')'
@@ -446,6 +449,7 @@ class GeradorDePaginasWeb:
         self.nPT9 = 0
         self.nPT10 = 0
         self.nPT11 = 0
+        self.nPT12 = 0
         self.nPT = 0
 
         if self.grupo.obterParametro('relatorio-incluir_software_com_patente'):
@@ -484,6 +488,9 @@ class GeradorDePaginasWeb:
         if self.grupo.obterParametro('relatorio-incluir_relatorio_de_pesquisa'):
             self.nPT11 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaRelatorioDePesquisa,
                                                        "Relatório de pesquisa", "PT11")
+        if self.grupo.obterParametro('relatorio-incluir_carta-mapa-ou-similar'):
+            self.nPT12 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaCartaMapaOuSimilar,
+                                                       "Cartas, mapas ou similares", "PT12")
         # Total de produções técnicas
         self.nPT = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPT, "Total de produção técnica",
                                                   "PT")
@@ -1231,7 +1238,8 @@ class GeradorDePaginasWeb:
                                         len(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional),
                                         len(membro.listaOrganizacaoDeEvento),
                                         len(membro.listaProgramaDeRadioOuTv),
-                                        len(membro.listaRelatorioDePesquisa)]
+                                        len(membro.listaRelatorioDePesquisa),
+                                        len(membro.listaCartaMapaOuSimilar)]
 
             quantitativo_artistica   = [len(membro.listaProducaoArtistica)]
 
@@ -1606,6 +1614,7 @@ class GeradorDePaginasWeb:
         (nPT9, lista_PT9, titulo_PT9) = self.gerar_lista_de_producoes_de_membro( membro.listaOrganizacaoDeEvento, u"Organização de evento")
         (nPT10, lista_PT10, titulo_PT10) = self.gerar_lista_de_producoes_de_membro(membro.listaProgramaDeRadioOuTv, u"Programa de rádio ou TV")
         (nPT11, lista_PT11, titulo_PT11) = self.gerar_lista_de_producoes_de_membro(membro.listaRelatorioDePesquisa, u"Relatório de pesquisa")
+        (nPT12, lista_PT12, titulo_PT12) = self.gerar_lista_de_producoes_de_membro(membro.listaCartaMapaOuSimilar, u"Cartas, mapas ou similares")
 
         (nPA0, lista_PA0, titulo_PA0) = self.gerar_lista_de_producoes_de_membro( membro.listaProducaoArtistica, u"Total de produção artística" )
 
@@ -1657,6 +1666,7 @@ class GeradorDePaginasWeb:
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT9', titulo_PT9, nPT9)
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT10', titulo_PT10, nPT10)
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT11', titulo_PT11, nPT11)
+        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT12', titulo_PT12, nPT12)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PA0', titulo_PA0, nPA0 )
@@ -1723,6 +1733,7 @@ class GeradorDePaginasWeb:
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT9', titulo_PT9, nPT9, lista_PT9)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT10', titulo_PT10, nPT10, lista_PT10)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT11', titulo_PT11, nPT11, lista_PT11)
+        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT12', titulo_PT12, nPT12, lista_PT12)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PA0', titulo_PA0, nPA0, lista_PA0)
