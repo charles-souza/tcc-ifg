@@ -47,6 +47,8 @@ class CompiladorDeListas:
     matrizCursoDeCurtaDuracaoMinistrado = None
     matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
     matrizOrganizacaoDeEvento = None
+    matrizProgramaDeRadioOuTv = None
+
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -83,6 +85,7 @@ class CompiladorDeListas:
         self.listaCompletaCursoDeCurtaDuracaoMinistrado = {}
         self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = {}
         self.listaCompletaOrganizacaoDeEvento = {}
+        self.listaCompletaProgramaDeRadioOuTv = {}
 
         self.listaCompletaPatente = {}
         self.listaCompletaProgramaComputador = {}
@@ -152,6 +155,8 @@ class CompiladorDeListas:
             self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.compilarLista(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
                                                                                     self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
             self.listaCompletaOrganizacaoDeEvento = self.compilarLista(membro.listaOrganizacaoDeEvento, self.listaCompletaOrganizacaoDeEvento)
+            self.listaCompletaProgramaDeRadioOuTv = self.compilarLista(membro.listaProgramaDeRadioOuTv,
+                                                                            self.listaCompletaProgramaDeRadioOuTv)
 
             self.listaCompletaPatente = self.compilarLista(membro.listaPatente, self.listaCompletaPatente)
             self.listaCompletaProgramaComputador = self.compilarLista(membro.listaProgramaComputador,
@@ -258,6 +263,9 @@ class CompiladorDeListas:
         if self.grupo.obterParametro('relatorio-incluir_organizacao_de_evento'):
             self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaOrganizacaoDeEvento,
                                                                 self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_programa_de_radio_ou_tv'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaProgramaDeRadioOuTv,
+                                                                self.listaCompletaPT)
 
         if self.grupo.obterParametro('relatorio-incluir_patente'):
             self.listaCompletaPR = self.compilarListasCompletas(self.listaCompletaPatente, self.listaCompletaPR)
@@ -340,6 +348,7 @@ class CompiladorDeListas:
                 self.adicionarCoautorNaLista(self.listaCompletaCursoDeCurtaDuracaoMinistrado, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaOrganizacaoDeEvento, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaProgramaDeRadioOuTv, membro)
 
                 self.adicionarCoautorNaLista(self.listaCompletaPatente, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaProgramaComputador, membro)
@@ -457,6 +466,8 @@ class CompiladorDeListas:
             self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.criarMatrizes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
         if self.grupo.obterParametro('grafo-incluir_organizacao_de_evento'):
             self.matrizesOrganizacaoDeEvento = self.criarMatrizes(self.listaCompletaOrganizacaoDeEvento)
+        if self.grupo.obterParametro('grafo-incluir_programa_de_radio_ou_tv'):
+            self.matrizesProgramaDeRadioOuTv = self.criarMatrizes(self.listaCompletaProgramaDeRadioOuTv)
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             self.matrizesPatente = self.criarMatrizes(self.listaCompletaPatente)
@@ -614,6 +625,10 @@ class CompiladorDeListas:
             matriz1 += self.matrizesOrganizacaoDeEvento[0]
             matriz2 += self.matrizesOrganizacaoDeEvento[1]
             colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesOrganizacaoDeEvento[2])
+        if self.grupo.obterParametro('grafo-incluir_programa_de_radio_ou_tv'):
+            matriz1 += self.matrizesProgramaDeRadioOuTv[0]
+            matriz2 += self.matrizesProgramaDeRadioOuTv[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesProgramaDeRadioOuTv[2])
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             matriz1 += self.matrizesPatente[0]
@@ -675,8 +690,10 @@ class CompiladorDeListas:
         print self.matrizCursoDeCurtaDuracaoMinistrado
         print "\nDesenvolvimento de material didático"
         print self.matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional
-        print "\nOrganização de Evento"
+        print "\nOrganização de evento"
         print self.matrizOrganizacaoDeEvento
+        print "\nPrograma de rádio ou TV"
+        print self.matrizesProgramaDeRadioOuTv
 
         print "\nPatente"
         print self.matrizPatente
@@ -730,8 +747,10 @@ class CompiladorDeListas:
         self.imprimirListaProducoes(self.listaCompletaCursoDeCurtaDuracaoMinistrado)
         print "\nDesenvolvimento de material didático"
         self.imprimirListaProducoes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
-        print "\nOrganização de Evento"
+        print "\nOrganização de evento"
         self.imprimirListaProducoes(self.listaCompletaOrganizacaoDeEvento)
+        print "\nPrograma de rádio ou TV"
+        self.imprimirListaProducoes(self.listaCompletaProgramaDeRadioOuTv)
         print "\nTOTAL DE PT"
         self.imprimirListaProducoes(self.listaCompletaPT)
 

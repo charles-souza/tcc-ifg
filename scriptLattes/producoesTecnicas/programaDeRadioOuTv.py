@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # encoding: utf-8
-# filename: desenvolvimentoDeMaterialDidaticoOuInstrucional.py
+# filename: programaDeRadioOuTv.py
 #
 #  scriptLattes V8
 #  Copyright 2005-2013: Jesús P. Mena-Chalco e Roberto M. Cesar-Jr.
@@ -28,7 +28,7 @@ import re
 from scriptLattes.util import similaridade_entre_cadeias
 
 
-class DesenvolvimentoDeMaterialDidaticoOuInstrucional:
+class ProgramaDeRadioOuTv:
     item = None # dado bruto
     idMembro = None
 
@@ -38,7 +38,6 @@ class DesenvolvimentoDeMaterialDidaticoOuInstrucional:
     ano = None
     natureza = None # tipo de apresentacao
     chave = None
-    finalidade = None
 
 
     def __init__(self, idMembro, partesDoItem='', relevante=''):

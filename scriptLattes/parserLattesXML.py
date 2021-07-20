@@ -52,6 +52,7 @@ from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucio
 	DesenvolvimentoDeMaterialDidaticoOuInstrucional
 from scriptLattes.producoesTecnicas.organizacaoDeEvento import OrganizacaoDeEvento
 from scriptLattes.producoesTecnicas.processoOuTecnica import ProcessoOuTecnica
+from scriptLattes.producoesTecnicas.programaDeRadioOuTv import ProgramaDeRadioOuTv
 from scriptLattes.producoesTecnicas.softwareSemPatente import SoftwareSemPatente
 
 
@@ -97,6 +98,8 @@ class ParserLattesXML(HTMLParser):
 	listaCursoDeCurtaDuracaoMinistrado = []
 	listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 	listaOrganizacaoDeEvento = []
+	listaProgramaDeRadioOuTv = []
+
 	listaProducaoArtistica = []
 
 	# Orientaççoes em andamento (OA)
@@ -139,6 +142,7 @@ class ParserLattesXML(HTMLParser):
 	achouCursoDeCurtaDuracaoMinistrado = None
 	achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
 	achouOrganizacaoDeEvento = None
+	achouProgramaDeRadioOuTv = None
 
 	achouPatente = None
 
@@ -185,6 +189,7 @@ class ParserLattesXML(HTMLParser):
 		self.listaCursoDeCurtaDuracaoMinistrado = []
 		self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 		self.listaOrganizacaoDeEvento = []
+		self.listaProgramaDeRadioOuTv = []
 
 		self.listaProducaoArtistica = []
 
@@ -428,6 +433,16 @@ class ParserLattesXML(HTMLParser):
 
 		if tag == 'organizacao-de-evento':
 			self.achouOrganizacaoDeEvento = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'programa-de-radio-ou-tv':
+			self.achouProgramaDeRadioOuTv = 1
 			self.autoresLista = list([''] * 150)
 			self.autores = ''
 			self.titulo = ''
@@ -959,6 +974,29 @@ class ParserLattesXML(HTMLParser):
 				self.autoresLista[int(autorOrdem)] = autorNome
 
 		# ----------------------------------------------------------------------
+
+		if self.achouProgramaDeRadioOuTv:
+			if tag == 'dados-basicos-do-programa-de-radio-ou-tv':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-do-programa-de-radio-ou-tv':
+				for name, value in attributes:
+					 if name == 'tema':
+						self.titulo = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+		# ----------------------------------------------------------------------
 		# ----------------------------------------------------------------------
 		if self.achouOCSupervisaoDePosDoutorado:
 			if tag=='dados-basicos-de-orientacoes-concluidas-para-pos-doutorado':
@@ -1356,6 +1394,23 @@ class ParserLattesXML(HTMLParser):
 			pub.ano = self.ano
 			pub.chave = self.autores
 			self.listaOrganizacaoDeEvento.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'programa-de-radio-ou-tv':
+			self.achouProgramaDeRadioOuTv = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ProgramaDeRadioOuTv(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaProgramaDeRadioOuTv.append(pub)
 
 		# ----------------------------------------------------------------------
 

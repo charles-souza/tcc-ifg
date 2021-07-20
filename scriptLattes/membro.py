@@ -93,6 +93,7 @@ class Membro:
     listaCursoDeCurtaDuracaoMinistrado = []
     listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
     listaOrganizacaoDeEvento = []
+    listaProgramaDeRadioOuTv = []
 
     # Patentes e registros
     listaPatente = []
@@ -280,6 +281,7 @@ class Membro:
         self.listaCursoDeCurtaDuracaoMinistrado = parser.listaCursoDeCurtaDuracaoMinistrado
         self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = parser.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional
         self.listaOrganizacaoDeEvento = parser.listaOrganizacaoDeEvento
+        self.listaProgramaDeRadioOuTv = parser.listaProgramaDeRadioOuTv
 
         # Patentes e registros
         self.listaPatente = parser.listaPatente
@@ -361,6 +363,7 @@ class Membro:
         self.listaCursoDeCurtaDuracaoMinistrado = self.filtrarItems(self.listaCursoDeCurtaDuracaoMinistrado)
         self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.filtrarItems(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
         self.listaOrganizacaoDeEvento = self.filtrarItems(self.listaOrganizacaoDeEvento)
+        self.listaProgramaDeRadioOuTv = self.filtrarItems(self.listaProgramaDeRadioOuTv)
 
         self.listaPatente = self.filtrarItems(self.listaPatente)
         self.listaProgramaComputador = self.filtrarItems(self.listaProgramaComputador)
@@ -535,6 +538,7 @@ class Membro:
             s += "\n- Cursos de curta duração                     : " + str(len(self.listaCursoDeCurtaDuracaoMinistrado))
             s += "\n- Desenvolvimento de material didático        : " + str(len(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional))
             s += "\n- Organização de Evento                       : " + str(len(self.listaOrganizacaoDeEvento))
+            s += "\n- Programa de rádio ou TV                     : " + str(len(self.listaProgramaDeRadioOuTv))
             s += "\n- Patente                                     : " + str(len(self.listaPatente))
             s += "\n- Programa de computador                      : " + str(len(self.listaProgramaComputador))
             s += "\n- Desenho industrial                          : " + str(len(self.listaDesenhoIndustrial))
