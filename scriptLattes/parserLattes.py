@@ -52,6 +52,7 @@ from producoesTecnicas.produtoTecnologico import *
 from producoesTecnicas.processoOuTecnica import *
 from producoesTecnicas.trabalhoTecnico import *
 from producoesTecnicas.outroTipoDeProducaoTecnica import *
+from producoesTecnicas.cursoDeCurtaDuracaoMinistrado import *
 
 from producoesArtisticas.producaoArtistica import *
 
@@ -60,6 +61,8 @@ from orientacoes.orientacaoConcluida import *
 
 from eventos.organizacaoDeEvento import *
 from eventos.participacaoEmEvento import *
+from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucional import \
+    DesenvolvimentoDeMaterialDidaticoOuInstrucional
 
 sys.tracebacklimit = 0
 
@@ -132,7 +135,6 @@ class ParserLattes(HTMLParser):
     achouResumoExpandidoEmCongresso = None
     achouResumoEmCongresso = None
     achouArtigoAceito = None
-    achouApresentacaoDeTrabalho = None
     achouOutroTipoDeProducaoBibliografica = None
 
     achouSoftwareComPatente = None
@@ -141,6 +143,9 @@ class ParserLattes(HTMLParser):
     achouProcessoOuTecnica = None
     achouTrabalhoTecnico = None
     achouOutroTipoDeProducaoTecnica = None
+    achouApresentacaoDeTrabalho = None
+    achouCursoDeCurtaDuracaoMinistrado = None
+    achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
 
     achouPatente = None
     achouProgramaComputador = None
@@ -181,7 +186,6 @@ class ParserLattes(HTMLParser):
     listaResumoExpandidoEmCongresso = []
     listaResumoEmCongresso = []
     listaArtigoAceito = []
-    listaApresentacaoDeTrabalho = []
     listaOutroTipoDeProducaoBibliografica = []
 
     listaSoftwareComPatente = []
@@ -190,6 +194,9 @@ class ParserLattes(HTMLParser):
     listaProcessoOuTecnica = []
     listaTrabalhoTecnico = []
     listaOutroTipoDeProducaoTecnica = []
+    listaApresentacaoDeTrabalho = []
+    listaCursoDeCurtaDuracaoMinistrado = []
+    listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 
     listaPatente = []
     listaProgramaComputador = []
@@ -254,7 +261,6 @@ class ParserLattes(HTMLParser):
         self.listaResumoExpandidoEmCongresso = []
         self.listaResumoEmCongresso = []
         self.listaArtigoAceito = []
-        self.listaApresentacaoDeTrabalho = []
         self.listaOutroTipoDeProducaoBibliografica = []
 
         self.listaSoftwareComPatente = []
@@ -263,6 +269,9 @@ class ParserLattes(HTMLParser):
         self.listaProcessoOuTecnica = []
         self.listaTrabalhoTecnico = []
         self.listaOutroTipoDeProducaoTecnica = []
+        self.listaApresentacaoDeTrabalho = []
+        self.listaCursoDeCurtaDuracaoMinistrado = []
+        self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 
         self.listaPatente = []
         self.listaProgramaComputador = []
@@ -629,10 +638,6 @@ class ParserLattes(HTMLParser):
                                 self.listaArtigoAceito.append(iessimoItem)
                                 self.doi = ''
                                 self.relevante = 0
-
-                            if self.achouApresentacaoDeTrabalho:
-                                iessimoItem = ApresentacaoDeTrabalho(self.idMembro, self.partesDoItem, self.relevante)
-                                self.listaApresentacaoDeTrabalho.append(iessimoItem)
     
                             if self.achouOutroTipoDeProducaoBibliografica:
                                 iessimoItem = OutroTipoDeProducaoBibliografica(self.idMembro, self.partesDoItem,
@@ -665,6 +670,20 @@ class ParserLattes(HTMLParser):
                                 iessimoItem = OutroTipoDeProducaoTecnica(self.idMembro, self.partesDoItem,
                                                                          self.relevante)
                                 self.listaOutroTipoDeProducaoTecnica.append(iessimoItem)
+
+                            if self.achouApresentacaoDeTrabalho:
+                                iessimoItem = ApresentacaoDeTrabalho(self.idMembro, self.partesDoItem, self.relevante)
+                                self.listaApresentacaoDeTrabalho.append(iessimoItem)
+
+                            if self.achouCursoDeCurtaDuracaoMinistrado:
+                                iessimoItem = cursoDeCurtaDuracaoMinistrado(self.idMembro, self.partesDoItem,
+                                                                         self.relevante)
+                                self.listaCursoDeCurtaDuracaoMinistrado.append(iessimoItem)
+
+                            if self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional:
+                                iessimoItem = DesenvolvimentoDeMaterialDidaticoOuInstrucional(self.idMembro, self.partesDoItem,
+                                                                         self.relevante)
+                                self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional.append(iessimoItem)
 
                         if self.achouProducaoArtisticaCultural:
                             if self.achouOutraProducaoArtisticaCultural:
@@ -849,7 +868,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Livros publicados/organizados ou edições'==dado:
                     self.salvarItem = 1
@@ -861,7 +879,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Capítulos de livros publicados'==dado:
                     self.salvarItem = 1
@@ -873,7 +890,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Textos em jornais de notícias/revistas'==dado:
                     self.salvarItem = 1
@@ -885,7 +901,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Trabalhos completos publicados em anais de congressos'==dado:
                     self.salvarItem = 1
@@ -897,7 +912,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Resumos expandidos publicados em anais de congressos'==dado:
                     self.salvarItem = 1
@@ -909,7 +923,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 1
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Resumos publicados em anais de congressos' in dado:
                     self.salvarItem = 1
@@ -921,7 +934,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 1
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Artigos aceitos para publicação'==dado:
                     self.salvarItem = 1
@@ -933,19 +945,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 1
-                    self.achouApresentacaoDeTrabalho = 0
-                    self.achouOutroTipoDeProducaoBibliografica = 0
-                if u'Apresentações de Trabalho'==dado:
-                    self.salvarItem = 1
-                    self.achouArtigoEmPeriodico = 0
-                    self.achouLivroPublicado = 0
-                    self.achouCapituloDeLivroPublicado = 0
-                    self.achouTextoEmJornalDeNoticia = 0
-                    self.achouTrabalhoCompletoEmCongresso = 0
-                    self.achouResumoExpandidoEmCongresso = 0
-                    self.achouResumoEmCongresso = 0
-                    self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 1
                     self.achouOutroTipoDeProducaoBibliografica = 0
                 if u'Outras produções bibliográficas'==dado:
                 #if u'Demais tipos de produção bibliográfica'==dado:
@@ -958,7 +957,6 @@ class ParserLattes(HTMLParser):
                     self.achouResumoExpandidoEmCongresso = 0
                     self.achouResumoEmCongresso = 0
                     self.achouArtigoAceito = 0
-                    self.achouApresentacaoDeTrabalho = 0
                     self.achouOutroTipoDeProducaoBibliografica = 1
 
 
@@ -972,6 +970,9 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 0
                     self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
                 if u'Programas de computador sem registro de patente'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -980,6 +981,20 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 0
                     self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                if u'Apresentações de Trabalho'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
                 if u'Produtos tecnológicos'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -988,6 +1003,9 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 0
                     self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
                 if u'Processos ou técnicas'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -996,6 +1014,9 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 1
                     self.achouTrabalhoTecnico = 0
                     self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
                 if u'Trabalhos técnicos'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1004,6 +1025,9 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 1
                     self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
                 if u'Demais tipos de produção técnica'==dado:
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
@@ -1012,14 +1036,42 @@ class ParserLattes(HTMLParser):
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 0
                     self.achouOutroTipoDeProducaoTecnica = 1
-                #if u'Demais trabalhos'==dado:
-                #	self.salvarItem = 0
-                #	self.achouSoftwareComPatente = 0
-                #	self.achouSoftwareSemPatente = 0
-                #	self.achouProdutoTecnologico = 0
-                #	self.achouProcessoOuTecnica = 0
-                #	self.achouTrabalhoTecnico = 0
-                #	self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                if u'Apresentações de Trabalho'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 1
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                if u'Cursos de curta duração'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 1
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+                if u'Desenvolvimento de material didático'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                    self.achouApresentacaoDeTrabalho = 0
+                    self.achouCursoDeCurtaDuracaoMinistrado = 0
+                    self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 1
     
             if self.achouProducaoArtisticaCultural:
                 #if u'Produção artística/cultural'==dado:

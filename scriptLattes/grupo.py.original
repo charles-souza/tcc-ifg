@@ -63,7 +63,6 @@ class Grupo:
     matrizResumoExpandidoEmCongresso = None
     matrizResumoEmCongresso = None
     matrizArtigoAceito = None
-    matrizApresentacaoDeTrabalho = None
     matrizOutroTipoDeProducaoBibliografica = None
     matrizSoftwareComPatente = None
     matrizSoftwareSemPatente = None
@@ -71,6 +70,9 @@ class Grupo:
     matrizProcessoOuTecnica = None
     matrizTrabalhoTecnico = None
     matrizOutroTipoDeProducaoTecnica = None
+    matrizApresentacaoDeTrabalho = None
+    matrizCursoDeCurtaDuracaoMinistrado = None
+    matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -564,7 +566,6 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaResumoExpandidoEmCongresso, 'PB5', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaResumoEmCongresso, 'PB6', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaArtigoAceito, 'PB7', 'Numero de publicacoes')
-        gBarra.criarGrafico(self.compilador.listaCompletaApresentacaoDeTrabalho, 'PB8', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaOutroTipoDeProducaoBibliografica, 'PB9',
                             'Numero de publicacoes')
 
@@ -575,6 +576,7 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaTrabalhoTecnico, 'PT4', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaOutroTipoDeProducaoTecnica, 'PT5',
                             'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaApresentacaoDeTrabalho, 'PT6', 'Numero de producoes tecnicas')
 
         gBarra.criarGrafico(self.compilador.listaCompletaPatente, 'PR0', 'Numero de patentes')
         gBarra.criarGrafico(self.compilador.listaCompletaProgramaComputador, 'PR1', 'Numero de programa de computador')

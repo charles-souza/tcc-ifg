@@ -80,7 +80,6 @@ class Membro:
     listaResumoExpandidoEmCongresso = []
     listaResumoEmCongresso = []
     listaArtigoAceito = []
-    listaApresentacaoDeTrabalho = []
     listaOutroTipoDeProducaoBibliografica = []
 
     # Produção técnica
@@ -90,6 +89,9 @@ class Membro:
     listaProcessoOuTecnica = []
     listaTrabalhoTecnico = []
     listaOutroTipoDeProducaoTecnica = []
+    listaApresentacaoDeTrabalho = []
+    listaCursoDeCurtaDuracaoMinistrado = []
+    listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 
     # Patentes e registros
     listaPatente = []
@@ -264,7 +266,6 @@ class Membro:
         self.listaResumoExpandidoEmCongresso = parser.listaResumoExpandidoEmCongresso
         self.listaResumoEmCongresso = parser.listaResumoEmCongresso
         self.listaArtigoAceito = parser.listaArtigoAceito
-        self.listaApresentacaoDeTrabalho = parser.listaApresentacaoDeTrabalho
         self.listaOutroTipoDeProducaoBibliografica = parser.listaOutroTipoDeProducaoBibliografica
 
         # Produção técnica
@@ -274,6 +275,9 @@ class Membro:
         self.listaProcessoOuTecnica = parser.listaProcessoOuTecnica
         self.listaTrabalhoTecnico = parser.listaTrabalhoTecnico
         self.listaOutroTipoDeProducaoTecnica = parser.listaOutroTipoDeProducaoTecnica
+        self.listaApresentacaoDeTrabalho = parser.listaApresentacaoDeTrabalho
+        self.listaCursoDeCurtaDuracaoMinistrado = parser.listaCursoDeCurtaDuracaoMinistrado
+        self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = parser.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional
 
         # Patentes e registros
         self.listaPatente = parser.listaPatente
@@ -343,7 +347,6 @@ class Membro:
         self.listaResumoExpandidoEmCongresso = self.filtrarItems(self.listaResumoExpandidoEmCongresso)
         self.listaResumoEmCongresso = self.filtrarItems(self.listaResumoEmCongresso)
         self.listaArtigoAceito = self.filtrarItems(self.listaArtigoAceito)
-        self.listaApresentacaoDeTrabalho = self.filtrarItems(self.listaApresentacaoDeTrabalho)
         self.listaOutroTipoDeProducaoBibliografica = self.filtrarItems(self.listaOutroTipoDeProducaoBibliografica)
 
         self.listaSoftwareComPatente = self.filtrarItems(self.listaSoftwareComPatente)
@@ -352,6 +355,9 @@ class Membro:
         self.listaProcessoOuTecnica = self.filtrarItems(self.listaProcessoOuTecnica)
         self.listaTrabalhoTecnico = self.filtrarItems(self.listaTrabalhoTecnico)
         self.listaOutroTipoDeProducaoTecnica = self.filtrarItems(self.listaOutroTipoDeProducaoTecnica)
+        self.listaApresentacaoDeTrabalho = self.filtrarItems(self.listaApresentacaoDeTrabalho)
+        self.listaCursoDeCurtaDuracaoMinistrado = self.filtrarItems(self.listaCursoDeCurtaDuracaoMinistrado)
+        self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.filtrarItems(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
 
         self.listaPatente = self.filtrarItems(self.listaPatente)
         self.listaProgramaComputador = self.filtrarItems(self.listaProgramaComputador)
@@ -515,7 +521,6 @@ class Membro:
             s += "\n- Resumos expandidos publicados em congressos : " + str(len(self.listaResumoExpandidoEmCongresso))
             s += "\n- Resumos publicados em anais de congressos   : " + str(len(self.listaResumoEmCongresso))
             s += "\n- Artigos aceitos para publicação             : " + str(len(self.listaArtigoAceito))
-            s += "\n- Apresentações de Trabalho                   : " + str(len(self.listaApresentacaoDeTrabalho))
             s += "\n- Demais tipos de produção bibliográfica      : " + str(len(self.listaOutroTipoDeProducaoBibliografica))
             s += "\n- Softwares com registro de patente           : " + str(len(self.listaSoftwareComPatente))
             s += "\n- Softwares sem registro de patente           : " + str(len(self.listaSoftwareSemPatente))
@@ -523,6 +528,9 @@ class Membro:
             s += "\n- Processos ou técnicas                       : " + str(len(self.listaProcessoOuTecnica))
             s += "\n- trabalhos técnicos                          : " + str(len(self.listaTrabalhoTecnico))
             s += "\n- Demais tipos de produção técnica            : " + str(len(self.listaOutroTipoDeProducaoTecnica))
+            s += "\n- Apresentações de Trabalho                   : " + str(len(self.listaApresentacaoDeTrabalho))
+            s += "\n- Cursos de curta duração                     : " + str(len(self.listaCursoDeCurtaDuracaoMinistrado))
+            s += "\n- Desenvolvimento de material didático        : " + str(len(self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional))
             s += "\n- Patente                                     : " + str(len(self.listaPatente))
             s += "\n- Programa de computador                      : " + str(len(self.listaProgramaComputador))
             s += "\n- Desenho industrial                          : " + str(len(self.listaDesenhoIndustrial))

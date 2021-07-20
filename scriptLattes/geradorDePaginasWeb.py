@@ -207,6 +207,15 @@ class GeradorDePaginasWeb:
         if self.nPT5 > 0:
             s += '<li> <a href="PT5-0' + self.extensaoPagina + '">Demais tipos de produção técnica</a> '.decode(
                 "utf8") + '(' + str(self.nPT5) + ')'
+        if self.nPT6 > 0:
+            s += '<li> <a href="PT6-0' + self.extensaoPagina + '">Apresentações de trabalho </a> '.decode(
+                "utf8") + '(' + str(self.nPT6) + ')'
+        if self.nPT7 > 0:
+            s += '<li> <a href="PT7-0' + self.extensaoPagina + '">Cursos de curta duração </a> '.decode(
+                "utf8") + '(' + str(self.nPT7) + ')'
+        if self.nPT8 > 0:
+            s += '<li> <a href="PT8-0' + self.extensaoPagina + '">Desenvolvimento de material didático </a> '.decode(
+                "utf8") + '(' + str(self.nPT8) + ')'
         if self.nPT > 0:
             s += '<li> <a href="PT-0' + self.extensaoPagina + '">Total de produção técnica</a> '.decode(
                 "utf8") + '(' + str(self.nPT) + ')'
@@ -403,9 +412,9 @@ class GeradorDePaginasWeb:
         if self.grupo.obterParametro('relatorio-incluir_artigo_aceito_para_publicacao'):
             self.nPB7 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaArtigoAceito,
                                                        "Artigos aceitos para publicação", "PB7")
-        if self.grupo.obterParametro('relatorio-incluir_apresentacao_de_trabalho'):
-            self.nPB8 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaApresentacaoDeTrabalho,
-                                                       "Apresentações de trabalho", "PB8")
+        #if self.grupo.obterParametro('relatorio-incluir_apresentacao_de_trabalho'):
+        #    self.nPB8 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaApresentacaoDeTrabalho,
+        #                                               "Apresentações de trabalho", "PB8")
         if self.grupo.obterParametro('relatorio-incluir_outro_tipo_de_producao_bibliografica'):
             self.nPB9 = self.gerar_pagina_de_producoes(
                 self.grupo.compilador.listaCompletaOutroTipoDeProducaoBibliografica,
@@ -422,6 +431,9 @@ class GeradorDePaginasWeb:
         self.nPT3 = 0
         self.nPT4 = 0
         self.nPT5 = 0
+        self.nPT6 = 0
+        self.nPT7 = 0
+        self.nPT8 = 0
         self.nPT = 0
 
         if self.grupo.obterParametro('relatorio-incluir_software_com_patente'):
@@ -442,6 +454,15 @@ class GeradorDePaginasWeb:
         if self.grupo.obterParametro('relatorio-incluir_outro_tipo_de_producao_tecnica'):
             self.nPT5 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaOutroTipoDeProducaoTecnica,
                                                        "Demais tipos de produção técnica", "PT5")
+        if self.grupo.obterParametro('relatorio-incluir_apresentacao_de_trabalho'):
+            self.nPT6 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaApresentacaoDeTrabalho,
+                                                       "Apresentações de trabalho", "PT6")
+        if self.grupo.obterParametro('relatorio-incluir_curso_de_curta_duracao_ministrado'):
+            self.nPT7 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaCursoDeCurtaDuracaoMinistrado,
+                                                       "Cursos de curta duracao", "PT7")
+        if self.grupo.obterParametro('relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
+            self.nPT8 = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
+                                                       "Desenvolvimento de material didático", "PT8")
         # Total de produções técnicas
         self.nPT = self.gerar_pagina_de_producoes(self.grupo.compilador.listaCompletaPT, "Total de produção técnica",
                                                   "PT")
@@ -1184,7 +1205,9 @@ class GeradorDePaginasWeb:
                                         len(membro.listaProdutoTecnologico),
                                         len(membro.listaProcessoOuTecnica),
                                         len(membro.listaTrabalhoTecnico),
-                                        len(membro.listaOutroTipoDeProducaoTecnica) ]
+                                        len(membro.listaOutroTipoDeProducaoTecnica),
+                                        len(membro.listaCursoDeCurtaDuracaoMinistrado),
+                                        len(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional)]
 
             quantitativo_artistica   = [len(membro.listaProducaoArtistica)]
 
@@ -1545,7 +1568,6 @@ class GeradorDePaginasWeb:
         (nPB5, lista_PB5, titulo_PB5) = self.gerar_lista_de_producoes_de_membro( membro.listaResumoExpandidoEmCongresso, u"Resumos expandidos publicados em anais de congressos" )
         (nPB6, lista_PB6, titulo_PB6) = self.gerar_lista_de_producoes_de_membro( membro.listaResumoEmCongresso, u"Resumos publicados em anais de congressos" )
         (nPB7, lista_PB7, titulo_PB7) = self.gerar_lista_de_producoes_de_membro( membro.listaArtigoAceito, u"Artigos aceitos para publicação" )
-        (nPB8, lista_PB8, titulo_PB8) = self.gerar_lista_de_producoes_de_membro( membro.listaApresentacaoDeTrabalho, u"Apresentações de trabalho" )
         (nPB9, lista_PB9, titulo_PB9) = self.gerar_lista_de_producoes_de_membro( membro.listaOutroTipoDeProducaoBibliografica, u"Demais tipos de produção bibliográfica" )
 
         (nPT0, lista_PT0, titulo_PT0) = self.gerar_lista_de_producoes_de_membro( membro.listaSoftwareComPatente, u"Programas de computador com registro de patente" )
@@ -1554,6 +1576,9 @@ class GeradorDePaginasWeb:
         (nPT3, lista_PT3, titulo_PT3) = self.gerar_lista_de_producoes_de_membro( membro.listaProcessoOuTecnica, u"Processos ou técnicas" )
         (nPT4, lista_PT4, titulo_PT4) = self.gerar_lista_de_producoes_de_membro( membro.listaTrabalhoTecnico, u"Trabalhos técnicos" )
         (nPT5, lista_PT5, titulo_PT5) = self.gerar_lista_de_producoes_de_membro( membro.listaOutroTipoDeProducaoTecnica, u"Demais tipos de produção técnica" )
+        (nPT6, lista_PT6, titulo_PT6) = self.gerar_lista_de_producoes_de_membro( membro.listaApresentacaoDeTrabalho, u"Apresentações de trabalho")
+        (nPT7, lista_PT7, titulo_PT7) = self.gerar_lista_de_producoes_de_membro( membro.listaCursoDeCurtaDuracaoMinistrado, u"Cursos de curta duração")
+        (nPT8, lista_PT8, titulo_PT8) = self.gerar_lista_de_producoes_de_membro( membro.listaCursoDeCurtaDuracaoMinistrado, u"Desenvolvimento de material didático")
 
         (nPA0, lista_PA0, titulo_PA0) = self.gerar_lista_de_producoes_de_membro( membro.listaProducaoArtistica, u"Total de produção artística" )
 
@@ -1590,7 +1615,6 @@ class GeradorDePaginasWeb:
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PB5', titulo_PB5, nPB5 )
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PB6', titulo_PB6, nPB6 )
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PB7', titulo_PB7, nPB7 )
-        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PB8', titulo_PB8, nPB8 )
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PB9', titulo_PB9, nPB9 )
         s += u'</ul>'
         s += u'<h3>Produção técnica</h3> <ul>'
@@ -1600,6 +1624,9 @@ class GeradorDePaginasWeb:
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PT3', titulo_PT3, nPT3 )
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PT4', titulo_PT4, nPT4 )
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PT5', titulo_PT5, nPT5 )
+        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT6', titulo_PT6, nPT6)
+        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT7', titulo_PT7, nPT7)
+        s += u'<li><a href="#{}">{}</a> ({}) </li>'.format('PT8', titulo_PT8, nPT8)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li><a href="#{}">{}</a> ({}) </li>'.format( 'PA0', titulo_PA0, nPA0 )
@@ -1651,7 +1678,6 @@ class GeradorDePaginasWeb:
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PB5', titulo_PB5, nPB5, lista_PB5)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PB6', titulo_PB6, nPB6, lista_PB6)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PB7', titulo_PB7, nPB7, lista_PB7)
-        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PB8', titulo_PB8, nPB8, lista_PB8)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PB9', titulo_PB9, nPB9, lista_PB9)
         s += u'</ul>'
         s += u'<h3>Produção técnica</h3> <ul>'
@@ -1661,6 +1687,9 @@ class GeradorDePaginasWeb:
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PT3', titulo_PT3, nPT3, lista_PT3)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PT4', titulo_PT4, nPT4, lista_PT4)
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PT5', titulo_PT5, nPT5, lista_PT5)
+        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT6', titulo_PT6, nPT6, lista_PT6)
+        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT7', titulo_PT7, nPT7, lista_PT7)
+        s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format('PT8', titulo_PT8, nPT8, lista_PT8)
         s += u'</ul>'
         s += u'<h3>Produção artística</h3> <ul>'
         s += u'<li id="{}"> <b>{}</b> ({}) <br> {} </li>'.format( 'PA0', titulo_PA0, nPA0, lista_PA0)

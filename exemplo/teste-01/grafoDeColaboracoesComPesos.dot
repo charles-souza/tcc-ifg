@@ -1,5 +1,5 @@
 strict graph grafo2 {
-	graph [bb="0,0,140,21",
+	graph [bb="0,0,179,21",
 		id=grafo2,
 		overlap=False
 	];
@@ -8,11 +8,11 @@ strict graph grafo2 {
 		shape=rectangle,
 		style=filled
 	];
-	0	[URL="membro-2762752291082988.html",
+	0	[URL="membro-9073478192027867.html",
 		color="#0A6EA4",
 		fontcolor="#FFFFFF",
 		height=0.29167,
-		label="Aylton José Alves [0]",
-		pos="70,10.5",
-		width=1.9444];
+		label="Wesley Pacheco Calixto [0]",
+		pos="89.5,10.5",
+		width=2.4861];
 }

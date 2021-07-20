@@ -66,7 +66,6 @@ class GeradorDeXML:
                 xmlTemp += self.getListaResumoExpandidoEmCongresso(registro)
                 xmlTemp += self.getListaResumoEmCongresso(registro)
                 xmlTemp += self.getListaArtigoAceito(registro)
-                xmlTemp += self.getListaApresentacaoDeTrabalho(registro)
                 xmlTemp += self.getListaOutroTipoDeProducaoBibliografica(registro)
                 xmlTemp += self.getListaSoftwareComPatente(registro)
                 xmlTemp += self.getListaSoftwareSemPatente(registro)
@@ -74,6 +73,7 @@ class GeradorDeXML:
                 xmlTemp += self.getLlistaProcessoOuTecnica(registro)
                 xmlTemp += self.getListaTrabalhoTecnico(registro)
                 xmlTemp += self.getListaOutroTipoDeProducaoTecnica(registro)
+                xmlTemp += self.getListaApresentacaoDeTrabalho(registro)
 
                 # xmlTemp += self.getListaPatente(registro)
                 # xmlTemp += self.getListaRegistroSoftware(registro)

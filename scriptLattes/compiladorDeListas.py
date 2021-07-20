@@ -36,7 +36,6 @@ class CompiladorDeListas:
     matrizResumoExpandidoEmCongresso = None
     matrizResumoEmCongresso = None
     matrizArtigoAceito = None
-    matrizApresentacaoDeTrabalho = None
     matrizOutroTipoDeProducaoBibliografica = None
     matrizSoftwareComPatente = None
     matrizSoftwareSemPatente = None
@@ -44,6 +43,9 @@ class CompiladorDeListas:
     matrizProcessoOuTecnica = None
     matrizTrabalhoTecnico = None
     matrizOutroTipoDeProducaoTecnica = None
+    matrizApresentacaoDeTrabalho = None
+    matrizCursoDeCurtaDuracaoMinistrado = None
+    matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -68,7 +70,6 @@ class CompiladorDeListas:
         self.listaCompletaResumoExpandidoEmCongresso = {}
         self.listaCompletaResumoEmCongresso = {}
         self.listaCompletaArtigoAceito = {}
-        self.listaCompletaApresentacaoDeTrabalho = {}
         self.listaCompletaOutroTipoDeProducaoBibliografica = {}
 
         self.listaCompletaSoftwareComPatente = {}
@@ -77,6 +78,9 @@ class CompiladorDeListas:
         self.listaCompletaProcessoOuTecnica = {}
         self.listaCompletaTrabalhoTecnico = {}
         self.listaCompletaOutroTipoDeProducaoTecnica = {}
+        self.listaCompletaApresentacaoDeTrabalho = {}
+        self.listaCompletaCursoDeCurtaDuracaoMinistrado = {}
+        self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = {}
 
         self.listaCompletaPatente = {}
         self.listaCompletaProgramaComputador = {}
@@ -124,8 +128,6 @@ class CompiladorDeListas:
                                                                      self.listaCompletaResumoEmCongresso)
             self.listaCompletaArtigoAceito = self.compilarLista(membro.listaArtigoAceito,
                                                                 self.listaCompletaArtigoAceito)
-            self.listaCompletaApresentacaoDeTrabalho = self.compilarLista(membro.listaApresentacaoDeTrabalho,
-                                                                          self.listaCompletaApresentacaoDeTrabalho)
             self.listaCompletaOutroTipoDeProducaoBibliografica = self.compilarLista(
                 membro.listaOutroTipoDeProducaoBibliografica, self.listaCompletaOutroTipoDeProducaoBibliografica)
 
@@ -141,6 +143,12 @@ class CompiladorDeListas:
                                                                    self.listaCompletaTrabalhoTecnico)
             self.listaCompletaOutroTipoDeProducaoTecnica = self.compilarLista(membro.listaOutroTipoDeProducaoTecnica,
                                                                               self.listaCompletaOutroTipoDeProducaoTecnica)
+            self.listaCompletaApresentacaoDeTrabalho = self.compilarLista(membro.listaApresentacaoDeTrabalho,
+                                                                          self.listaCompletaApresentacaoDeTrabalho)
+            self.listaCompletaCursoDeCurtaDuracaoMinistrado = self.compilarLista(membro.listaCursoDeCurtaDuracaoMinistrado,
+                                                                              self.listaCompletaCursoDeCurtaDuracaoMinistrado)
+            self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.compilarLista(membro.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
+                self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
 
             self.listaCompletaPatente = self.compilarLista(membro.listaPatente, self.listaCompletaPatente)
             self.listaCompletaProgramaComputador = self.compilarLista(membro.listaProgramaComputador,
@@ -214,9 +222,6 @@ class CompiladorDeListas:
                                                                 self.listaCompletaPB)
         if self.grupo.obterParametro('relatorio-incluir_artigo_aceito_para_publicacao'):
             self.listaCompletaPB = self.compilarListasCompletas(self.listaCompletaArtigoAceito, self.listaCompletaPB)
-        if self.grupo.obterParametro('relatorio-incluir_apresentacao_de_trabalho'):
-            self.listaCompletaPB = self.compilarListasCompletas(self.listaCompletaApresentacaoDeTrabalho,
-                                                                self.listaCompletaPB)
         if self.grupo.obterParametro('relatorio-incluir_outro_tipo_de_producao_bibliografica'):
             self.listaCompletaPB = self.compilarListasCompletas(self.listaCompletaOutroTipoDeProducaoBibliografica,
                                                                 self.listaCompletaPB)
@@ -237,6 +242,15 @@ class CompiladorDeListas:
             self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaTrabalhoTecnico, self.listaCompletaPT)
         if self.grupo.obterParametro('relatorio-incluir_outro_tipo_de_producao_tecnica'):
             self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaOutroTipoDeProducaoTecnica,
+                                                                self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_apresentacao_de_trabalho'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaApresentacaoDeTrabalho,
+                                                                self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_curso_de_curta_duracao_ministrado'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaCursoDeCurtaDuracaoMinistrado,
+                                                                self.listaCompletaPT)
+        if self.grupo.obterParametro('relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
+            self.listaCompletaPT = self.compilarListasCompletas(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional,
                                                                 self.listaCompletaPT)
 
         if self.grupo.obterParametro('relatorio-incluir_patente'):
@@ -308,7 +322,6 @@ class CompiladorDeListas:
                 self.adicionarCoautorNaLista(self.listaCompletaResumoExpandidoEmCongresso, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaResumoEmCongresso, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaArtigoAceito, membro)
-                self.adicionarCoautorNaLista(self.listaCompletaApresentacaoDeTrabalho, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaOutroTipoDeProducaoBibliografica, membro)
 
                 self.adicionarCoautorNaLista(self.listaCompletaSoftwareComPatente, membro)
@@ -317,6 +330,9 @@ class CompiladorDeListas:
                 self.adicionarCoautorNaLista(self.listaCompletaProcessoOuTecnica, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaTrabalhoTecnico, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaOutroTipoDeProducaoTecnica, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaApresentacaoDeTrabalho, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaCursoDeCurtaDuracaoMinistrado, membro)
+                self.adicionarCoautorNaLista(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional, membro)
 
                 self.adicionarCoautorNaLista(self.listaCompletaPatente, membro)
                 self.adicionarCoautorNaLista(self.listaCompletaProgramaComputador, membro)
@@ -410,8 +426,6 @@ class CompiladorDeListas:
             self.matrizesResumoEmCongresso = self.criarMatrizes(self.listaCompletaResumoEmCongresso)
         if self.grupo.obterParametro('grafo-incluir_artigo_aceito_para_publicacao'):
             self.matrizesArtigoAceito = self.criarMatrizes(self.listaCompletaArtigoAceito)
-        if self.grupo.obterParametro('grafo-incluir_apresentacao_de_trabalho'):
-            self.matrizesApresentacaoDeTrabalho = self.criarMatrizes(self.listaCompletaApresentacaoDeTrabalho)
         if self.grupo.obterParametro('grafo-incluir_outro_tipo_de_producao_bibliografica'):
             self.matrizesOutroTipoDeProducaoBibliografica = self.criarMatrizes(
                 self.listaCompletaOutroTipoDeProducaoBibliografica)
@@ -428,6 +442,12 @@ class CompiladorDeListas:
             self.matrizesTrabalhoTecnico = self.criarMatrizes(self.listaCompletaTrabalhoTecnico)
         if self.grupo.obterParametro('grafo-incluir_outro_tipo_de_producao_tecnica'):
             self.matrizesOutroTipoDeProducaoTecnica = self.criarMatrizes(self.listaCompletaOutroTipoDeProducaoTecnica)
+        if self.grupo.obterParametro('grafo-incluir_apresentacao_de_trabalho'):
+            self.matrizesApresentacaoDeTrabalho = self.criarMatrizes(self.listaCompletaApresentacaoDeTrabalho)
+        if self.grupo.obterParametro('grafo-incluir_curso_de_curta_duracao_ministrado'):
+            self.matrizesCursoDeCurtaDuracaoMinistrado = self.criarMatrizes(self.listaCompletaCursoDeCurtaDuracaoMinistrado)
+        if self.grupo.obterParametro('grafo-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
+            self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional = self.criarMatrizes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             self.matrizesPatente = self.criarMatrizes(self.listaCompletaPatente)
@@ -540,10 +560,6 @@ class CompiladorDeListas:
             matriz1 += self.matrizesArtigoAceito[0]
             matriz2 += self.matrizesArtigoAceito[1]
             colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesArtigoAceito[2])
-        if self.grupo.obterParametro('grafo-incluir_apresentacao_de_trabalho'):
-            matriz1 += self.matrizesApresentacaoDeTrabalho[0]
-            matriz2 += self.matrizesApresentacaoDeTrabalho[1]
-            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesApresentacaoDeTrabalho[2])
         if self.grupo.obterParametro('grafo-incluir_outro_tipo_de_producao_bibliografica'):
             matriz1 += self.matrizesOutroTipoDeProducaoBibliografica[0]
             matriz2 += self.matrizesOutroTipoDeProducaoBibliografica[1]
@@ -573,6 +589,18 @@ class CompiladorDeListas:
             matriz1 += self.matrizesOutroTipoDeProducaoTecnica[0]
             matriz2 += self.matrizesOutroTipoDeProducaoTecnica[1]
             colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesOutroTipoDeProducaoTecnica[2])
+        if self.grupo.obterParametro('grafo-incluir_apresentacao_de_trabalho'):
+            matriz1 += self.matrizesApresentacaoDeTrabalho[0]
+            matriz2 += self.matrizesApresentacaoDeTrabalho[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesApresentacaoDeTrabalho[2])
+        if self.grupo.obterParametro('grafo-incluir_curso_de_curta_duracao_ministrado'):
+            matriz1 += self.matrizesCursoDeCurtaDuracaoMinistrado[0]
+            matriz2 += self.matrizesCursoDeCurtaDuracaoMinistrado[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesCursoDeCurtaDuracaoMinistrado[2])
+        if self.grupo.obterParametro('grafo-incluir_desenvolvimento_de_material_didatico_ou_instrucional'):
+            matriz1 += self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[0]
+            matriz2 += self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[1]
+            colaboracoes = self.intercalar_colaboracoes(colaboracoes, self.matrizesDesenvolvimentoDeMaterialDidaticoOuInstrucional[2])
 
         if self.grupo.obterParametro('grafo-incluir_patente'):
             matriz1 += self.matrizesPatente[0]
@@ -614,8 +642,6 @@ class CompiladorDeListas:
         print self.matrizResumoEmCongresso
         print "\nArtigo aceito"
         print self.matrizArtigoAceito
-        print "\nApresentacao de trabalho"
-        print self.matrizApresentacaoDeTrabalho
         print "\nOutro tipo de producao bibliografica"
         print self.matrizOutroTipoDeProducaoBibliografica
         print "\nSoftware com patente"
@@ -630,6 +656,12 @@ class CompiladorDeListas:
         print self.matrizTrabalhoTecnico
         print "\nOutro tipo de producao tecnica"
         print self.matrizOutroTipoDeProducaoTecnica
+        print "\nApresentacao de trabalho"
+        print self.matrizApresentacaoDeTrabalho
+        print "\nCursos de curta duração"
+        print self.matrizCursoDeCurtaDuracaoMinistrado
+        print "\nDesenvolvimento de material didático"
+        print self.matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional
 
         print "\nPatente"
         print self.matrizPatente
@@ -660,8 +692,6 @@ class CompiladorDeListas:
         self.imprimirListaProducoes(self.listaCompletaResumoEmCongresso)
         print "\nArtigo aceito"
         self.imprimirListaProducoes(self.listaCompletaArtigoAceito)
-        print "\nApresentacao de trabalho"
-        self.imprimirListaProducoes(self.listaCompletaApresentacaoDeTrabalho)
         print "\nOutro tipo de producao bibliografica"
         self.imprimirListaProducoes(self.listaCompletaOutroTipoDeProducaoBibliografica)
         print "\nTOTAL DE PB"
@@ -679,6 +709,12 @@ class CompiladorDeListas:
         self.imprimirListaProducoes(self.listaCompletaTrabalhoTecnico)
         print "\nOutro tipo de producao tecnica"
         self.imprimirListaProducoes(self.listaCompletaOutroTipoDeProducaoTecnica)
+        print "\nApresentacao de trabalho"
+        self.imprimirListaProducoes(self.listaCompletaApresentacaoDeTrabalho)
+        print "\nCursos de curta duração"
+        self.imprimirListaProducoes(self.listaCompletaCursoDeCurtaDuracaoMinistrado)
+        print "\nDesenvolvimento de material didático"
+        self.imprimirListaProducoes(self.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional)
         print "\nTOTAL DE PT"
         self.imprimirListaProducoes(self.listaCompletaPT)
 

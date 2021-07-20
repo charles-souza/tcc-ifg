@@ -1,3 +1,2704 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<curriculo_lattes data_processamento="05/07/2021 23:06:59">
+<curriculo_lattes data_processamento="18/07/2021 22:22:54">
+  <pesquisador id="9073478192027867">
+    <identificacao>
+      <identificador10></identificador10>
+      <nome_inicial>Wesley Pacheco Calixto</nome_inicial>
+      <nome_completo>Wesley Pacheco Calixto</nome_completo>
+      <nome_citacao_bibliografica>CALIXTO, W. P.;Calixto, Wesley Pacheco;CALIXTO, WESLEY. P.;CALIXTO, WESLEY P.;CALIXTO, WESLEY;WESLEY PACHECO CALIXTO;PACHECO, WESLEY CALIXTO;CALIXTO, W.P.;WESLEY PACHECO;PACHECO, WESLEY;PACHECO CALIXTO, WESLEY;ORCID ID: 0000-0002-1928-4432;Web of Science Researcher ID: H-3620-2015;Scopus ID: 35268180700</nome_citacao_bibliografica>
+      <sexo></sexo>
+    </identificacao>
+    <endereco>
+      <endereco_profissional>Instituto Federal de Educação, Ciência e Tecnologia de Goiás. . Departamento de Eletrotécnica. Rua 75, nº 46, Sala T 309 CEP 74305-440 - Goiânia, GO - Brasil</endereco_profissional>
+      <endereco_profissional_lat>0</endereco_profissional_lat>
+      <endereco_profissional_long>0</endereco_profissional_long>
+    </endereco>
+    <artigos_em_periodicos>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Sistemas de Numeração e Escalas</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <revista>Estudos (Goiânia)</revista>
+          <volume>Estudos (Goiânia)</volume>
+          <paginas>1279-1482</paginas>
+          <numero></numero>
+          <ano>2003</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Acústica: Poluição Sonora</titulo>
+          <autores>CALIXTO, W. P.; RODRIGUES, C. G.</autores>
+          <revista>Núcleo de Pesquisa em Engenharia On Line</revista>
+          <volume>Núcleo de Pesquisa em Engenharia On Line</volume>
+          <paginas>02-105</paginas>
+          <numero></numero>
+          <ano>2004</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Poluição Sonora</titulo>
+          <autores>CALIXTO, W. P.; RODRIGUES, C. G.</autores>
+          <revista>Revista Científica da Engenharia da Universidade Católica de Goiás</revista>
+          <volume>Revista Científica da Engenharia da Universidade Católica de Goiás</volume>
+          <paginas>27-38</paginas>
+          <numero></numero>
+          <ano>2005</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1109/TPWRD.2010.2040845</doi>
+          <titulo>Parameters Estimation of a Horizontal Multilayer Soil Using Genetic Algorithm</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; Wu, Marcel; Yamanaka, Keiji; da Paz Moreira, Emerson</autores>
+          <revista>IEEE Transactions on Power Delivery</revista>
+          <volume>IEEE Transactions on Power Delivery</volume>
+          <paginas>01-09</paginas>
+          <numero></numero>
+          <ano>2010</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Horizontal Stratification of the Soil in Multi-Layer Using Non-Linear Optimization</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; Wu, Marcel; MACHADO FILHO, H. B.</autores>
+          <revista>Revista de Ciências Exatas e Naturais</revista>
+          <volume>Revista de Ciências Exatas e Naturais</volume>
+          <paginas>67-89</paginas>
+          <numero></numero>
+          <ano>2009</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/jnm.785</doi>
+          <titulo>A new methodology to calculate Carter factor using genetic algorithms</titulo>
+          <autores>CALIXTO, W. P.; MARRA, E. G.; BRITO, L. C.; ALVARENGA, B. P</autores>
+          <revista>International Journal of Numerical Modelling (Print)</revista>
+          <volume>International Journal of Numerical Modelling (Print)</volume>
+          <paginas>387-399</paginas>
+          <numero></numero>
+          <ano>2011</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/jnm.827</doi>
+          <titulo>Carter?s factor calculation using domain transformations and the finite element method</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; Coimbra, A. P.; Alves, A. J.; MARTINS NETO, L.; Wu, Marcel; Silva, W. G.; Delbone, E.</autores>
+          <revista>International Journal of Numerical Modelling (Print)</revista>
+          <volume>International Journal of Numerical Modelling (Print)</volume>
+          <paginas>236-247</paginas>
+          <numero></numero>
+          <ano>2012</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1016/j.epsr.2012.01.003</doi>
+          <titulo>Linear induction machine fed on a non-traditional manner to generate force pulses at low speeds</titulo>
+          <autores>Gontijo, Andre Luiz; Calixto, Wesley Pacheco; Neto, Luciano Martins; Wu, Marcel; Delbone, Edval; Alves, Manoel Berto</autores>
+          <revista>Electric Power Systems Research (Print)</revista>
+          <volume>Electric Power Systems Research (Print)</volume>
+          <paginas>42-51</paginas>
+          <numero></numero>
+          <ano>2012</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Estimativa das Indutâncias de uma Máquina Síncrona a partir de Ensaio com Rotor Bloqueado</titulo>
+          <autores>Alves, A. J.; MARTINS NETO, L.; CALIXTO, W. P.; Wu, Marcel; ALVARENGA, B. P; Oliveira, J. M. M.</autores>
+          <revista>Revista Ciências Exatas e Naturais (Impresso)</revista>
+          <volume>Revista Ciências Exatas e Naturais (Impresso)</volume>
+          <paginas>1-17</paginas>
+          <numero></numero>
+          <ano>2011</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/jnm.804</doi>
+          <titulo>Methodology for the reduction of parameters in the inverse transformation of Schwarz-Christoffel applied to electromagnetic devices with axial geometry</titulo>
+          <autores>Calixto, Wesley Pacheco; da Mota, Jesus Carlos; de Alvarenga, Bernardo Pinheiro</autores>
+          <revista>International Journal of Numerical Modelling (Print)</revista>
+          <volume>International Journal of Numerical Modelling (Print)</volume>
+          <paginas>n/a-n/a</paginas>
+          <numero></numero>
+          <ano>2011</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/jnm.823</doi>
+          <titulo>Salient poles synchronous machines simulation validation and inductances determination procedure</titulo>
+          <autores>ALVES, A. J.; MARTINS NETO, L.; CALIXTO, W. P.; Wu, M.; Alvarenga, B; José Mario Menescal de Oliveira</autores>
+          <revista>International Journal of Numerical Modelling (Print)</revista>
+          <volume>International Journal of Numerical Modelling (Print)</volume>
+          <paginas>192-204</paginas>
+          <numero></numero>
+          <ano>2011</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1155/2010</doi>
+          <titulo>Electromagnetic Problems Solving by Conformal Mapping: A Mathematical Operator for Optimization</titulo>
+          <autores>CALIXTO, W. P.; Alvarenga, B; Mota, J. C.; BRITO, L. C.; Wu, M.; ALVES, A. J.; MARTINS NETO, L; ANTUNES, Carlos F. R. Lemos</autores>
+          <revista>Mathematical Problems in Engineering (Print)</revista>
+          <volume>Mathematical Problems in Engineering (Print)</volume>
+          <paginas>520-539</paginas>
+          <numero></numero>
+          <ano>2010</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Análise Teórica e Experimental do Gerador de Indução</titulo>
+          <autores>Wu, Marcel; MARTINS NETO, L.; CALIXTO, W. P.; Gontijo, A. L.; Alves, A. J.</autores>
+          <revista>PCH Notícias & SHP News</revista>
+          <volume>PCH Notícias & SHP News</volume>
+          <paginas>00-00</paginas>
+          <numero></numero>
+          <ano>2009</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1016/j.compag.2009.12.002</doi>
+          <titulo>Calculation of soil electrical conductivity using a genetic algorithm</titulo>
+          <autores>CALIXTO, W. P.; Martins Neto, Luciano; Wu, Marcel; Kliemann, Huberto José; CASTRO, S. S.; Yamanaka, Keiji</autores>
+          <revista>Computers and Electronics in Agriculture</revista>
+          <volume>Computers and Electronics in Agriculture</volume>
+          <paginas>1-6</paginas>
+          <numero></numero>
+          <ano>2010</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1109/TPWRD.2012.2193602</doi>
+          <titulo>3-D Soil Stratification Methodology for Geoelectrical Prospection</titulo>
+          <autores>CALIXTO, W. P.; Coimbra, A. P.; Alvarenga, B; MOLIN, J. P.; Cardoso, Alexandre; MARTINS NETO, L.</autores>
+          <revista>IEEE Transactions on Power Delivery</revista>
+          <volume>IEEE Transactions on Power Delivery</volume>
+          <paginas>1636-1643</paginas>
+          <numero></numero>
+          <ano>2012</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Economic Viability Analysis of Investment lternatives for the Use of Biogas in a Pig Farming in the Middle East Area of Brazil</titulo>
+          <autores>DOMINGUES, E. G.; Borges, Tauler T.; GARCES JUNIOR, W. B.; ALVES, A. J.; CALIXTO, W. P.; DOMINGOS, J. L.</autores>
+          <revista>Journal of Energy and Power Engineering</revista>
+          <volume>Journal of Energy and Power Engineering</volume>
+          <paginas>1433-1439</paginas>
+          <numero></numero>
+          <ano>2013</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/jnm.1986</doi>
+          <titulo>Troubleshooting in geoelectrical prospecting using real-coded genetic algorithm with chromosomal extrapolation</titulo>
+          <autores>CALIXTO, W. P.; Coimbra, A. P.; MOTA, J. C.; WU, M.; Silva, W. G.; ALVARENGA, B. P; BRITO, L. C.; ALVES, A. J.; DOMINGUES, E. G.; PINHEIRO NETO, D.</autores>
+          <revista>International Journal of Numerical Modelling (Print)</revista>
+          <volume>International Journal of Numerical Modelling (Print)</volume>
+          <paginas>1-18</paginas>
+          <numero></numero>
+          <ano>2015</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Secondary Lens Optimization for LED Lamps</titulo>
+          <autores>BARBOSA, J. L. F.; CALIXTO, W. P.; BRITO, L. C.; Alves, A. J.; MARRA, E. G.; Coimbra, A. P.; DOMINGUES, E. G.; Ferraz, R. da S.; PINHEIRO NETO, D.</autores>
+          <revista>Journal of Mechanics Engineering and Automation</revista>
+          <volume>Journal of Mechanics Engineering and Automation</volume>
+          <paginas>46-51</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.5540/tema.2014.015.02.0177</doi>
+          <titulo>Desenvolvimento de Operador Matemático para Algoritmos de Otimização Heurísticos Aplicado a Problema de Geoprospecção</titulo>
+          <autores>CALIXTO, W. P.; PEREIRA, T. M.; MOTA, J. C.; Alves, A. J.; DOMINGUES, E. G.; DOMINGOS, J. L.; COIMBRA, A. PAULO; Alvarenga, B</autores>
+          <revista>Tendências em Matemática Aplicada e Computacional</revista>
+          <volume>Tendências em Matemática Aplicada e Computacional</volume>
+          <paginas>177-194</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>A First Approach on the Impact of Distributed Generation on Voltage Sags</titulo>
+          <autores>Ramos, A. C. L.; BATISTA, A. J.; LEBORGNE, R. C.; DOMINGUES, E. G.; CALIXTO, W. P.; ALVES, A. J.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>432-</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Study of parameters for the design of a continuous flow laboratory biogas reactor</titulo>
+          <autores>ALMEIDA, C. A.; ALVES, A. J.; OLIVEIRA, S. B.; Zang, J. W.; CALIXTO, W. P.; DOMINGUES, E. G.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>488-</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Proposal of Technical and Commercial Arrangements for Distributed Generation from the Use of Biogas in a Food Industry</titulo>
+          <autores>Ramos, A. C. L.; CALIXTO, W. P.; ALVES, A. J.; DOMINGUES, E. G.; OLIVEIRA, S. B.; COELHO, S. T.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>465-</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Lens Optimization and Thermal Studies for LED Lamps</titulo>
+          <autores>BARBOSA, J. L. F.; CALIXTO, W. P.; BRITO, L. C.; Alves, A. J.; MARRA, E. G.; COIMBRA, A. PAULO; DOMINGUES, E. G.; Ferraz, R. da S.; PINHEIRO NETO, D.</autores>
+          <revista>Electrical Engineering Electronic Journal</revista>
+          <volume>Electrical Engineering Electronic Journal</volume>
+          <paginas>1-9</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>A First Approach on the Fault Impedance Impact on Voltage Sags Studies</titulo>
+          <autores>Ramos, A. C. L.; BATISTA, A. J.; LEBORGNE, R. C.; DOMINGUES, E. G.; CALIXTO, W. P.; ALVES, A. J.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>1-</paginas>
+          <numero></numero>
+          <ano>2015</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Aparato de Estratificação Tridimensional do Solo: Mensurar a Resistividade ou a Condutividade Elétrica e as Profundidades das Camadas do Solo</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <revista>Revista da Propriedade Industrial</revista>
+          <volume>Revista da Propriedade Industrial</volume>
+          <paginas>103-104</paginas>
+          <numero></numero>
+          <ano>2015</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Energetic Use of Landfill Biogas as a Power Energy Source: An Economic Feasibility Study</titulo>
+          <autores>COSTA, A. N.; DOMINGUES, E. G.; PINHEIRO NETO, D.; CALIXTO, W. P.; ALVES, A. J.; SANTOS, L.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>322-</paginas>
+          <numero></numero>
+          <ano>2015</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>MÉTODO MPPT PARA SISTEMA FOTOVOLTAICO BASEADO NA TÉCNICA DA CONDUTÂNCIA INCREMENTAL</titulo>
+          <autores>ALVES, A. J.; MENITA, B.; DOMINGUES E. G., Elder G. Domingues; STECANELLA, P. A. J.; CALIXTO, W. P.</autores>
+          <revista>Ciência, Tecnologia e Sociedade</revista>
+          <volume>Ciência, Tecnologia e Sociedade</volume>
+          <paginas>1-11</paginas>
+          <numero></numero>
+          <ano>2015</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Energy Efficiency and Distributed Generation: Case Study</titulo>
+          <autores>FARIA, A. F.; DOMINGOS, J. L.; SOUSA, T. P.; MIGUEL, M. L. S.; MORAES, P. H. F.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>1-</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Heuristic Optimization Applied on DMC and Cascade PI Controllers Tunning for Speed Control of DC Motor</titulo>
+          <autores>CARVALHO, D. F.; GANZAROLI, C. A.; DIAS, R. N. H. M.; COUTO, L. A.; ALVES, AYLTON J.; DOMINGOS, J. L.; CALIXTO, W. P.</autores>
+          <revista>Renewable Energy and Power Quality Journal</revista>
+          <volume>Renewable Energy and Power Quality Journal</volume>
+          <paginas>1-</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Stochastic Modeling Applied to Prediction of Electricity Saving by using Solar Water Heating Systems for Low-Income Families</titulo>
+          <autores>MENITA, B. G.; DOMINGOS, J. L.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>1-</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1109/TLA.2016.7555249</doi>
+          <titulo>Waste heat recovery plant for exhaust ducts using thermoelectric generators</titulo>
+          <autores>Gomes, P. H. G.; CALIXTO, W. P.; FARIA, M. A. A.; STECANELLA, P. A. J.; ALVES, A. J.; DOMINGUES, E. G.</autores>
+          <revista>Revista IEEE América Latina</revista>
+          <volume>Revista IEEE América Latina</volume>
+          <paginas>2752-2757</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Proposal of Technical and Commercial Arrangements for Distributed Generation from the Use of Biogas in a Food Industry</titulo>
+          <autores>ALMEIDA, C. A.; ALVES, A. J.; OLIVEIRA, S. B.; ZANG, J. W.; CALIXTO, W. P.; DOMINGUES, E. G.</autores>
+          <revista>Renewable Energy & Power Quality Journal (RE&PQJ)</revista>
+          <volume>Renewable Energy & Power Quality Journal (RE&PQJ)</volume>
+          <paginas>465-</paginas>
+          <numero></numero>
+          <ano>2014</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v1i4.75</doi>
+          <titulo>Reconditioning in synchronous operation with one parallel induction generator</titulo>
+          <autores>MAGALHAES, ALANA S.; MORAES, P. H. F.; SILVA, A. H. F.; Gomes, P. H. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>66-78</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i1.84</doi>
+          <titulo>Methodology for Measurement the Energy Efficiency Involving Solar Heating Systems Using Stochastic Modelling</titulo>
+          <autores>MENITA, B. G.; MEDEIROS, G. P.; DOMINGOS, J. L.; DOMINGUES, E. G.; ALVES, A. J.; FARIA, A. F.; MIGUEL, M. L. S.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>1-10</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i1.80</doi>
+          <titulo>Metric for Calculation of System Complexity based on its Connections</titulo>
+          <autores>PAIVA, J. R. B.; GOMES, V. M.; RODRIGUES, B. A.; SILVA, L. F. A.; ANICETO, B. C. M.; FURRIEL, G. P.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>67-</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.85</doi>
+          <titulo>Geoelectric method applied in correlation between physical characteristics and electrical properties of the soil</titulo>
+          <autores>SILVA FILHO, A. M.; Silva, C. L. B.; OLIVEIRA, M. A. A.; PIRES, T. G.; ALVES, A. J.; NARCISO, M. G.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>36-42</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.92</doi>
+          <titulo>Estimate of Geopressures using Conformal Mapping in Eccentrical Wellbores</titulo>
+          <autores>SILVA, U. F.; Q. JUNIOR, M. I.; LEMOS, S.; FURRIEL, G. P.; SEGATTI, N. M. S.; SILVA, A. H. F.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>1-10</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i1.89</doi>
+          <titulo>Calculation of the influence of slot geometry on the magnetic flux density of the air gap</titulo>
+          <autores>LIMA, R. A.; COIMBRA, A. C. PAULO; ALMEIDA, T.; GOMES, V. M.; PEREIRA, T. M.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>81-89</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.105</doi>
+          <titulo>Proposal of heuristic regression method applied in descriptive data analysis: case studies</titulo>
+          <autores>GOMES, F. A.; ASSIS, ALFREDO DE O.; REIS, M. R. C.; GOMES, V. M.; OLIVEIRA, SOSTENES G. M.; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>51-</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.95</doi>
+          <titulo>Calculation of Grounding Grids Parameter at Arbitrary Geometry</titulo>
+          <autores>Silva, C. L. B.; PIRES, T. G.; OLIVEIRA, D. N.; NERYS, J. W. L.; AYLTON JOSÉ ALVES; CALIXTO, W. P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>11-</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.3390/en10050639</doi>
+          <titulo>Design Optimization of a High Power LED Matrix Luminaire</titulo>
+          <autores>BARBOSA, J. L. F.; SIMON, DAN; CALIXTO, W. P.</autores>
+          <revista>Energies</revista>
+          <volume>Energies</volume>
+          <paginas>639-</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1016/j.eneco.2017.03.020</doi>
+          <titulo>Portfolio optimization of renewable energy assets: Hydro, wind, and photovoltaic energy in the regulated market in Brazil</titulo>
+          <autores>PINHEIRO NETO, D.; DOMINGUES, E. G.; COIMBRA, A. PAULO; ALMEIDA, ANIBAL T.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Energy Economics</revista>
+          <volume>Energy Economics</volume>
+          <paginas>1-25</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i1.90</doi>
+          <titulo>Increasing photovoltaic panel power through water cooling technique</titulo>
+          <autores>MATIAS, CALEBE ABRENHOSA; SANTOS, LICÍNIO M.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>60-67</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i1.91</doi>
+          <titulo>Efficiency Improvement of Switched Reluctance Generator Using Optimization Techniques</titulo>
+          <autores>REIS, MÁRCIO RODRIGUES DA CUNHA; DE ARAÚJO, WANDERSON RAINER HILÁRIO; Calixto, Wesley Pacheco</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>74-80</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.98</doi>
+          <titulo>Hybrid Optimization Process Applied to Tuning of Dynamic Matrix Control: Study Case with DC Motor</titulo>
+          <autores>DE CARVALHO, DOUGLAS FREIRE; GANZAROLI, CLEBER ASMAR; DO COUTO, LUIZ ALBERTO; DIAS, RAFAEL NUNES HIDALGO MONTEIRO; Calixto, Wesley Pacheco</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>23-30</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.99</doi>
+          <titulo>Analysis and monitoring of electrical grounding grid encapsulated with concrete: case study using simulation in finite element method</titulo>
+          <autores>PEREIRA, THIAGO MARTINS; LIMA, RODRIGO ALVES; GOMES, VIVIANE MARGARIDA; Alves, Aylton José; Calixto, Wesley Pacheco</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>30-36</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.22149/teee.v2i2.93</doi>
+          <titulo>Simulation and analysis of an isolated full-bridge DC/DC boost converter operating with a modified perturb and observe maximum power point tracking algorithm</titulo>
+          <autores>MATIAS, CALEBE A.; MEDEIROS, GIRODANI PACÍFICO; MORAES, PEDRO H. F.; FERNANDES, BRUNO DE A.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; FURRIEL, GEOVANNE P.</autores>
+          <revista>Transactions on Environment and Electrical Engineering</revista>
+          <volume>Transactions on Environment and Electrical Engineering</volume>
+          <paginas>45-</paginas>
+          <numero></numero>
+          <ano>2017</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1080/15325008.2018.1444686</doi>
+          <titulo>Methodology of Investment Risk Analysis for Wind Power Plants in the Brazilian Free Market</titulo>
+          <autores>PINHEIRO NETO, D.; DOMINGUES, E. G.; CALIXTO, W. P.; ALVES, A. J.</autores>
+          <revista>ELECTRIC POWER COMPONENTS AND SYSTEMS</revista>
+          <volume>ELECTRIC POWER COMPONENTS AND SYSTEMS</volume>
+          <paginas>316-330</paginas>
+          <numero></numero>
+          <ano>2018</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Energy Efficiency and Distributed Generation: Case Study</titulo>
+          <autores>FERREIRA, A. F.; DOMINGOS, JOSE L.; MORAES, P. H. F.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <revista>Renewable Energy and Power Quality Journal</revista>
+          <volume>Renewable Energy and Power Quality Journal</volume>
+          <paginas>764-769</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.24084/repqj16.230</doi>
+          <titulo>A First Approach on the Impact of Distributed Generation and network topology on Studies of Voltage Sags</titulo>
+          <autores>Ramos, A. C. L.; BATISTA, A.J.; LEBORGNE, R.C.; DOMINGUES, E.G.; CALIXTO, W.P.</autores>
+          <revista>RENEWABLE ENERGY & POWER QUALITY JOURNAL (RE&PQJ)</revista>
+          <volume>RENEWABLE ENERGY & POWER QUALITY JOURNAL (RE&PQJ)</volume>
+          <paginas>114-120</paginas>
+          <numero></numero>
+          <ano>2018</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1155/2019/1303241</doi>
+          <titulo>Mechanism for Measuring System Complexity Applying Sensitivity Analysis</titulo>
+          <autores>GOMES, V. M.; PAIVA, J. R. B.; REIS, M. R. C.; WAINER, G. A.; CALIXTO, W.P.</autores>
+          <revista>COMPLEXITY</revista>
+          <volume>COMPLEXITY</volume>
+          <paginas>1-12</paginas>
+          <numero></numero>
+          <ano>2019</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1016/j.conengprac.2019.06.007</doi>
+          <titulo>Optimized techniques for driving and control of the switched reluctance motor to improve efficiency</titulo>
+          <autores>REIS, M. R. C.; ARAUJO, W. R. H.; GOMES, V. M.; SILVA, FELIPPE S.; GANZAROLI, C. A.; GOMES, F. A.; WAINER, G. A.; CALIXTO, W.P.</autores>
+          <revista>CONTROL ENGINEERING PRACTICE</revista>
+          <volume>CONTROL ENGINEERING PRACTICE</volume>
+          <paginas>1-20</paginas>
+          <numero></numero>
+          <ano>2019</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1016/j.chaos.2019.109509</doi>
+          <titulo>Indirect prediction system for variables that have gaps in their time series</titulo>
+          <autores>BULHOES, JUNIO S.; MARTINS, CRISTIANE L.; OLIVEIRA, MARCIA D.; CALHEIROS, DEBORA F.; CALIXTO, WESLEY P.</autores>
+          <revista>CHAOS SOLITONS & FRACTALS</revista>
+          <volume>CHAOS SOLITONS & FRACTALS</volume>
+          <paginas>109509-</paginas>
+          <numero></numero>
+          <ano>2019</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Investment Risk Analysis in the Use of Landfill Biogas for Electricity Generation</titulo>
+          <autores>COSTA, A. N.; MEDEIROS, G. P.; CALIXTO, W. P.; Alves A. J.; PINHEIRO NETO, D.; DOMINGUES E. G., Elder G. Domingues</autores>
+          <revista>RENEWABLE ENERGY & POWER QUALITY JOURNAL (RE&PQJ)</revista>
+          <volume>RENEWABLE ENERGY & POWER QUALITY JOURNAL (RE&PQJ)</volume>
+          <paginas>811-816</paginas>
+          <numero></numero>
+          <ano>2016</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/10.1002/2050-7038.12365</doi>
+          <titulo>Experimental study of induction generator as a repowering solution</titulo>
+          <autores>MAGALHAES, A. S.; BULHOES, JUNIO S.; REIS, M. R. C.; GOMES, V. M.; SILVA, A. H. F.; Alves, A. J.; WAINER, G. A.; GANZAROLI, C. A.; ARAUJO, W. R. H.; CALIXTO, W. P.</autores>
+          <revista>International Transactions on Electrical Energy Systems</revista>
+          <volume>International Transactions on Electrical Energy Systems</volume>
+          <paginas>1-25</paginas>
+          <numero></numero>
+          <ano>2020</ano>
+        </artigo>
+        <artigo>
+          <doi>http://dx.doi.org/</doi>
+          <titulo>Pump Speed Control in Center Pivot Irrigation - A Perspective of Rationalization and Electrical</titulo>
+          <autores>Alves, A. J.; CALIXTO, W. P.; Alvarenga, B; BARBOSA, J. L. F.; DOMINGUES, E. G.</autores>
+          <revista>Electrical Engineering Electronic Journal</revista>
+          <volume>Electrical Engineering Electronic Journal</volume>
+          <paginas>1-6</paginas>
+          <numero></numero>
+          <ano>2013</ano>
+        </artigo>
+    </artigos_em_periodicos>
+    <livros_publicados>
+        <livro>
+          <autores>SILVA FILHO, A. M.; CALIXTO, W. P.</autores>
+          <titulo>Correlação entre propriedades físicas e parâmetros elétricos do solo: mapeamento da variabilidade espacial do solo através de suas propriedades elétricas</titulo>
+          <edicao>1</edicao>
+          <volume></volume>
+          <paginas>100</paginas>
+          <ano>2016</ano>
+        </livro>
+        <livro>
+          <autores>REIS, M. R. C.; CALIXTO, W. P.; GANZAROLI, C. A.</autores>
+          <titulo>Métodos de otimização aplicados à sintonia do controlador PI</titulo>
+          <edicao>1</edicao>
+          <volume></volume>
+          <paginas>132</paginas>
+          <ano>2018</ano>
+        </livro>
+        <livro>
+          <autores>FRANCO, A. L. C.; ALVARENGA, B.; CALIXTO, W.P.</autores>
+          <titulo>Otimização aplicada ao projeto de enrolamentos de máquinas CA: uma modelagem computacional utilizando algoritmos genéticos</titulo>
+          <edicao>1</edicao>
+          <volume></volume>
+          <paginas>148</paginas>
+          <ano>2019</ano>
+        </livro>
+        <livro>
+          <autores>GOMES, F. A.; GOMES, V. M.; CALIXTO, W. P.</autores>
+          <titulo>Otimização aplicada a identificação de sistemas</titulo>
+          <edicao>1</edicao>
+          <volume></volume>
+          <paginas>116</paginas>
+          <ano>2018</ano>
+        </livro>
+    </livros_publicados>
+    <capitulos_livros>
+        <capitulo>
+          <livro>Em.formação: Cadernos de Inicação Científica e Tecnológica do IFG, Destaques 2015/2016</livro>
+          <titulo>Contador de fluxo digital para a coleta de dados estatísticos em bibliotecas: simulação por sistemas a eventos discretos</titulo>
+          <autores>CAMPOS, P. H. M.; BRAGA, A. O.; TSU, M. A. A. O.; GOMES, V. M.; CALIXTO, W. P.</autores>
+          <edicao>3</edicao>
+          <editora>Editora IFG</editora>
+          <volume></volume>
+          <paginas>51-66</paginas>
+          <ano>2017</ano>
+        </capitulo>
+        <capitulo>
+          <livro>Em.formação: Cadernos de Inicação Científica e Tecnológica do IFG, Destaques 2015/2016</livro>
+          <titulo>Desenvolvimento de aparato para mensurar tempo de reação motora</titulo>
+          <autores>OLIVEIRA FILHO, R. M.; CUNHA, L. L. P.; KLAFKE, M.; GOMES, V. M.; CALIXTO, W. P.</autores>
+          <edicao>3</edicao>
+          <editora>Editora IFG</editora>
+          <volume></volume>
+          <paginas>67-80</paginas>
+          <ano>2017</ano>
+        </capitulo>
+        <capitulo>
+          <livro>Impactos das Tecnologias nas Engenharias 4</livro>
+          <titulo>IMPLEMENTAÇÃO DE UMA TÉCNICA DE CONTROLE PREDITIVO NÃO LINEAR PRÁTICA NO ACIONAMENTO DE UM MOTOR CC</titulo>
+          <autores>GANZAROLI, CLEBER ASMAR; Carvalho, Douglas Freire de; Couto, Luiz Alberto do; DIAS, RAFAEL NUNES HIDALGO MONTEIRO; Calixto, Wesley Pacheco</autores>
+          <edicao>1</edicao>
+          <editora>Antonella Carvalho de Oliveira</editora>
+          <volume></volume>
+          <paginas>42-54</paginas>
+          <ano>2019</ano>
+        </capitulo>
+        <capitulo>
+          <livro>Gestão da Informação, Cooperação em Redes e Competitividade</livro>
+          <titulo>Gestão da Informação em Grandes Volumes de Dados no Poder Judiciário</titulo>
+          <autores>CASTRO JUNIOR, A. P.; FRANCO, B. F.; CALIXTO, W. P.</autores>
+          <edicao>1</edicao>
+          <editora>Universidade do Porto/Coletânea Luso-Brasileira</editora>
+          <volume></volume>
+          <paginas>61-78</paginas>
+          <ano>2014</ano>
+        </capitulo>
+    </capitulos_livros>
+    <trabalho_completo_congresso>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; SILVA, Adriano Fonseca da; SILVA, Clebes André da; FARIA, Jean Alves de; PIRES FILHO, W. G.</autores>
+          <titulo>Robótica</titulo>
+          <nome_evento>IX Jornada de Educação Matemática (IX JEM)</nome_evento>
+          <ano>2002</ano>
+          <volume>1</volume>
+          <paginas>18-22</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; SILVA, Adriano Fonseca da; SILVA, Clebes André da; FARIA, Jean Alves de; PIRES FILHO, W. G.</autores>
+          <titulo>Robótica</titulo>
+          <nome_evento>Jornada Pedagógica da Educação</nome_evento>
+          <ano>2003</ano>
+          <volume>1</volume>
+          <paginas>44-45</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CARVALHO, Rose Mary Almas de; SILVA, Adriano Fonseca da; SILVA, Clebes André da; FARIA, Jean Alves de; PIRES FILHO, W. G.; CALIXTO, W. P.</autores>
+          <titulo>Robótica</titulo>
+          <nome_evento>VI Congresso Estadual de Informática na Educação</nome_evento>
+          <ano>2002</ano>
+          <volume>2</volume>
+          <paginas>75-77</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; SILVA, Clebes André da</autores>
+          <titulo>Robótica Educativa</titulo>
+          <nome_evento>Jornada de Produção Científica das Universidades do Centro Oeste</nome_evento>
+          <ano>2002</ano>
+          <volume>6</volume>
+          <paginas>42-43</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; RODRIGUES, C. G.</autores>
+          <titulo>Poluição Sonora</titulo>
+          <nome_evento>V Fórum Brasileiro de Educação Ambiental</nome_evento>
+          <ano>2004</ano>
+          <volume>5º</volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; SILVA, Adriano Fonseca da; SILVA, Clebes André da; FARIA, Jean Alves de; PIRES FILHO, W. G.</autores>
+          <titulo>Robótica</titulo>
+          <nome_evento>Jornada Pedagógica de Educação</nome_evento>
+          <ano>2004</ano>
+          <volume>1</volume>
+          <paginas>38-40</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <titulo>Solução de Problemas Eletromagnéticos por Transformações Conformes</titulo>
+          <nome_evento>VII Congresso Brasileiro de Eletromagnetismo - MOMAG</nome_evento>
+          <ano>2006</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; Wu, Marcel; MACHADO FILHO, H. B.; Yamanaka, Keiji</autores>
+          <titulo>Algoritmo Genético Aplicado a um Método de Prospecção Geoelétrico</titulo>
+          <nome_evento>Simpósio Brasileiro de Sistemas Elétricos</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; Wu, Marcel; Yamanaka, Keiji; MACHADO FILHO, H. B.</autores>
+          <titulo>Genetic Algorithm Applied in a Geoelectrical Prospecting Method</titulo>
+          <nome_evento>9ª International Conference on Environment and Electrical Engineering</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>297-300</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <titulo>Aplicação do Mapeamento Conforme no Cálculo do Fator de Carter</titulo>
+          <nome_evento>IX Congresso Brasileiro de Eletromagnetismo - MOMAG</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; Wu, Marcel; Alves, A. J.; Kliemann, Huberto José</autores>
+          <titulo>Obtenção da Condutividade Elétrica do Solo e suas Respectivas Espessuras Utilizando Heurística Moderna</titulo>
+          <nome_evento>Congresso Brasileiro de Agricultura de Precisão - ConBap</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; SA, Angela Abreu Rosa de; ANTUNES, Carlos F. R. Lemos; Wu, Marcel; Cardoso, Alexandre; Alves, A. J.; MARTINS NETO, L.</autores>
+          <titulo>Methodology for Tridimensional Soil Stratification</titulo>
+          <nome_evento>3rd International Conference on Power Electronics and Intelligent Transportation System - IEEE/PEITS 2010</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Alves, A. J.; CALIXTO, W. P.; Wu, Marcel; ALVARENGA, B. P; MARTINS NETO, L.; Cardoso, Alexandre</autores>
+          <titulo>Electrical Parameters Estimation of the Salient Poles Machine in Phase Variables</titulo>
+          <nome_evento>3rd International Conference on Power Electronics and Intelligent Transportation System - IEEE/PEITS 2010</nome_evento>
+          <ano>2010</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Alves, A. J.; Wu, Marcel; MARTINS NETO, L.; CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <titulo>Modeling validation of Salient Pole Synchronous Machines from experimental inductances</titulo>
+          <nome_evento>IEEE - 10th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2011</ano>
+          <volume></volume>
+          <paginas>1-4</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Alves, A. J.; MARTINS NETO, L.; CALIXTO, W. P.; Wu, Marcel; ALVARENGA, B. P</autores>
+          <titulo>Salient Pole Synchronous Machine, a New Modeling of Inductances Validation</titulo>
+          <nome_evento>12th Portuguese-Spanish Conference on Electrical Engineering - XIICLEEE</nome_evento>
+          <ano>2011</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; Coimbra, A. P.; Silva, W. G.; ALVARENGA, B. P</autores>
+          <titulo>Carter Factor Calculation by Finite Element and Domain Transformation Methods</titulo>
+          <nome_evento>32th Iberian Latin-American Congress on Computational Methods in Engineering - XXXII CILAMCE</nome_evento>
+          <ano>2011</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Alves, A. J.; CALIXTO, W. P.; DOMINGUES, E. G.; MARTINS NETO, L; Alvarenga, B</autores>
+          <titulo>Determinação das Indutâncias da Máquina Síncrona de Pólos Salientes em Variáveis de Fase</titulo>
+          <nome_evento>10º Congresso Brasileiro de Eletromagnetismo - MOMAG</nome_evento>
+          <ano>2012</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, J. L. F.; SILVA FILHO, A. M.; CALIXTO, W. P.; BRITO, L. C.; Alves, A. J.; Coimbra, A. P.</autores>
+          <titulo>Otimização da Lente Secundária para Lâmpadas de LED.</titulo>
+          <nome_evento>IX Congresso de Pesquisa Ensino e Extensão - IX CONPEEX</nome_evento>
+          <ano>2012</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Alves, A. J.; CALIXTO, W. P.; DOMINGUES, E. G.; BARBOSA, J. L. F.; Alvarenga, B</autores>
+          <titulo>Pump Speed Control in Center Pivot Irrigation System - A Perspective of Rationalization and Quality of Energy</titulo>
+          <nome_evento>13th Spanish Portuguese Conference on Electrical Engineering (XIII CHLIE)</nome_evento>
+          <ano>2013</ano>
+          <volume>1</volume>
+          <paginas>1-6</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, J. L. F.; CALIXTO, W. P.; BRITO, L. C.; Alves, A. J.; MARRA, E. G.; COIMBRA, A. PAULO</autores>
+          <titulo>Secondary Lens Optimization for LED Lamps</titulo>
+          <nome_evento>13th Spanish Portuguese Conference on Electrical Engineering (XIII CHLIE)</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, MARCIO R. C.; Alvarenga, Bernardo; DA SILVA, WANDER G.; GANZAROLI, CLEBER. A.; CALIXTO, WESLEY. P.; DE ARAUJO, WANDERSON R. H.; ALVES, AYLTON J.; DOMINGUES, ELDER G.</autores>
+          <titulo>Heuristic and deterministic strategies applied on a PID controller tuning for speed control of a DC motor</titulo>
+          <nome_evento>2013 13th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>223-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARAUJO, WANDERSON R. H.; GANZAROLI, CLEBER A.; CALIXTO, WESLEY. P.; ALVES, AYLTON J.; VIAJANTE, GHUNTER P.; REIS, MARCIO R. C.; SILVEIRA, AUGUSTO F. V.</autores>
+          <titulo>Firing angles optimization for Switched Reluctance Generator using Genetic Algorithms</titulo>
+          <nome_evento>2013 13th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>217-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, M. R. C.; GANZAROLI, C. A.; ARAUJO, W. R. H.; MELO, O. R.; CARARO, J. A. G.; SANTANA, M. L.; ALVARENGA, B. P; Silva, W. G.; CALIXTO, W. P.</autores>
+          <titulo>Estratégias Determinística e Heurística para a Sintonia do Controlador PID aplicado ao Controle de Velocidade da Máquina de Corrente Contínua</titulo>
+          <nome_evento>X Congresso de pesquisa, ensino e extensão - CONPEEX</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, C. A.; SANTOS, L. E. B.; ALVES, A. J.; DOMINGUES, E. G.; CALIXTO, W. P.</autores>
+          <titulo>Simulação e Otimização das filas nos elevadores do Fórum da cidade de Goiânia aplicando a teoria de Sistema a Eventos Discretos</titulo>
+          <nome_evento>X Congresso de pesquisa, ensino e extensão - CONPEEX</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA FILHO, A. M.; ALVES, A. J.; MIRANDA, M. C. C.; CALIXTO, W. P.</autores>
+          <titulo>Geoprospecção Aplicada a Caracterização do Solo</titulo>
+          <nome_evento>X Congresso de pesquisa, ensino e extensão - CONPEEX</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MARQUES, L. G.; Yamanaka, Keiji; CALIXTO, W. P.</autores>
+          <titulo>Implementação Paralela de Programação Genética e sua Aplicação em Regressão Simbólica</titulo>
+          <nome_evento>IV Escola Regional de Informática da Sociedade Brasileira de Computação</nome_evento>
+          <ano>2013</ano>
+          <volume></volume>
+          <paginas>43-48</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ALMEIDA, C. A.; ALVES, A. J.; OLIVEIRA, S. B.; Zang, J. W.; CALIXTO, W. P.; DOMINGUES, E. G.</autores>
+          <titulo>Study of parameters for the design of a continuous flow laboratory biogas reactor</titulo>
+          <nome_evento>International Conference on Renewable Energies and Power Quality (ICREPQ 2014)</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Ramos, A. C. L.; BATISTA, A. J.; LEBORGNE, R. C.; DOMINGUES, E. G.; CALIXTO, W. P.; ALVES, A. J.</autores>
+          <titulo>A First Approach on the Impact of Distributed Generation on Voltage Sags</titulo>
+          <nome_evento>International Conference on Renewable Energies and Power Quality (ICREPQ 2014)</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Ramos, A. C. L.; CALIXTO, W. P.; ALVES, A. J.; DOMINGUES, E. G.; OLIVEIRA, S. B.; COELHO, S. T.</autores>
+          <titulo>Proposal of Technical and Commercial Arrangements for Distributed Generation from the Use of Biogas in a Food Industry</titulo>
+          <nome_evento>International Conference on Renewable Energies and Power Quality (ICREPQ 2014)</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ANDRADE, R. A.; DOMINGUES, E. G.; DOMINGOS, J. L.; CALIXTO, W. P.; ALVES, A. J.</autores>
+          <titulo>Análise da Viabilidade Técnico-Econômica da Implantação de Sistema Híbrido de Geração de Energia Elétrica Solar-Biomassa em Frigoríficos de Suínos</titulo>
+          <nome_evento>V Congresso Brasileio de Energia Solar</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>OLIVEIRA, D. N.; CALIXTO, W. P.; Alves, A. J.; Silva, C. L. B.; MOTA, I. L.</autores>
+          <titulo>Multilayer Soil Parameters Estimation Optimization Using Genetic Algorithms</titulo>
+          <nome_evento>International Conference on Grounding and Earthing & International Conference on Lightning Physics and Effects (GROUND'2014 & 6th LPE)</nome_evento>
+          <ano>2014</ano>
+          <volume>1</volume>
+          <paginas>1-6</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SANTOS, L. E. B.; SILVA, C. A.; CALIXTO, W. P.</autores>
+          <titulo>Aplicação da teoria de Sistema a Eventos Discretos no processo de otimização das filas em hospitais</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CAETANO NETO, J.; ALVES, A. J.; DOMINGUES, E. G.; CALIXTO, W. P.</autores>
+          <titulo>Modelo Espacial para Análise Comparativa dos Cenários da Rede de Distribuição de Energia Elétrica Utilizando Método Fuzzy C-Médias</titulo>
+          <nome_evento>Seminário de Eletrônica de Potência e Controle & Seminário de Energia e Sistemas de Potência</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CAETANO NETO, J.; CALIXTO, W. P.</autores>
+          <titulo>Modelo Espacial para Análise da Rede de Distribuição de Energia Utilizando Técnicas de Classificação e os Conceitos de Redes Inteligentes</titulo>
+          <nome_evento>Congresso Nacional de Matemática Aplicada e Computacional</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARAUJO, W. R. H.; REIS, M. R. C.; GANZAROLI, C. A.; ALVES, A. J.; DOMINGUES, E. G.; BRAGANCA, F. J. P. M.; CALIXTO, W. P.</autores>
+          <titulo>Técnicas de otimização aplicadas ao Gerador a Relutância Chaveado para Conexão a Redes Monofásicas</titulo>
+          <nome_evento>Redes Elétricas Inteligentes</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Ferraz, R. da S.; CALIXTO, W. P.</autores>
+          <titulo>Estudo Teórico e Experimental da Impedância do Solo Frente a Aplicação de Impulsos de Corrente</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PIRES, T. G.; Silva, C. L. B.; CALIXTO, W. P.</autores>
+          <titulo>Malha de Aterramento: Cálculo de Parâmetros em Geometrias não Convencionais</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>LIMA, R. A.; PEREIRA, T. M.; Alvarenga, B; BARBOSA, J. L. F.; ALVES, A. J.; DOMINGUES, E. G.; CALIXTO, W. P.</autores>
+          <titulo>Metodologia para Determinação do Fator de Carter em três Dimensões</titulo>
+          <nome_evento>16º SBMO - Simpósio Brasileiro de Micro-ondas e Optoeletrônica & 11º CBMag - Congresso Brasileiro de Eletromagnetismo</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, G. P.; NASCIMENTO, R. N. C.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <titulo>Controle de MIT por inversores de frequência versus controle por escorregamento em sistemas de bombeamento: Uma avaliação qualitativa</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, C. A.; SANTOS, L. E. B.; MAGALHAES, A. S.; ALVES, A. J.; DOMINGUES, E. G.; CALIXTO, W. P.</autores>
+          <titulo>Simulação das filas dos elevadores do Fórum da Cidade de Goiânia utilizando o Software Arena</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FONSECA, L. C.; DOMINGUES, E. G.; PINHEIRO NETO, D.; CALIXTO, W. P.</autores>
+          <titulo>Influência das Distribuições de Probabilidade na Geração de Séries Sintéticas de Velocidade</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PEREIRA, T. M.; CALIXTO, W. P.</autores>
+          <titulo>Influência da Estrutura de Concreto nos Sistemas de Aterramentos Elétricos: Simulação através do Método dos Elementos Finitos</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, A. H. F.; CALIXTO, W. P.; SILVA, U. F.; MAGALHAES, A. S.; ALVES, A. J.; DOMINGUES, E. G.</autores>
+          <titulo>Cálculo de Capacitância em Capacitores de Placas Cilíndricas e Semicilíndricas Utilizando Transformações Conformes</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>KLAFKE, M.; SANTANA, M. L.; MAGALHAES, A. B.; FERREIRA, C. C.; SOUZA, K. S.; OLIVEIRA FILHO, R. M.; TOLENTINO, R. F.; COSTA, T. C. B.; CALIXTO, W. P.</autores>
+          <titulo>Comparação dos Tempos de Reação Simples em Relação ao Gênero e a Prática de Jogos Eletrônicos</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, M. R. C.; GANZAROLI, C. A.; ARAUJO, W. R. H.; Bezerra, C. A. V.; Alvarenga, B; Silva, W. G.; SANTANA, M. L.; MELO, O. R.; CARARO, J. A. G.; CALIXTO, W. P.</autores>
+          <titulo>Métodos Determinísticos e Heurísticos Aplicados na Sintonia do Controlador PID</titulo>
+          <nome_evento>Redes Elétricas Inteligentes</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA FILHO, A. M.; GODOI, F. F. F.; PROJETA, F. A.; Silva, C. L. B.; SILVA, J. R. S.; MIRANDA, M. C. C.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.</autores>
+          <titulo>Geoprospecting applied to soil characterization</titulo>
+          <nome_evento>9th International Symposium AgroEnviron</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA FILHO, A. M.; PEREIRA, T. M.; GODOI, F. F. F.; SILVA, J. R. S.; MONTEIRO, T. K. M.; SILVA, M. C.; ALVES, A. J.; MIRANDA, M. C. C.; Silva, C. L. B.; CALIXTO, W. P.; NARCISO, M. G.</autores>
+          <titulo>Identification of soil's variability through geoprospecting</titulo>
+          <nome_evento>9th International Symposium AgroEnviron</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Ramos, A. C. L.; CALIXTO, W. P.; ALVES, A. J.; DOMINGUES, E. G.; OLIVEIRA, S. B.; COELHO, S. T.</autores>
+          <titulo>Preliminary Results on the Energetic use of Biogas Produced in a Food Industry Facility: Technical and Commercial Arrangements</titulo>
+          <nome_evento>22nd European Biomass Conference and Exhibition</nome_evento>
+          <ano>2014</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, PEDRO H. G.; CALIXTO, WESLEY P.; FARIA, MESSIAS A. A.; STECANELLA, PRISCILLA A. J.; ALVES, AYLTON J.; DOMINGUES, ELDER G.</autores>
+          <titulo>Geometry optimization of exhaust ducts applied in thermoelectric cogeneration efficiency</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1132-1136</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.; ALVES, AYLTON J.; CAMPOS, PEDRO H. M.; DOMINGUES, ELDER G.</autores>
+          <titulo>Intelligent system for measuring soil compaction on croplands</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1357-1361</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FARIA, MESSIAS A. A.; STECANELLA, PRISCILLA A. J.; DOMINGUES, ELDER G.; GOMES, PEDRO H. G.; CALIXTO, WESLEY P.; ALVES, AYLTON J.</autores>
+          <titulo>Modeling, simulation and control of a thermoelectric generator</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1373-1378</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>STECANELLA, PRISCILLA A. J.; FARIA, MESSIAS A. A.; DOMINGUES, ELDER G.; GOMES, PEDRO H. G.; CALIXTO, WESLEY P.; ALVES, AYLTON J.</autores>
+          <titulo>Eletricity generation using thermoelectric generator - TEG</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>2104-2108</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>RODRIGUES, JONATAS M.; ALVES, AYLTON J.; DOMINGUES, ELDER G.; DOMINGOS, JOSE L.; ABRAO, PEDRO J.; CALIXTO, WESLEY P.</autores>
+          <titulo>A photovoltaic system installed on the rooftop of a industry: A technical and economical study</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>2141-2146</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARRUDA, SERGIO; Alvarenga, Bernardo; CALIXTO, WESLEY</autores>
+          <titulo>Particle Swarm Optimization with multi-ring topology applied to the optimization of power transmission line parameters</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>2211-2215</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, JOSE LUIZ F.; CALIXTO, WESLEY P.; LIMA, RODRIGO A.; ALVES, AYLTON J.; DOMINGUES, ELDER G.</autores>
+          <titulo>Thermal simulation and validation of 5W high power LED luminaire</titulo>
+          <nome_evento>2015 IEEE 15th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>2216-2220</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, J. R. S.; GODOI, F. F. F.; PROJETA, F. A.; CALIXTO, W. P.; MIRANDA, M. C. C.</autores>
+          <titulo>Análise da influência de sistema radicular no solo através de método de prospecção geoelétrico</titulo>
+          <nome_evento>XXXV Congresso Brasileiro de Ciência do Solo</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, J. R. S.; GODOI, F. F. F.; PROJETA, F. A.; CALIXTO, W. P.; MIRANDA, M. C. C.</autores>
+          <titulo>Análise da influência da aplicação de vinhaça no solo através de método de prospecção geoelétrico</titulo>
+          <nome_evento>XXXV Congresso Brasileiro de Ciência do Solo</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, M. R. C.; ARAUJO, W. R. H.; CALIXTO, W. P.</autores>
+          <titulo>Regulação de velocidade do motor a relutância chaveado empregando controlador fuzzy</titulo>
+          <nome_evento>Congresso de Matemática Aplicada e Computacional</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>NETO, DAYWES P.; DOMINGUES, ELDER G.; CALIXTO, WESLEY P.; ALVES, AYLTON J.; LIMA, RODRIGO A.</autores>
+          <titulo>Investment risk analysis for eolic power plants in the free contracting environment</titulo>
+          <nome_evento>2015 IEEE International Conference on Industrial Technology (ICIT)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>2783-2788</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>NETO, DAYWES P.; DOMINGUES, ELDER G.; COIMBRA, A. PAULO; ALMEIDA, ANIBAL T.; CALIXTO, WESLEY P.</autores>
+          <titulo>Investment risk analysis for photovoltaic power plant in the free contracting environment</titulo>
+          <nome_evento>2015 12th International Conference on the European Energy Market (EEM)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1-5</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>Gomes, P. H. G.; CALIXTO, W. P.; FARIA, M. A. A.; STECANELLA, P. A. J.; ALVES, A. J.; DOMINGUES, E. G.</autores>
+          <titulo>Waste heat recovery plant for exhaust ducts using thermoelectric generators</titulo>
+          <nome_evento>IEEE Congreso Chileno de Ingeniería Eléctrica, Electrónica, Tecnologías de la Información y Comunicaciones</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CALIXTO, W. P.; NOBRE, F. S.; ALVES, A. J.; DOMINGUES, E. G.; DOMINGOS, J. L.; PIRES, T. G.; FERRAZ, R. S.; GOMES, V. M.</autores>
+          <titulo>Methodology for 3D mapping soil electrical conductivity: A case study</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>511-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PIRES, THYAGO G.; SILVA, CARLOS L. B.; OLIVEIRA, DIOGO N.; NERYS, JOSE W. L.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Computation of grounding grids parameter on unconventional geometry</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>523-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MENITA, BRUNO G.; DOMINGOS, JOSE L.; DOMINGUES, ELDER G.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; GARCIA, AGENOR G. P.; FARIA, ADRIANO F.DE; MIGUEL, MARCIO L. S.</autores>
+          <titulo>Measurement and verification in energy efficiency projects involving solar water heating systems in homes of low-income families  Case studies</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>585-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.; ALVES, AYLTON J.; FILHO, ANTONIO M. S.; OLIVEIRA, SOSTENES G. M.; DOMINGOS, JOSE L.; DOMINGUES, ELDER G.</autores>
+          <titulo>Automatic instrument for measuring soil penetration resistance</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>701-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, UYARA F.; MANOEL, I. Q.; FURRIEL, GEOVANNE P.; SILVA, ALAN H. F.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Application of conformal mapping in the calculation of geological pressures</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>711-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FILHO, ANTONIO M. S.; FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.; ALVES, AYLTON J.; PROFETA, FRANCISCO A.; DOMINGOS, JOSE L.; DOMINGUES, ELDER G.; NARCISO, MARCELO G.</autores>
+          <titulo>Methodology to correlate the humidity, compaction and soil apparent electrical conductivity</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>729-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SANTOS, LUCIANO; SILVA, CLEBES; PAIVA, JOAO; GOMES, VIVIANE; OLIVEIRA, SOSTENES; ALVES, AYLTON; CALIXTO, WESLEY</autores>
+          <titulo>A methodology for calculation of complexity in systems: Case study</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>83-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>RODRIGUES DA CUNHA REIS, MARCIO; DE ARAUJO, WANDERSON RAINER HILARIO; Calixto, Wesley Pacheco; ALVES, AYLTON JOSE</autores>
+          <titulo>Analysis of switched reluctance motor efficiency under different speed control strategies</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>467-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MAGALHAES, ALANA S.; LEOVIR, C. A.; MATIAS, CALEBE A.; SILVA, ALAN H. F.; DOMINGUES, ELDER G.; ALVES, AYLTON. J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Repowering of a synchronous generation plant by induction generator</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>667-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GANZAROLI, CLEBER A.; DE CARVALHO, DOUGLAS F.; DIAS, RAFAEL N. H. M.; REIS, MARCIO R. C.; ALVES, AYLTON J.; DOMINGOS, JOSE L.; CALIXTO, WESLEY P.</autores>
+          <titulo>Heuristic and deterministic strategies applied on cascade PI controller tuning for speed control of a DC motor</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>101-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FERRAZ, RAFAEL; OLIVEIRA, SOSTENES; SILVA, ALAN; NERYS, JOSE; ALVES, AYLTON; CALIXTO, WESLEY</autores>
+          <titulo>Construction of an impulse current generator prototype applied in electrical grounding systems</titulo>
+          <nome_evento>2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>649-1</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PEDRO HENRIQUE GARCIA GOMES; WESLEY PACHECO CALIXTO; PRISCILLA ARAÚJO JUÁ STECANELLA; MESSIAS ANAIN ALMEIDA FARIA; AYLTON JOSÉ ALVES; ELDER GERALDO DOMINGUES</autores>
+          <titulo>Optimized exhaust duct applied in thermoelectric waste heat recovery system</titulo>
+          <nome_evento>23rd ABCM International Congress of Mechanical Engineering</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PIRES, THYAGO G.; DA SILVA, CARLOS L. B.; CALIXTO, WESLEY P.; OLIVEIRA, DIOGO N.; ALVES, AYLTON J.; DOMINGUES, ELDER G.; DOMINGOS, JOSE L.; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Simulation and determination of grounding grid parameters in non-symmetrical shapes</titulo>
+          <nome_evento>2015 IEEE 13th Brazilian Power Electronics Conference and 1st Southern Power Electronics Conference (COBEP/SPEC)</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>COSTA, A. N.; DOMINGUES, E. G.; PINHEIRO NETO, D.; CALIXTO, W. P.; ALVES, A. J.; SANTOS, L.</autores>
+          <titulo>Energetic Use of Landfill Biogas as a Power Energy Source: An Economic Feasibility Study</titulo>
+          <nome_evento>International Conference on Renewable Energies and Power Quality</nome_evento>
+          <ano>2015</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, V. M.; PAIVA, J. R. B.; FURRIEL, G. P.; ANICETO, B. C. M.; SILVA, L. F. A.; CALIXTO, W. P.; DOMINGUES, E. G.; CRUZ JUNIOR, G.</autores>
+          <titulo>Complexity Metric Applied to the Discrete Events Systems</titulo>
+          <nome_evento>6th International Conference on Nonlinear Science and Complexity</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MENITA, B. G.; DOMINGOS, J. L.; ALVES, A. J.; CALIXTO, W. P.; FARIA, A. F.; SILVA, M. L.</autores>
+          <titulo>Contribuições para Medição e Verificação em Projetos de Eficiência Energética Envolvendo Aquecimento Solar de Água em Residências de Famílias de Baixa Renda</titulo>
+          <nome_evento>VI Congresso Brasileiro de Energia Solar - IEE/USP</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MAGALHAES, ALANA S.; MORAES, PEDRO H. F.; SILVA, ALAN H. F.; GOMES, PEDRO H. G.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Parallel operation repowering of synchronous and induction generator</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ALVES, AYLTON J.; FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.; GODOI, FABIANA; SILVA, JOSE R. S.; PROFETA, FRANCISCO A.; DOMINGOS, JOSE L.</autores>
+          <titulo>Geoelectrical method to obtain 3D maps for distribution of fertilizer in the soil</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, GEOVANNE P.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; SILVA, BRUNNA C. R.; MATIAS, CALEBE A.; SILVA, UYARA</autores>
+          <titulo>Methodology for validating measurement systems of soil compaction</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MENITA, BRUNO G.; DOMINGOS, JOSE L.; DOMINGUES, ELDER G.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; FARIA, ADRIANO F.DE; MIGUEL, MARCIO L. S.</autores>
+          <titulo>Energy efficiency projects involving solar water heating systems in homes of low-income families: Measurement and verification and stochastic modelling applied to prediction of electricity saving</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MATIAS, CALEBE A.; MORAES, PEDRO H. F.; FERNANDES, BRUNO DE A.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Simulation and analysis of an isolated full-bridge DC/DC boost converter operating with a modified perturb and observe maximum power point tracking algorithm</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MATIAS, CALEBE ABRENHOSA; SANTOS, LICINIO MORAES; ALVES, AYLTON JOSE; Calixto, Wesley Pacheco</autores>
+          <titulo>Electrical performance evaluation of PV panel through water cooling technique</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, CARLOS L. B.; OLIVEIRA, DIOGO N.; PIRES, THYAGO G.; NERYS, JOSE W. L.; BARBOSA, PAULO H. S.; CALIXTO, WESLEY P.; ALVES, AYLTON J.</autores>
+          <titulo>Optimization of grounding grid's multidesign geometry</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>OLIVEIRA, DIOGO N.; SILVA, CARLOS L.B.; CALIXTO, WESLEY P.; ALVES, AYLTON J.; GOMES, VIVIANE; DOMINGOS, JOSE LUIS</autores>
+          <titulo>Heuristic methodology for horizontal multilayer soil stratification</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE CARVALHO, DOUGLAS F.; GANZAROLI, CLEBER A.; DIAS, RAFAEL N. H. M.; COUTO, LUIS A.; CALIXTO, WESLEY P.</autores>
+          <titulo>Optimization process applied to tuning of dynamic matrix control: Study case with DC motor</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, FLAVIO A.; GOMES, VIVIANE M.; ASSIS, ALFREDO DE O.; REIS, MARCIO R. DA C.; DA CRUZ, GELSON; CALIXTO, WESLEY P.</autores>
+          <titulo>Heuristic regression method for descriptive data analysis</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, GEOVANNE P.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; GODOI, FABIANA; SILVA, JOSE R. S.; PROFETA, FRANCISCO A.; DOMINGUES, ELDER G.</autores>
+          <titulo>Methodology to correlate fertilizer and electrical resistance of soil</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PAIVA, JOAO R. B.; GOMES, VIVIANE M.; OLIVEIRA, SOSTENES G. M.; DOMINGUES, ELDER G.; ALVES, AYLTON J.; DA CRUZ, GELSON; CALIXTO, WESLEY P.</autores>
+          <titulo>Calculation of system complexity based on the connections: Methodology and applications</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FILHO, ANTONIO SILVA; BORGES DA SILVA, CARLOS; OLIVEIRA, MARCO; PIRES, THYAGO; ALVES, AYLTON; CALIXTO, WESLEY P.; NARCISO, MARCELO</autores>
+          <titulo>Correlation method of physical characteristics with electrical properties of the soil</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, MARCIO R. C.; SILVA, FELIPPE S.; ARAUJO, WANDERSON R. H.; CALIXTO, WESLEY P.; ARAUJO, DANIEL S.; MENDES, IAGO N.; ROSE, RAFAEL M.</autores>
+          <titulo>Speed control for direct current motor using optimization tuning for PID controller</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, MARCIO R. C.; CALIXTO, WESLEY P.; ARAUJO, WANDERSON R. H.; ALVES, AYLTON J.; DOMINGOS, JOSE L.</autores>
+          <titulo>Switched reluctance generator efficiency improvement for wind energy applications</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MORAES, PEDRO H. F.; MAGALHAES, ALANA S.; FERREIRA, ADRIANO F.; PAIVA, JOAO R. B.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; DOMINGOS, JOSE L.; ABRAO, PEDRO J.</autores>
+          <titulo>Synchronous compensation versus capacitive compensation for reactive power in industrial systems subjected to harmonic distortion</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DA SILVA FERRAZ, RAFAEL; OLIVEIRA, SOSTENES G. M.; DE OLIVEIRA, SERGIO BOTELHO; Calixto, Wesley Pacheco</autores>
+          <titulo>Analysis of the soil impedance in high frequencies using an electric impulse generator prototype</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, UYARA F.; MANOEL, I. Q.; SILVA, ALAN H. F.; CALIXTO, WESLEY P.; LEMOS, SANTIAGO; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Conformai mapping applied to the estimate of Surge and Swab geopressures</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE OLIVEIRA, SERGIO B.; ALVES, AYLTON J.; CALIXTO, WESLEY P.; FURRIEL, GEOVANNE P.; GODOI, FABIANA; SILVA, JOSE R. S.; PROFETA, FRANCISCO A.</autores>
+          <titulo>Geoelectrical prospection to obtain distribution maps of fertilizer in the soil</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE LIMA, RODRIGO ALVES; COIMBRA, A. C. PAULO; ALMEIDA, TONY; GOMES, VIVIANE MARGARIDA; PEREIRA, THIAGO MARTINS; ALVES, AYLTON JOSE; Calixto, Wesley Pacheco</autores>
+          <titulo>Influence of slot geometry on air gap magnetic flux density of rotating machines</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PEREIRA, THIAGO MARTINS; DE LIMA, RODRIGO ALVES; GOMES, VIVIANE MARGARIDA; GUTEMBERGUE, SOSTENES; ALVES, AYLTON JOSE; Calixto, Wesley Pacheco</autores>
+          <titulo>Soil resistivity study and simulation with finite elements method</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARAUJO, WANDERSON R. H.; CALIXTO, WESLEY P.; REIS, MARCIO R. C.; RODRIGUES, LEHYR F.; MARTINS, DANIEL W. P.</autores>
+          <titulo>Comparative analysis between PI and fuzzy controllers applied to a workbench with an induction motor</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, JOSE LUIZ F.; CALIXTO, WESLEY P.; SIMON, DAN</autores>
+          <titulo>High power LED luminaire design optimization</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PIRES, THYAGO G.; NERYS, JOSE W. L.; SILVA, CARLOS L. B.; OLIVEIRA, DIOGO N.; FILHO, ANTONIO M. SILVA; CALIXTO, WESLEY P.; ALVES, AYLTON J.</autores>
+          <titulo>Computation of resistance and potential of grounding grids in any geometry</titulo>
+          <nome_evento>2016 IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC)</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>RODRIGUES, B. A.; PAIVA, J. R. B.; GOMES, V. M.; MORRIS, C.; CALIXTO, W. P.</autores>
+          <titulo>Passfault: an Open Source Tool for Measuring Password Complexity and Strength</titulo>
+          <nome_evento>The 8th International Multi-Conference on Complexity, Informatics and Cybernetics (IMCIC 2017)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-7</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE SOUSA BEZERRA, CARLOS DANIEL; Calixto, Wesley Pacheco; DA CUNHA REIS, MARCIO RODRIGUES; BEZERRA, CARLOS ALBERTO VASCONCELOS; ALVES, AYLTON JOSE</autores>
+          <titulo>Optimization of the operation power of DC-DC converters applied to thermogenerators</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REIS, MARCIO R. C.; Calixto, Wesley Pacheco; ARAUJO, WANDERSON R. H.; MATIAS, CALEBE A.</autores>
+          <titulo>Increasing efficiency of the switched reluctance generator using parametric regression and optimization methods</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SARAIVA, JULYANA P.; LIMA, BEATRIZ S.; GOMES, VIVIANE M.; FLORES, PAULO H. R.; GOMES, FLAVIO A.; ASSIS, ALFREDO O.; REIS, MARCIO R. C.; ARAUJO, WANDERSON R. H.; ABRENHOSA, CALEBE; CALIXTO, WESLEY P.</autores>
+          <titulo>Calculation of sensitivity index using one-at-a-time measures based on graphical analysis</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BOTELHO, JEREMIAS L.; OLIVEIRA, JOSEPH R.; REIS, MARCIO R. C.; SILVA, FELIPPE S.; DO COUTO, LUIZ A.; ARAUJO, WANDERSON R. H.; CALIXTO, WESLEY P.; MAGALHAES, ALANA S.; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Parametric regression methodology and optimized control for DC motor</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DIAS, RAFAEL N. H. M.; GANZAROLI, CLEBER A.; DE CARVALHO, DOUGLAS F.; FURRIEL, GEOVANNE P.; COUTO, LUIZ A.; CALIXTO, WESLEY P.</autores>
+          <titulo>Comparative study between optimized controllers fuzzy X MPC</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SANTOS, LICINIO MORAES; ALVES, AYLTON JOSE; MATIAS, CALEBE ABRENHOSA; Calixto, Wesley Pacheco</autores>
+          <titulo>Studies for the efficiency of a water pumping system for cooling and improving the electrical efficiency of photovoltaic panels</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FERREIRA, LUIZ GUILHERME GONZAGA BORBA; DOMINGOS, JOSE LUIS; ALVES, AYLTON JOSE; Calixto, Wesley Pacheco; DOMINGUES, ELDER GERALDO; DE LIMA, RODRIGO ALVES</autores>
+          <titulo>Wind's actions effects on photovoltaic panels installed on rooftop of buildings</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MAGALHAES, ALANA S.; BULHOES, JUNIO S.; FURRIEL, GEOVANNE P.; REIS, MARCIO R. C.; ALVES, AYLTON J.; SILVA, ALAN H. F.; CALIXTO, WESLEY P.</autores>
+          <titulo>Parametric regression in synchronous and induction generators</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>TSURUDA, LEANDRO KAZUAKI; RODRIGUES, LUANN; SALLES, DAYANE MARTINS; ALVES, AYLTON JOSE; Calixto, Wesley Pacheco; VITOR, LUIZA RODRIGUES; E SOUZA, MARCEL BRUNO SILVEIRA</autores>
+          <titulo>Energy efficiency, rationalization of energy and water consumption in popular houses</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SALLES, DAYANE MARTINS; DA SILVA, DEBORA PEREIRA; MATIAS, CALEBE ABRENHOSA; DOMINGUES, ELDER GERALDO; PINTO, LUANE SCHIOCHET; MILOGRANA, JUSSANA; Calixto, Wesley Pacheco</autores>
+          <titulo>Behavior of temperature in photovoltaic panels installed on surfaces with different albedo indexes</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARAUJO, VANESSA KELLY ALVES; DE ALMEIDA, SUZEL; DE OLIVEIRA, SERGIO BOTELHO; Calixto, Wesley Pacheco; FURRIEL, GEOVANNE PEREIRA; BARBOSA, DANNS PEREIRA</autores>
+          <titulo>Anaerobic digestion using residue of soybean processing: Biogas production and it is potential to generate energy</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ANICETO, BRUNO C. M.; VILELA, WAGNER A.; NETO, JOAO CAETANO; RODRIGUES, BRUNO U.; CARARO, JOSE A. G.; GOMES, VIVIANE M.; SILVA, ALAN H. F.; FREITAS, JOSE L.; SILVA, DANIEL C.; GOMES, FLAVIO A.; SANTOS, PAULO V.; NIELSON, RAFAEL; REIS, MARCIO R. C.; GALVAO, NATALIA K. M.; ALVES, AYLTON J.; SILVA, LAIS F. A.; CALIXTO, WESLEY P.</autores>
+          <titulo>Calculation and analysis of voltage violation problem on electricity distribution networks</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, BRUNNA CAROLINNE ROCHA; FURRIEL, GEOVANNE PEREIRA; PACHECO, WESLEY CALIXTO; BULHOES, JUNIO SANTOS</autores>
+          <titulo>Methodology and comparison of devices for recognition of sign language characters</titulo>
+          <nome_evento>2017 18th International Scientific Conference on Electric Power Engineering (EPE)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CARARO, J. A. G.; SILVA, A. H. F.; ANICETO, B. C. M.; REIS, M. R. C.; RODRIGUES, B. U.; GALVAO, NATALIA K. M.; VILELA JUNIOR, W. A.; CALIXTO, W. P.</autores>
+          <titulo>Otimização da inserção de geração distribuída fotovoltaica em rede de distribuição de energia</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SANTOS NETO, A. S.; CALIXTO, W. P.</autores>
+          <titulo>Aplicação da modelagem de equações estruturais para avaliação da satisfação dos alunos de engenharia de produção segundo ENADE 2011</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MARTINS, D. W. P.; SILVA, D. J. R.; CALIXTO, W. P.</autores>
+          <titulo>Aparato para ensaio automático de sedimentação e análise granulométrica</titulo>
+          <nome_evento>Congresso de Pesquisa, Ensino e Extensão</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ALELUIA, LEOVIR CARDOSO; DA SILVA MAGALHAES, ALANA; SILVA, ALAN HENRIQUE FERREIRA; CALIXTO, WESLEY P.; ALVES, AYLTON JOSE; MATIAS, CALEBE ABRENHOSA; DOMINGUES, ELDER GERALDO; DOMINGOS, JOSE LUIZ</autores>
+          <titulo>Attenuation methodology for torque oscillations in synchronous machine</titulo>
+          <nome_evento>2017 IEEE URUCON</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ALELUIA, LEOVIR CARDOSO; MAGALHAES, ALANA; SILVA, ALAN HENRIQUE FERREIRA; CALIXTO, WESLEY P.; ALVES, AYLTON JOSE; MATIAS, CALEBE ABRENHOSA; DOMINGUES, ELDER GERALDO; DOMINGOS, JOSE LUIZ</autores>
+          <titulo>AC components insertion into rotor of synchronous generator for damping of harmonics on current in bar</titulo>
+          <nome_evento>2017 IEEE URUCON</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE MORAES SANTOS, LICINIO; ALVES, AYLTON JOSE; SALLES, DAYANE MARTINS; MATIAS, CALEBE ABRENHOSA; DOMINGOS, JOSE LUIS; DOMINGUES, ELDER GERALDO; Calixto, Wesley Pacheco</autores>
+          <titulo>Technical analysis of the application of water in the improvement of the electrical efficiency in photovoltaic panels</titulo>
+          <nome_evento>2017 IEEE URUCON</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FARIA, A. F.; DOMINGOS, J. L.; JUNIOR, J. A.; DOMINGUES, E. G.; ALVES, A. J.; CALIXTO, W. P.; FERREIRA, L. G. G. B.</autores>
+          <titulo>Energy efficiency and renewable energy: Energy, economics and environment gains</titulo>
+          <nome_evento>2017 IEEE URUCON</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DA SILVA, KRISTINNE RODRIGUES; DOMINGOS, JOSE LUIS; ALVES, AYLTON JOSE; DOMINGUES, ELDER GERALDO; Calixto, Wesley Pacheco; FERREIRA, LUIZ GUILHERME GONZAGA BORBA</autores>
+          <titulo>Analysis of the capacity of electricity production through photovoltaic panels installation on the roofs of the IFG  Câmpus Águas Lindas</titulo>
+          <nome_evento>2017 IEEE URUCON</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MEDEIROS, GIORDANI PACIFICO; STACH, AIRON HERBERT MOREIRA; COSTA, ALESSANDRO NUNES; PINTO, LUANE SCHIOCHET; DOMINGUES, ELDER GERALDO; NETO, DAYWES PINHEIRO; Calixto, Wesley Pacheco; TSCHUDIN, MARTIN HEINZ EUGEN</autores>
+          <titulo>Technical and economic feasibility of using microturbines for the energy utilization of landfill gas</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE MELO, ERICKSSEN B.; DE MELO, GILBERTO; CALIXTO, WESLEY P.; REIS, MARCIO R. C.</autores>
+          <titulo>An application of genetic algorithm and the serial schedule generation scheme for solving the Resource-Constrained Project Scheduling Problem</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, VIVIANE M.; ASSIS, ALFREDO O.; MATIAS, CALEBE A.; SARAIVA, JULYANA P.; GOMES, FLAVIO A.; WAINER, GABRIEL A.; LIMA, BEATRIZ S.; MAGALHAES, ALANA S.; CALIXTO, WESLEY P.; FLORES, PAULO H. R.; BULHOES, JUNIO S.</autores>
+          <titulo>Analytical method for calculating the sensitivity index of system parameters</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CASTRO, ANTONIO P.; CALIXTO, WESLEY P.; GOMES, VIVIANE M.; VEIGA, ERNESTO F.; SILVA, LAIS F. A.; CASTRO, LAYZA L. OLIVEIRA P.; BARBOSA, JOSE LUIZ FERRAZ; CAMPOS, PEDRO H. M.</autores>
+          <titulo>Ontology applied in the judicial sentences</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, CLEBES A.; OLIVEIRA, MARCELA N.; CALIXTO, WESLEY P.; SANTOS, LUCIANO E. B.; BARBOSA, JOSE LUIZ F.; SILVA, DANILO F. A.</autores>
+          <titulo>Simulation and minimization of waiting time in rows of elevators of public buildings</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE MELO, GILBERTO; OLIVEIRA, SANDERSON M.; FERREIRA, CINTIA C.; FILHO, ENIO P. VASCONCELOS; CALIXTO, WESLEY P.; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Evaluation techniques of machine learning in task of reprovation prediction of technical high school students</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MAGALHAES, ALANA S.; BULHOES, JUNIO S.; MATIAS, CALEBE A.; SILVA, ALAN H. F.; FURRIEL, GEOVANNE P.; REIS, MARCIO R. C.; WAINER, GABRIEL A.; GOMES, VIVIANE M.; CALIXTO, WESLEY P.; ALVES, AYLTON J.</autores>
+          <titulo>Sensitivity analysis of the synchronous generation repowering system in parallel with induction generator</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, BRUNNA; CALIXTO, WESLEY; FURRIEL, GEOVANNE</autores>
+          <titulo>Devices analysis and artificial neural network parameters for sign language recognition</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>REZENDE, KAREN K. M.; RODRIGUES, LUANN; CAMPOS, PEDRO H. M.; CALIXTO, WESLEY P.; FURRIEL, GEOVANNE P.</autores>
+          <titulo>Technique development to improve electrical grounding systems performance</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PINHEIRO-NETO, DAYWES; DOMINGUES, ELDER G.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Investment risk analysis for small hydro power plants in the short term market in Brazil</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>LINO, ATTYLA F. S.; SILVA, BRUNNA C. R.; ROCHA, DANILO P. C.; FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.</autores>
+          <titulo>Performance of haar and LBP features in cascade classifiers to whiteflies detection and counting</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GANZAROLI, CLEBER A.; COUTO, LUIZ A. DO; NETO, DAYWES P.; DE CARVALHO, DOUGLAS F.; DIAS, RAFAEL N. H. M.; CALIXTO, WESLEY P.</autores>
+          <titulo>Nonlinear practical model based predictive control: Study case with DC motor</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>ARAJO, WANDERSON R. H.; REIS, MARCIO R. C.; CALIXTO, WESLEY P.; WAINER, GABRIEL A.; MAGALHES, ALANA S.; GOMES, FLAVIO A.</autores>
+          <titulo>Nonlinear simulation methodology for switched reluctance machine using induction profile found by parametric regression</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>TSURUDA, LEANDRO KAZUAKI; Calixto, Wesley Pacheco; ALVES, AYLTON JOSE; VITOR, LUIZA R.; SOUZA, MARCEL B. S. E</autores>
+          <titulo>Evaluations of energy efficiency and economic impact of the application of retrofit lighting in popular housing</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CARARO, JOSE A. G.; SILVA, ALAN H. F.; ANICETO, BRUNO C.; REIS, MARCIO R. C.; RODRIGUES, BRUNO U.; GALVAO, NATALIA K. M.; VILELA, WAGNER A.; NETO, JOAO CAETANO; CALIXTO, WESLEY P.</autores>
+          <titulo>Optimizing of the insertion of distributed generation into a power distribution network</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BULHOES, JUNIO S.; ASSIS, ALFREDO O.; MARTINS, CRISTIANE L.; FURRIEL, GEOVANNE P.; SILVA, BRUNNA C. R.; RODRIGUES, LUANN; REIS, MARCIO R. C.; CALHEIROS, DEBORA F.; OLIVEIRA, MARCIA D.; CALIXTO, WESLEY P.</autores>
+          <titulo>Gap filling in time series: A new methodology applying spectral analysis and system identification</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FURRIEL, GEOVANNE P.; MATIAS, CALEBE A.; CALIXTO, WESLEY P.; OLIVEIRA, SERGIO B.; DA SILVA, JOSE G.; NARCISO, MARCELO G.</autores>
+          <titulo>Acoustics applied in precision agriculture</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, ALAN H. F.; SILVA, UYARA F.; CALIXTO, WESLEY P.; MAGALHAES, ALANA S.; ALVES, AYLTON J.</autores>
+          <titulo>Conformal mapping applied to encoding and decoding of images</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, LAIS F. A.; DA SILVA, MICHELLE C.; ALVES, AYLTON J.; REIS, MARCIO R. C.; BULHOES, JUNIO S.; COSTA, RODRIGO E.; SILVA, BRUNNA C. R.; ALEIXO, EVERTON L.; GOMES, VIVIANE M.; CALIXTO, WESLEY P.</autores>
+          <titulo>Socioeconomic, scientific and technological indicators as parameters for prediction model</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, JOSE LUIZ F.; FURRIEL, GEOVANNE P.; CALIXTO, WESLEY P.</autores>
+          <titulo>Improved optimization methodology for high power LED matrix luminaire</titulo>
+          <nome_evento>2017 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SOUZA, LUIS A. P.; SILVA, CARLOS L. B.; CALIXTO, WESLEY P.</autores>
+          <titulo>Optimized setting of directional overcurrent relays via genetic algorithm</titulo>
+          <nome_evento>2018 Simposio Brasileiro de Sistemas Eletricos (SBSE)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BULHOES, JUNIO S.; MARTINS, CRISTIANE L.; REIS, MARCIO R.C.; OLIVEIRA, MARCIA D.; CALHEIROS, DEBORA F.; CALIXTO, WESLEY P.</autores>
+          <titulo>Indirect Prediction System That Uses Other Predictions of Correlated Variables</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BULHOES, JUNIO S.; MARTINS, CRISTIANE L.; REIS, MARCIO R. C.; OLIVEIRA, MARCIA D.; CALHEIROS, DEBORA F.; CALIXTO, WESLEY P.</autores>
+          <titulo>Predicting System for Flooded Areas Developed with MLP-Type Neural Network</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>BARBOSA, JOSE LUIZ F.; ALVES, AYLTON J.; BARBOSA, ANA CLARA O. F.; FERRAZ, RAFAEL S.; CALIXTO, WESLEY P.</autores>
+          <titulo>Lighting Simulation and Validation for High Power LED Matrix Luminaire</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, PEDRO H.G.; NETO, ANTONIO P.A.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Influence of the Inner Surface in Thermoelectric Waste Heat Recovery Ducts</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>GOMES, PEDRO H. G.; NETO, ANTONIO P. A.; ALVES, AYLTON J.; CALIXTO, WESLEY P.</autores>
+          <titulo>Influence of Finishing and Contact Pressure on Thermal Conduction of Thermoelectric Generator</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>PAIVA, JOAO R.B.; GOMES, VIVIANE M.; REIS, MARCIO R.C.; WAINER, GABRIEL; CALIXTO, WESLEY P.</autores>
+          <titulo>Relationship Between Risk and Complexity in System Using Connection Based Metric</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>P. SOUZA, LUIS A.; B. SILVA, CARLOS L.; CALIXTO, WESLEY P.</autores>
+          <titulo>Optimized Coordination of Directional Overcurrent Relays Using Genetic Algorithm</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>TSURUDA, LEANDRO KAZUAKI; VITOR, LUIZA R.; S. E SOUZA, MARCEL B.; Calixto, Wesley Pacheco; DA CUNHA REIS, MARCIO R.; P. FONSECA, YARA V.</autores>
+          <titulo>Evaluation of Technologies to Reduce Energy and Water Consumption in Popular Housing</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MATIAS, CALEBE ABRENHOSA; FURRIEL, GEOVANNE PEREIRA; SANTOS, LICINIO MORAES; Calixto, Wesley Pacheco; F. BARBOSA, JOSE LUIZ; DE OLIVEIRA, SERGIO BOTELHO; ALVES, AYLTON JOSE</autores>
+          <titulo>Optimized Solar Simulator Structure for Uniform Irradiance Distribution</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MARTINS, DANIEL; PACHECO, WESLEY; DAMIN, VIRGINIA</autores>
+          <titulo>Device for Automatic Particle Size Analysis and the of Sedimentation Using Pattern Recognition</titulo>
+          <nome_evento>2018 IEEE International Conference on Environment and Electrical Engineering and 2018 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MELO, GILBERTO DE; VIEIRA, SILVIO L.; CALIXTO, WESLEY P.</autores>
+          <titulo>Conformal Mapping applied in coding and decoding of audio signal</titulo>
+          <nome_evento>2018 IEEE International Conference on Automation/XXIII Congress of the Chilean Association of Automatic Control (ICAACCA)</nome_evento>
+          <ano>2018</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SOUZA, LUIS A. P.; SILVA, CARLOS L. B.; CALIXTO, WESLEY P.</autores>
+          <titulo>Optimization of directional relay adjustments using heuristic and deterministic method</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>TSURUDA, LEANDRO KAZUAKI; VITOR, LUIZA RODRIGUES; DE CASTRO FURTADO, BERTHIE; BORBA FERREIRA, LUIZ GUILHERME G.; MENDES MARTINS, ANDRE; PACHECO CALIXTO, WESLEY</autores>
+          <titulo>Autonomous water consumption meter for evaluation of sustainable technologies in popular housing</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>FILHO, ANTONIO SILVA; SILVA, JOSE R. S.; SILVA, CARLOS B.; SOUZA, LUIS A.; CALIXTO, WESLEY; BRITO, LEONARDO</autores>
+          <titulo>Analysis of plant root system influence on electrical properties of the soil</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>SILVA, CLEBES ANDRE; SILVA, DANILO FERNANDO A.; VITOR, LUIZA R.; NETO, DAYWES PINHEIRO; KAZU, LEANDRO; Calixto, Wesley Pacheco</autores>
+          <titulo>Modeling, simulation and optimization of people traffic in elevators</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>MARTINS, ANDRE MENDES; GUIMARAES MEDEIROS, CARLOS AUGUSTO; DOMINGOS, JOSE LUIS; REIS, MARCIO RODRIGUES; PACHECO, WESLEY CALIXTO; DE AQUINO GOMES, RAPHAEL</autores>
+          <titulo>Minimization of the electricity bill of Brazilian consumers with PV system through the optimization of contracting demand and the orientation of photovoltaic panels</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>CARARO, JOSE A. G.; SILVA, ALAN H. F.; NETO, JOAO CAETANO; REIS, MARCIO R. C.; CALIXTO, WESLEY P.</autores>
+          <titulo>Methodology for voltage adequacy using photovoltaic distributed generation</titulo>
+          <nome_evento>2019 IEEE International Conference on Environment and Electrical Engineering and 2019 IEEE Industrial and Commercial Power Systems Europe (EEEIC / I&amp;CPS Europe)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+        <trabalho_completo>
+          <doi></doi>
+          <autores>DE GODOI BRANDAO, JHONATHAN; Calixto, Wesley Pacheco</autores>
+          <titulo>N-Gram and TF-IDF for Feature Extraction on Opinion Mining of Tweets with SVM Classifier</titulo>
+          <nome_evento>2019 International Artificial Intelligence and Data Processing Symposium (IDAP)</nome_evento>
+          <ano>2019</ano>
+          <volume></volume>
+          <paginas>1-</paginas>
+        </trabalho_completo>
+    </trabalho_completo_congresso>
+    <resumo_expandido_congresso>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CALIXTO, W. P.; ALMEIDA, Norton Gomes de</autores>
+          <titulo>Processo Comunicação Quântica</titulo>
+          <nome_evento>Avaliação dos Programas de Iniciação Científica da Universidade Católica de Goiás</nome_evento>
+          <ano>2005</ano>
+          <volume>1</volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <titulo>Mapeamento das Linhas Equipotenciais e de Campo e Cálculo da Capacitância Utilizando a Transformação de Schwarz-Christoffel</titulo>
+          <nome_evento>III Congresso de Pesquisa, Ensino e Extensão da Universidade Federal de Goiás (III Conpeex - UFG)</nome_evento>
+          <ano>2006</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; SILVA, L. G. W.; BRITO, L. C.; Alves, A. C. B.</autores>
+          <titulo>Algoritmo Genético com Codificação Real Aplicado na Estimativa dos Parâmetros da Transformação Inversa de Schwarz-Christoffel</titulo>
+          <nome_evento>V FÓRUM ABEE ? Ciência, Tecnologia, Inovação e Responsabilidade Social</nome_evento>
+          <ano>2007</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; BRITO, L. C.; Alves, A. J.; Soares, M. G.; Silva, F. R. de A.; MARTINS NETO, L.</autores>
+          <titulo>Methodology for Tridimensional Geoelectrical Prospection</titulo>
+          <nome_evento>IV Simpósio Brasileiro de Sistemas Elétricos ? IV SBSE</nome_evento>
+          <ano>2012</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>Silva, F. R. de A.; ALVARENGA, B. P; CALIXTO, W. P.</autores>
+          <titulo>Modelo do Motor a Relutância Variável com Base na Energia Magnética Armazenada</titulo>
+          <nome_evento>IV Simpósio Brasileiro de Sistemas Elétricos ? IV SBSE</nome_evento>
+          <ano>2012</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CASTRO JUNIOR, A. P.; GOMES, V. M.; SILVA, L. F. A.; CAMPOS, P. H. M.; VEIGA, E. F.; CALIXTO, W. P.</autores>
+          <titulo>Ontology to Mining Judicial Sentence's Big Data</titulo>
+          <nome_evento>International Conference on Alive Engineering Education</nome_evento>
+          <ano>2017</ano>
+          <volume></volume>
+          <paginas>33-34</paginas>
+        </resumo_expandido>
+        <resumo_expandido>
+          <doi>http://dx.doi.org/</doi>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; SILVA, L. G. W.; BRITO, L. C.; Alves, A. C. B.</autores>
+          <titulo>Determinação dos Parâmetros da Transformação de Schwarz-Christoffel usando Algoritmo Genético</titulo>
+          <nome_evento>IV Congresso de Pesquisa, Ensino e Extensão da Universidade Federal de Goiás (IV Conpeex - UFG)</nome_evento>
+          <ano>2007</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+        </resumo_expandido>
+    </resumo_expandido_congresso>
+    <resumo_congresso>
+        <resumo>
+          <doi>http://dx.doi.org/</doi>
+          <autores>KLAFKE, M.; CORREA, P. F. L.; SANTANA, M. L.; CARNEIRO, M. A. D.; CALIXTO, W. P.; DINIZ, D. S.</autores>
+          <titulo>Association between response times and functional systems in multiple sclerosis</titulo>
+          <nome_evento>Congresso Brasileiro de Esclerose Múltipla e Neuromielite óptica</nome_evento>
+          <ano>2016</ano>
+          <volume></volume>
+          <paginas>-</paginas>
+          <numero></numero>
+        </resumo>
+    </resumo_congresso>
+    <producao_bibliografica>
+        <producao>
+          <titulo>Números e Biblioteconomia</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2002</ano>
+          <natureza>. (Apostila)</natureza>
+        </producao>
+        <producao>
+          <titulo>Processo de Comunicação Quântica</titulo>
+          <autores>CALIXTO, W. P.; ALMEIDA, Norton Gomes de</autores>
+          <ano>2004</ano>
+          <natureza>. (Relatório de iniciação cientifica)</natureza>
+        </producao>
+        <producao>
+          <titulo>Poluição Sonora</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2004</ano>
+          <natureza>. (Monografia de especialização)</natureza>
+        </producao>
+        <producao>
+          <titulo>Apostila para o Curso de Mecânica da Partícula</titulo>
+          <autores>CALIXTO, W. P.; Roberto Teruo Kobayashi; Lilian Rodrigues Rios</autores>
+          <ano>2008</ano>
+          <natureza>. (Apostila)</natureza>
+        </producao>
+        <producao>
+          <titulo>Curso de Informática para Engenharia com MatLab</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2008</ano>
+          <natureza>. (Apostila)</natureza>
+        </producao>
+    </producao_bibliografica>
+    <software_com_patente>
+        <software>
+          <titulo>ATERRA</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.</autores>
+          <ano>2009</ano>
+        </software>
+        <software>
+          <titulo>CARFAC</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <ano>2009</ano>
+        </software>
+        <software>
+          <titulo>SCGENE</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <ano>2009</ano>
+        </software>
+        <software>
+          <titulo>CODITRAC</titulo>
+          <autores>SILVA, A. H. F.; CALIXTO, W. P.; MAGALHAES, A. S.</autores>
+          <ano>2016</ano>
+        </software>
+        <software>
+          <titulo>QUALITAS</titulo>
+          <autores>VILELA JUNIOR, W. A.; RODRIGUES, B. U.; SILVA, D. C.; CAETANO NETO, J.; FREITAS JUNIOR, J. L.; SILVA, L. F. A.; SANTOS, P. V.; NIELSON, R.; CALIXTO, W. P.</autores>
+          <ano>2017</ano>
+        </software>
+        <software>
+          <titulo>CALC SURGE SWAB</titulo>
+          <autores>SILVA, U. F.; LEMOS, S.; SILVA, A. H. F.; CALIXTO, W. P.</autores>
+          <ano>2017</ano>
+        </software>
+        <software>
+          <titulo>SICAPROC</titulo>
+          <autores>SILVA, A. H. F.; MAGALHAES, A. S.; COUTO, M. S. D. S.; CALIXTO, W. P.</autores>
+          <ano>2017</ano>
+        </software>
+        <software>
+          <titulo>QUALITAS V2</titulo>
+          <autores>CALIXTO, W. P.; REIS, MARCIO R.C.; CARARO, J. A. G.; SILVA, D. A. P.; GOMES, F. A.; GOMES, V. M.; SANTOS, P. V.; CAETANO NETO, J.; VILELA JUNIOR, W. A.; NIELSON, R.</autores>
+          <ano>2019</ano>
+        </software>
+        <software>
+          <titulo>CoMaSoAp</titulo>
+          <autores>MELO JUNIOR, G.; CALIXTO, W. P.; VIEIRA, S. L.; SILVA, BRUNNA C. R.</autores>
+          <ano>2019</ano>
+        </software>
+        <software>
+          <titulo>SGI</titulo>
+          <autores>GOMES, V. M.; RODRIGUES, M. M.; GOMES, D. A.; FARIA, K. A. C.; MACEDO, C. J. A.; CAMPOS, P. H. M.; SOUZA, R. R.; CALIXTO, W. P.</autores>
+          <ano>2017</ano>
+        </software>
+    </software_com_patente>
+    <software_sem_patente>
+        <software>
+          <titulo>ESVC - Software para Estratificação do Solo em Várias Camadas</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.; NERYS, J. W. L.</autores>
+          <ano>2007</ano>
+        </software>
+        <software>
+          <titulo>Aterra - Software de Estratificação do Solo</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.</autores>
+          <ano>2009</ano>
+        </software>
+        <software>
+          <titulo>Stratum 3D - Software de Estratificação do Solo em 3D</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.</autores>
+          <ano>2010</ano>
+        </software>
+        <software>
+          <titulo>CARFAC</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <ano>2010</ano>
+        </software>
+        <software>
+          <titulo>SCGENE 1.0</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P</autores>
+          <ano>2010</ano>
+        </software>
+    </software_sem_patente>
+    <produto_tecnologico>
+        <produto>
+          <titulo>Stratum - Aparato para Estratificação do Solo em Camadas Tridimensionais</titulo>
+          <autores>CALIXTO, W. P.; MARTINS NETO, L.</autores>
+          <ano>2010</ano>
+        </produto>
+    </produto_tecnologico>
+    <trabalhos_tecnicos>
+        <trabalho>
+          <titulo>Aprendendo a Fazer</titulo>
+          <autores>CALIXTO, W. P.; SILVA, Clebes André da; SILVA, Adriano Fonseca da; FARIA, Jean Alves de</autores>
+          <ano>2003</ano>
+        </trabalho>
+        <trabalho>
+          <titulo>Robótica Educativa</titulo>
+          <autores>CALIXTO, W. P.; SILVA, Clebes André da; SILVA, Adriano Fonseca da; FARIA, Jean Alves de</autores>
+          <ano>2002</ano>
+        </trabalho>
+    </trabalhos_tecnicos>
+    <apresentacao_trabalho>
+        <trabalho_apresentado>
+          <titulo>Robótica Educativa</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2002</ano>
+          <natureza>VI Jornada de Produção Científica do Centro das universidades do Centro Oeste. (Comunicacao)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Poluição Sonora</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2004</ano>
+          <natureza>Congresso Nacional de Educação Ambiental. (Comunicacao)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Algoritmo Genético com Codificação Real Aplicado na Estimativa dos Parâmetros da Transformação Inversa de Schwarz-Christoffel</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; SILVA, L. G. W.; BRITO, L. C.; Alves, A. C. B.</autores>
+          <ano>2007</ano>
+          <natureza>V FÓRUM ABEE ? Ciência, Tecnologia, Inovação e Responsabilidade Social. (Simposio)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Determinação dos Parâmetros da Transformação de Schwarz-Christoffel Usando Algoritmo Genético</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2007</ano>
+          <natureza>IV Congresso de Pesquisa, Ensino e Extensão. (Congresso)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Obtenção da Condutividade Elétrica do Solo e suas Respectivas Espessuras Utilizando Heurística Moderna</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2010</ano>
+          <natureza>Congresso Brasileiro de Agricultura de Precisão. (Congresso)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Methodology for Tridimensional Geoelectrical Prospection</titulo>
+          <autores>CALIXTO, W. P.; ALVARENGA, B. P; BRITO, L. C.; Alves, A. J.; Soares, M. G.; Silva, F. R. de A.; MARTINS NETO, L.</autores>
+          <ano>2012</ano>
+          <natureza>IV Simpósio Brasileiro de Sistemas Elétricos ? IV SBSE. (Congresso)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Introdução ao Sistema a Eventos Discretos através de Ferramentas Computacionais</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>. (Conferencia)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Sistema a Eventos Discretos</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>. (Conferencia)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Secção Áurea: A Linguagem Matemática da Beleza</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>II Seminário da Engenharia de Controle e Automação. (Conferencia)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Otimização em Sistemas</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>1ª Semana de Eletrônica e Telecomunicações. (Conferencia)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Métodos de Otimização Aplicados a Sistemas Reais: processo de otimização heurístico</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>I Semana de Engenharia Elétrica do Instituto Unificado de Ensino Superior Objetivo. (Conferencia)</natureza>
+        </trabalho_apresentado>
+        <trabalho_apresentado>
+          <titulo>Processos de Otimização Utilizando Heurísticas Modernas</titulo>
+          <autores>CALIXTO, W. P.</autores>
+          <ano>2012</ano>
+          <natureza>I WorkShop do Programa de Pós-Graduação em Engenharia de Sistemas Eletrônicos. (Conferencia)</natureza>
+        </trabalho_apresentado>
+    </apresentacao_trabalho>
+    <orientacao_doutorado_concluido>
+        <tese>
+          <nome_aluno>Daywes Pinheiro Neto</nome_aluno>
+          <titulo_trabalho>Processo de otimização aplicada a análise de risco de investimento em geração de energia elétrica com fontes renováveis</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Tese de doutorado</tipo_de_orientacao>
+        </tese>
+        <tese>
+          <nome_aluno>Wanderson Rainer Hilário de Araújo</nome_aluno>
+          <titulo_trabalho>Potencialização do rendimento do gerador a relutância chaveado empregando técnica de rastreamento associada a controle de tensão otimizado</titulo_trabalho>
+          <ano>2020</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Tese de doutorado</tipo_de_orientacao>
+        </tese>
+        <tese>
+          <nome_aluno>Alana da Silva Magalhães</nome_aluno>
+          <titulo_trabalho>Repotencialização na operação paralela de gerador síncrono com gerador de indução</titulo_trabalho>
+          <ano>2020</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Tese de doutorado</tipo_de_orientacao>
+        </tese>
+        <tese>
+          <nome_aluno>Viviane Margarida Gomes</nome_aluno>
+          <titulo_trabalho>Complexidade natural de sistemas com base em análise de sensibilidade</titulo_trabalho>
+          <ano>2020</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Tese de doutorado</tipo_de_orientacao>
+        </tese>
+        <tese>
+          <nome_aluno>Marcio Rodrigues da Cunha Reis</nome_aluno>
+          <titulo_trabalho>Técnicas de acionamento e controle ótimo aplicados ao motor à relutância chaveado para maximizar o rendimento</titulo_trabalho>
+          <ano>2020</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Tese de doutorado</tipo_de_orientacao>
+        </tese>
+    </orientacao_doutorado_concluido>
+    <orientacao_mestrado_concluido>
+        <dissertacao>
+          <nome_aluno>José Luiz Ferraz Barbosa</nome_aluno>
+          <titulo_trabalho>Metodologia de Otimização de Lentes para Lâmpadas de LED</titulo_trabalho>
+          <ano>2013</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Antonio Marcelino da Silva Filho</nome_aluno>
+          <titulo_trabalho>Metodologia para correlacionar a umidade, compactação e a condutividade elétrica aparente do solo</titulo_trabalho>
+          <ano>2015</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Rafael da Silva Ferraz</nome_aluno>
+          <titulo_trabalho>Dispositivo para medição de impedância em sistemas de aterramentos elétricos em alta frequência</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Luciano Eduardo Braga dos Santos</nome_aluno>
+          <titulo_trabalho>Otimização do Atendimento Médico-Hospitalar Emergencial Utilizando Sistema a Eventos Discretos</titulo_trabalho>
+          <ano>2015</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Fundação de Amparo a Pesquisa do Estado de Goiás</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Márcio Rodrigues da Cunha Reis</nome_aluno>
+          <titulo_trabalho>Análise Comparativa de Métodos de Otimização Aplicados a Sintonia do Controlador PI</titulo_trabalho>
+          <ano>2015</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Pedro Henrique Garcia Gomes</nome_aluno>
+          <titulo_trabalho>Geometria de dutos de escape otimizada para aplicação na cogeração da produção de energia elétrica</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Alan Henrique Ferreira Silva</nome_aluno>
+          <titulo_trabalho>Aplicação de transformações conformes em codificação e decodificação de imagens</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Geovanne Pereira Furriel</nome_aluno>
+          <titulo_trabalho>Desenvolvimento e validação de aparelho automático para Medição da compactação do solo</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Marcelo Klafke</nome_aluno>
+          <titulo_trabalho>Identificação do grau de comprometimento neurossensório-motor utilizando tempo de resposta</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Thyago Gumeratto Pires</nome_aluno>
+          <titulo_trabalho>Cálculo de parâmetros de malhas de aterramento em geometrias não convencionais</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Uyara Ferreira Silva</nome_aluno>
+          <titulo_trabalho>Cálculo de geopressões utilizando transformação de domínio</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Ricardo Ferreira da Cunha</nome_aluno>
+          <titulo_trabalho>Aplicações das Transformações Conformes em Problemas Eletromagnéticos</titulo_trabalho>
+          <ano>2012</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Lais Fernanda Araujo Silva</nome_aluno>
+          <titulo_trabalho>Índices e indicadores socioeconômicos, científicos e tecnológicos como parâmetros para modelo de previsão</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento>Fundação de Amparo a Pesquisa do Estado de Goiás</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>João Ricardo Braga de Paiva</nome_aluno>
+          <titulo_trabalho>Métrica de complexidade em sistemas a eventos discretos</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>(IFG) Instituto Federal de Goiás</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Flávio Adalberto Gomes</nome_aluno>
+          <titulo_trabalho>Processo de otimização aplicado em método descritivo da análise de dados</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Douglas Freire de Carvalho</nome_aluno>
+          <titulo_trabalho>Sintonia de controlador preditivo não linear: análise comparativa com técnicas tradicionais</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Brunna Carolinne Rocha Silva</nome_aluno>
+          <titulo_trabalho>Desenvolvimento de tecnologia baseada em redes neurais artificiais para reconhecimento de gestos em língua de sinais</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Rafael Nunes Hidalgo Monteiro Dias</nome_aluno>
+          <titulo_trabalho>Análise comparativa de técnicas de controle Fuzzy e matriz dinâmica aplicadas à máquina de corrente contínua</titulo_trabalho>
+          <ano>2017</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Sérgio Alexandre Martins Arruda</nome_aluno>
+          <titulo_trabalho>Aplicação da otimização por exame de partículas com topologia multi-ring na estimação de parâmetros de linha de transmissão</titulo_trabalho>
+          <ano>2015</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>José Rodrigo dos Santos</nome_aluno>
+          <titulo_trabalho>Análise da influência de sistema radicular no solo através de método de prospecção geoelétrico</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Fabiana Fernandes Ferreira de Godoi</nome_aluno>
+          <titulo_trabalho>Utilização de método geoelétrico na produção de mapas para aplicação de insumos no solo</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Pedro Henrique Franco Moraes</nome_aluno>
+          <titulo_trabalho>Compensação síncrona em sistemas industriais submetidos a distorções harmônicas</titulo_trabalho>
+          <ano>2016</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento>Conselho Nacional de Desenvolvimento Científico e Tecnológico</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Bernardo Araujo Rodrigues</nome_aluno>
+          <titulo_trabalho>Corinda: heurísticas concorrentes para quebra de senhas</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>José Alberto Gobbes Cararo</nome_aluno>
+          <titulo_trabalho>Processo de otimização aplicada na adequação de tensão utilizando geração distribuída fotovoltaica</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Luiz Alberto do Couto</nome_aluno>
+          <titulo_trabalho>Implementação e análise das técnicas de controle por modos deslizantes e preditivo não linear</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Leandro Kazuaki Tsuruda</nome_aluno>
+          <titulo_trabalho>Análise de tecnologias sustentáveis instaladas em habitações populares</titulo_trabalho>
+          <ano>2019</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Carlos Daniel de Sousa Bezerra</nome_aluno>
+          <titulo_trabalho>Controle inteligente para maximização da geração de potência em termogeradores</titulo_trabalho>
+          <ano>2019</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Jhonathan de Godoi Brandão</nome_aluno>
+          <titulo_trabalho>Mineração de opinião em mídias sociais com aprendizado de máquina</titulo_trabalho>
+          <ano>2020</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Júnio Santos Bulhões</nome_aluno>
+          <titulo_trabalho>Metodologia de previsão utilizando identificação de sistemas aplicada a séries temporais</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Luis Antonio Paulino de Souza</nome_aluno>
+          <titulo_trabalho>Comparação entre métodos de otimização aplicados aos ajustes de relés direcionais de sobrecorrente</titulo_trabalho>
+          <ano>2019</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Calebe Abrenhosa Matias</nome_aluno>
+          <titulo_trabalho>Desenvolvimento de bancada para teste de eficiência energética em painéis fotovoltaicos</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Instituto Federal de Educação, Ciência e Tecnologia de Goiás</instituicao>
+          <agencia_de_fomento>COLOMBO</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Leovir Cardoso Aleluia Junior</nome_aluno>
+          <titulo_trabalho>Atenuação das componentes oscilantes de conjugado no gerador síncrono de polos salientes</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento></agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+        <dissertacao>
+          <nome_aluno>Daniel Warles Pereira Martins</nome_aluno>
+          <titulo_trabalho>Dispositivo para ensaio automático de sedimentação e análise granulométrica do solo</titulo_trabalho>
+          <ano>2018</ano>
+          <instituicao>Universidade Federal de Goiás</instituicao>
+          <agencia_de_fomento>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</agencia_de_fomento>
+          <tipo_de_orientacao>Dissertação de mestrado</tipo_de_orientacao>
+        </dissertacao>
+    </orientacao_mestrado_concluido>
+  </pesquisador>
 </curriculo_lattes>

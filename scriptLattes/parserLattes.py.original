@@ -132,7 +132,6 @@ class ParserLattes(HTMLParser):
     achouResumoExpandidoEmCongresso = None
     achouResumoEmCongresso = None
     achouArtigoAceito = None
-    achouApresentacaoDeTrabalho = None
     achouOutroTipoDeProducaoBibliografica = None
 
     achouSoftwareComPatente = None
@@ -141,6 +140,9 @@ class ParserLattes(HTMLParser):
     achouProcessoOuTecnica = None
     achouTrabalhoTecnico = None
     achouOutroTipoDeProducaoTecnica = None
+    achouApresentacaoDeTrabalho = None
+    achouCursoDeCurtaDuracaoMinistrado = None
+    achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
 
     achouPatente = None
     achouProgramaComputador = None
@@ -181,7 +183,6 @@ class ParserLattes(HTMLParser):
     listaResumoExpandidoEmCongresso = []
     listaResumoEmCongresso = []
     listaArtigoAceito = []
-    listaApresentacaoDeTrabalho = []
     listaOutroTipoDeProducaoBibliografica = []
 
     listaSoftwareComPatente = []
@@ -190,6 +191,9 @@ class ParserLattes(HTMLParser):
     listaProcessoOuTecnica = []
     listaTrabalhoTecnico = []
     listaOutroTipoDeProducaoTecnica = []
+    listaApresentacaoDeTrabalho = []
+    listaCursoDeCurtaDuracaoMinistrado = []
+    listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 
     listaPatente = []
     listaProgramaComputador = []
@@ -253,7 +257,6 @@ class ParserLattes(HTMLParser):
         self.listaResumoExpandidoEmCongresso = []
         self.listaResumoEmCongresso = []
         self.listaArtigoAceito = []
-        self.listaApresentacaoDeTrabalho = []
         self.listaOutroTipoDeProducaoBibliografica = []
 
         self.listaSoftwareComPatente = []
@@ -262,6 +265,9 @@ class ParserLattes(HTMLParser):
         self.listaProcessoOuTecnica = []
         self.listaTrabalhoTecnico = []
         self.listaOutroTipoDeProducaoTecnica = []
+        self.listaApresentacaoDeTrabalho = []
+        self.listaCursoDeCurtaDuracaoMinistrado = []
+        self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 
         self.listaPatente = []
         self.listaProgramaComputador = []
@@ -633,10 +639,6 @@ class ParserLattes(HTMLParser):
                                 self.listaArtigoAceito.append(iessimoItem)
                                 self.doi = ''
                                 self.relevante = 0
-
-                            if self.achouApresentacaoDeTrabalho:
-                                iessimoItem = ApresentacaoDeTrabalho(self.idMembro, self.partesDoItem, self.relevante)
-                                self.listaApresentacaoDeTrabalho.append(iessimoItem)
     
                             if self.achouOutroTipoDeProducaoBibliografica:
                                 iessimoItem = OutroTipoDeProducaoBibliografica(self.idMembro, self.partesDoItem,
@@ -669,6 +671,10 @@ class ParserLattes(HTMLParser):
                                 iessimoItem = OutroTipoDeProducaoTecnica(self.idMembro, self.partesDoItem,
                                                                          self.relevante)
                                 self.listaOutroTipoDeProducaoTecnica.append(iessimoItem)
+
+                            if self.achouApresentacaoDeTrabalho:
+                                iessimoItem = ApresentacaoDeTrabalho(self.idMembro, self.partesDoItem, self.relevante)
+                                self.listaApresentacaoDeTrabalho.append(iessimoItem)
 
                         if self.achouProducaoArtisticaCultural:
                             if self.achouOutraProducaoArtisticaCultural:
@@ -980,6 +986,15 @@ class ParserLattes(HTMLParser):
                     self.salvarItem = 1
                     self.achouSoftwareComPatente = 0
                     self.achouSoftwareSemPatente = 1
+                    self.achouProdutoTecnologico = 0
+                    self.achouProcessoOuTecnica = 0
+                    self.achouTrabalhoTecnico = 0
+                    self.achouOutroTipoDeProducaoTecnica = 0
+                if u'Apresentações de Trabalho'==dado:
+                    self.salvarItem = 1
+                    self.achouSoftwareComPatente = 0
+                    self.achouSoftwareSemPatente = 0
+                    self.achouApresentacaoDeTrabalhoTecnico = 1
                     self.achouProdutoTecnologico = 0
                     self.achouProcessoOuTecnica = 0
                     self.achouTrabalhoTecnico = 0

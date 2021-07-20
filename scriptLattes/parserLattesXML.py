@@ -47,6 +47,9 @@ from producoesTecnicas.produtoTecnologico import *
 from producoesTecnicas.outroTipoDeProducaoTecnica import *
 from producoesTecnicas.softwareComPatente import *
 from scriptLattes.patentesRegistros.patente import Patente
+from scriptLattes.producoesTecnicas.cursoDeCurtaDuracaoMinistrado import cursoDeCurtaDuracaoMinistrado
+from scriptLattes.producoesTecnicas.desenvolvimentoDeMaterialDidaticoOuInstrucional import \
+	DesenvolvimentoDeMaterialDidaticoOuInstrucional
 from scriptLattes.producoesTecnicas.processoOuTecnica import ProcessoOuTecnica
 from scriptLattes.producoesTecnicas.softwareSemPatente import SoftwareSemPatente
 
@@ -81,7 +84,6 @@ class ParserLattesXML(HTMLParser):
 	listaResumoExpandidoEmCongresso = []
 	listaResumoEmCongresso = []
 	listaArtigoAceito = []
-	listaApresentacaoDeTrabalho = []
 	listaOutroTipoDeProducaoBibliografica = []
 
 	listaSoftwareComPatente = []
@@ -90,6 +92,9 @@ class ParserLattesXML(HTMLParser):
 	listaProcessoOuTecnica = []
 	listaTrabalhoTecnico = []
 	listaOutroTipoDeProducaoTecnica = []
+	listaApresentacaoDeTrabalho = []
+	listaCursoDeCurtaDuracaoMinistrado = []
+	listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
 	listaProducaoArtistica = []
 
 	# Orientaççoes em andamento (OA)
@@ -119,7 +124,6 @@ class ParserLattesXML(HTMLParser):
 	achouResumoExpandidoEmCongresso = None #
 	achouResumoEmCongresso = None #
 	achouArtigoAceito = None #
-	achouApresentacaoDeTrabalho = None # 
 	achouOutroTipoDeProducaoBibliografica = None #
 
 	achouSoftware = None
@@ -129,6 +133,9 @@ class ParserLattesXML(HTMLParser):
 	achouProcessoOuTecnica = None
 	achouTrabalhoTecnico = None
 	achouOutroTipoDeProducaoTecnica = None
+	achouApresentacaoDeTrabalho = None
+	achouCursoDeCurtaDuracaoMinistrado = None
+	achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
 
 	achouPatente = None
 
@@ -163,7 +170,6 @@ class ParserLattesXML(HTMLParser):
 		self.listaResumoExpandidoEmCongresso = []
 		self.listaResumoEmCongresso = []
 		self.listaArtigoAceito = []
-		self.listaApresentacaoDeTrabalho = []
 		self.listaOutroTipoDeProducaoBibliografica = []
 
 		self.listaSoftwareComPatente = []
@@ -172,6 +178,10 @@ class ParserLattesXML(HTMLParser):
 		self.listaProcessoOuTecnica = []
 		self.listaTrabalhoTecnico = []
 		self.listaOutroTipoDeProducaoTecnica = []
+		self.listaApresentacaoDeTrabalho = []
+		self.listaCursoDeCurtaDuracaoMinistrado = []
+		self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional = []
+
 		self.listaProducaoArtistica = []
 
 		# Patentes e registros
@@ -321,14 +331,6 @@ class ParserLattesXML(HTMLParser):
 			self.paginas  = ''
 			self.doi      = ''
 
-		if tag=='apresentacao-de-trabalho':
-			self.achouApresentacaoDeTrabalho = 1
-			self.autoresLista = list(['']*150)
-			self.autores  = '' 
-			self.titulo   = '' 
-			self.ano      = '' 
-			self.natureza = '' 
-
 		if tag=='outra-producao-bibliografica':
 			self.achouOutroTipoDeProducaoBibliografica = 1
 			self.autoresLista = list(['']*150)
@@ -346,26 +348,6 @@ class ParserLattesXML(HTMLParser):
 			self.autores  = ''
 			self.titulo   = ''
 			self.ano      = ''
-			self.natureza = ''
-
-		# ----------------------------------------------------------------------
-
-		if tag == 'apresentacao-de-trabalho':
-			self.achouOutroTipoDeProducaoTecnica = 1
-			self.autoresLista = list([''] * 150)
-			self.autores = ''
-			self.titulo = ''
-			self.ano = ''
-			self.natureza = ''
-
-		# ----------------------------------------------------------------------
-
-		if tag == 'trabalho-tecnico':
-			self.achouTrabalhoTecnico = 1
-			self.autoresLista = list([''] * 150)
-			self.autores = ''
-			self.titulo = ''
-			self.ano = ''
 			self.natureza = ''
 
 		# ----------------------------------------------------------------------
@@ -406,6 +388,36 @@ class ParserLattesXML(HTMLParser):
 			self.autores  = ''
 			self.titulo   = ''
 			self.ano      = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag=='apresentacao-de-trabalho':
+			self.achouApresentacaoDeTrabalho = 1
+			self.autoresLista = list(['']*150)
+			self.autores  = ''
+			self.titulo   = ''
+			self.ano      = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'curso-de-curta-duracao-ministrado':
+			self.achouCursoDeCurtaDuracaoMinistrado = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
+			self.natureza = ''
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'desenvolvimento-de-material-didatico-ou-instrucional':
+			self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 1
+			self.autoresLista = list([''] * 150)
+			self.autores = ''
+			self.titulo = ''
+			self.ano = ''
 			self.natureza = ''
 
 		# ----------------------------------------------------------------------
@@ -657,30 +669,6 @@ class ParserLattesXML(HTMLParser):
 				self.paginas = pagina1+'-'+pagina2
 
 		# ----------------------------------------------------------------------
-		if self.achouApresentacaoDeTrabalho:
-			if tag=='autores':
-				for name, value in attributes:
-					if name=='nome-para-citacao':
-						autorNome = value.split(';')[0]
-					if name=='ordem-de-autoria':
-						autorOrdem = value
-				self.autoresLista[int(autorOrdem)] = autorNome
-
-			if tag=='dados-basicos-da-apresentacao-de-trabalho':
-				for name, value in attributes:
-					if name=='titulo':
-						self.titulo = value
-					if name=='ano':
-						self.ano = value
-					if name=='natureza':
-						self.natureza = value.capitalize()
-
-			if tag=='detalhamento-da-apresentacao-de-trabalho':
-				for name, value in attributes:
-					if name=='nome-do-evento':
-						self.nomeEvento = value
-
-		# ----------------------------------------------------------------------
 		if self.achouOutroTipoDeProducaoBibliografica:
 			if tag=='autores':
 				for name, value in attributes:
@@ -736,26 +724,6 @@ class ParserLattesXML(HTMLParser):
 						autorOrdem = value
 				self.autoresLista[int(autorOrdem)] = autorNome
 
-			if tag == 'dados-basicos-de-apresentacao-de-trabalho':
-				for name, value in attributes:
-					if name == 'titulo':
-						self.titulo = value
-					if name == 'ano':
-						self.ano = value
-					if name == 'natureza':
-						self.natureza = value.capitalize()
-
-		# ----------------------------------------------------------------------
-
-		if self.achouOutroTipoDeProducaoTecnica:
-			if tag == 'autores':
-				for name, value in attributes:
-					if name == 'nome-para-citacao':
-						autorNome = value.split(';')[0]
-					if name == 'ordem-de-autoria':
-						autorOrdem = value
-				self.autoresLista[int(autorOrdem)] = autorNome
-
 			if tag == 'dados-basicos-de-cursos-curta-duracao-ministrado':
 				for name, value in attributes:
 					if name == 'titulo':
@@ -767,6 +735,30 @@ class ParserLattesXML(HTMLParser):
 				for name, value in attributes:
 					if name == 'instituicao-promotora-do-curso':
 						self.instituicao = value
+
+		# ----------------------------------------------------------------------
+		if self.achouApresentacaoDeTrabalho:
+			if tag=='autores':
+				for name, value in attributes:
+					if name=='nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name=='ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+			if tag=='dados-basicos-da-apresentacao-de-trabalho':
+				for name, value in attributes:
+					if name=='titulo':
+						self.titulo = value
+					if name=='ano':
+						self.ano = value
+					if name=='natureza':
+						self.natureza = value.capitalize()
+
+			if tag=='detalhamento-da-apresentacao-de-trabalho':
+				for name, value in attributes:
+					if name=='nome-do-evento':
+						self.nomeEvento = value
 
 		# ----------------------------------------------------------------------
 
@@ -817,6 +809,8 @@ class ParserLattesXML(HTMLParser):
 					if name == 'ordem-de-autoria':
 						autorOrdem = value
 				self.autoresLista[int(autorOrdem)] = autorNome
+
+			self.achouSoftwareSemPatente = 1
 
 			if tag == 'registro-ou-patente':
 				self.achouSoftwareComPatente = 1
@@ -870,6 +864,54 @@ class ParserLattesXML(HTMLParser):
 					#	self.titulo = value
 					if name == 'instituicao-financiadora':
 						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+		# ----------------------------------------------------------------------
+
+		if self.achouCursoDeCurtaDuracaoMinistrado:
+			if tag == 'dados-basicos-de-cursos-curta-duracao-ministrado':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-de-cursos-curta-duracao-ministrado':
+				for name, value in attributes:
+					# if name == 'finalidade':
+					#	self.titulo = value
+					if name == 'instituicao-promotora-do-curso':
+						self.instituicao = value
+
+			if tag == 'autores':
+				for name, value in attributes:
+					if name == 'nome-para-citacao':
+						autorNome = value.split(';')[0]
+					if name == 'ordem-de-autoria':
+						autorOrdem = value
+				self.autoresLista[int(autorOrdem)] = autorNome
+
+		# ----------------------------------------------------------------------
+
+		if self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional:
+			if tag == 'dados-basicos-do-material-didatico-ou-instrucional':
+				for name, value in attributes:
+					if name == 'titulo':
+						self.titulo = value
+					if name == 'ano':
+						self.ano = value
+
+			if tag == 'detalhamento-do-material-didatico-ou-instrucional':
+				for name, value in attributes:
+					 if name == 'finalidade':
+						self.finalidade = value
 
 			if tag == 'autores':
 				for name, value in attributes:
@@ -1093,23 +1135,6 @@ class ParserLattesXML(HTMLParser):
 			pub.chave   = self.autores
 			pub.doi     = 'http://dx.doi.org/'+self.doi if not self.doi==0 else ''
 			self.listaArtigoAceito.append(pub)
-
-		# ----------------------------------------------------------------------
-		if tag=='apresentacao-de-trabalho':
-			self.achouApresentacaoDeTrabalho = 0
-
-			for aut in self.autoresLista:
-				if not aut=='':
-					self.autores+= aut +"; "
-			self.autores = self.autores.strip("; ")
-
-			pub = ApresentacaoDeTrabalho(self.idMembro)
-			pub.autores = self.autores
-			pub.titulo  = stripBlanks(self.titulo)
-			pub.ano     = self.ano
-			pub.natureza= self.nomeEvento+'. ('+self.natureza+')'
-			pub.chave   = self.autores
-			self.listaApresentacaoDeTrabalho.append(pub)
 		
 		# ----------------------------------------------------------------------
 		if tag=='outra-producao-bibliografica':
@@ -1148,42 +1173,6 @@ class ParserLattesXML(HTMLParser):
 
 		# ----------------------------------------------------------------------
 
-		if tag == 'apresentacao-de-trabalho':
-			self.achouOutroTipoDeProducaoTecnica = 0
-
-			for aut in self.autoresLista:
-				if not aut == '':
-					self.autores += aut + "; "
-			self.autores = self.autores.strip("; ")
-
-			pub = ApresentacaoDeTrabalho(self.idMembro)
-			pub.autores = self.autores
-			pub.titulo = stripBlanks(self.titulo)
-			pub.ano = self.ano
-			pub.natureza = self.nomeEvento + '. (' + self.natureza + ')'
-			pub.chave = self.autores
-			self.listaOutroTipoDeProducaoTecnica.append(pub)
-
-		# ----------------------------------------------------------------------
-
-		if tag == 'curso-de-curta-duracao-ministrado':
-			self.achouOutroTipoDeProducaoTecnica = 0
-
-			for aut in self.autoresLista:
-				if not aut == '':
-					self.autores += aut + "; "
-			self.autores = self.autores.strip("; ")
-
-			pub = ApresentacaoDeTrabalho(self.idMembro)
-			pub.autores = self.autores
-			pub.titulo = stripBlanks(self.titulo)
-			pub.ano = self.ano
-			pub.natureza = self.nomeEvento + '. (' + self.natureza + ')'
-			pub.chave = self.autores
-			self.listaOutroTipoDeProducaoTecnica.append(pub)
-
-		# ----------------------------------------------------------------------
-
 		if tag == 'trabalho-tecnico':
 			self.achouTrabalhoTecnico = 0
 
@@ -1204,7 +1193,6 @@ class ParserLattesXML(HTMLParser):
 
 		if tag == 'software':
 			self.achouSoftware = 0
-			#self.achouSoftwareComPatente = 0
 
 			for aut in self.autoresLista:
 				if not aut == '':
@@ -1219,6 +1207,7 @@ class ParserLattesXML(HTMLParser):
 				pub.chave = self.autores
 				self.listaSoftwareComPatente.append(pub)
 				self.achouSoftwareComPatente = 0
+				self.achouSoftwareSemPatente = 0
 
 			if self.achouSoftwareSemPatente:
 				pub = SoftwareSemPatente(self.idMembro)
@@ -1227,6 +1216,7 @@ class ParserLattesXML(HTMLParser):
 				pub.ano = self.ano
 				pub.chave = self.autores
 				self.listaSoftwareSemPatente.append(pub)
+				self.achouSoftwareSemPatente = 0
 
 		# ----------------------------------------------------------------------
 
@@ -1261,6 +1251,57 @@ class ParserLattesXML(HTMLParser):
 			pub.ano = self.ano
 			pub.chave = self.autores
 			self.listaProcessoOuTecnica.append(pub)
+
+		# ----------------------------------------------------------------------
+		if tag=='apresentacao-de-trabalho':
+			self.achouApresentacaoDeTrabalho = 0
+
+			for aut in self.autoresLista:
+				if not aut=='':
+					self.autores+= aut +"; "
+			self.autores = self.autores.strip("; ")
+
+			pub = ApresentacaoDeTrabalho(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo  = stripBlanks(self.titulo)
+			pub.ano     = self.ano
+			pub.natureza= self.nomeEvento+'. ('+self.natureza+')'
+			pub.chave   = self.autores
+			self.listaApresentacaoDeTrabalho.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'curso-de-curta-duracao-ministrado':
+			self.achouCursoDeCurtaDuracaoMinistrado = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = cursoDeCurtaDuracaoMinistrado(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaCursoDeCurtaDuracaoMinistrado.append(pub)
+
+		# ----------------------------------------------------------------------
+
+		if tag == 'desenvolvimento-de-material-didatico-ou-instrucional':
+			self.achouDesenvolvimentoDeMaterialDidaticoOuInstrucional = 0
+
+			for aut in self.autoresLista:
+				if not aut == '':
+					self.autores += aut + "; "
+			self.autores = self.autores.strip("; ")
+
+			pub = DesenvolvimentoDeMaterialDidaticoOuInstrucional(self.idMembro)
+			pub.autores = self.autores
+			pub.titulo = stripBlanks(self.titulo)
+			pub.ano = self.ano
+			pub.chave = self.autores
+			self.listaDesenvolvimentoDeMaterialDidaticoOuInstrucional.append(pub)
 
 		# ----------------------------------------------------------------------
 

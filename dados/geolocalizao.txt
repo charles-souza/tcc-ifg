@@ -72,10 +72,9 @@ brasil+maranhao+Sao+Luis+65075110	-2.4979370	-44.2928951
 brasil+goias+Goiania+74605170	-16.6793235	-49.2425986
 brasil+bahia+Salvador+40170130	-13.0044362	-38.5027932
 brasil+bahia+Guanambi+46430000	-14.2193381	-42.7796907
-brasil+rio+de+janeiro+Volta+Redonda+27213415	-22.5060001	-44.0841459
 brasil+minas+gerais+Belo+Horizonte+30140111	-19.9357512	-43.9293784
 brasil+paraiba+Cajazeiras+58900000	-6.8897071	-38.5612185
-brasil+santa+catarina+Balneario+de+Camboriu+88337300	-27.0180648	-48.5837799
+brasil+sao+paulo+Sao+Paulo+01454010	-23.5823683	-46.6867636
 brasil+sao+paulo+Sao+Paulo+04534004	-23.5859452	-46.6795871
 brasil+rio+grande+do+sul+Porto+Alegre+90040060	-30.0331136	-51.2189123
 brasil+piaui+Teresina+64049000	-5.0696453	-42.8003978
@@ -122,6 +121,7 @@ brasil+rio+grande+do+sul+Porto+Alegre+90003035	-30.0049222	-51.2056567
 brasil+sao+paulo+Campinas+13070115	-22.8947424	-47.0930392
 brasil+minas+gerais+Teofilo+Otoni+39803371	-17.8876316	-41.4978962
 brasil+rio+de+janeiro+Rio+de+Janeiro+22240040	-22.9325795	-43.1848595
+brasil+santa+catarina+Balneario+de+Camboriu+88337300	-27.0180648	-48.5837799
 brasil+sao+paulo+Sao+Paulo+05427000	-23.5648444	-46.6955237
 brasil+rio+grande+do+norte+Macaiba+59280000	-5.8562141	-35.3551905
 brasil+parana+Londrina+86051990	-23.3181690	-51.1538593
@@ -224,7 +224,7 @@ brasil+pernambuco+Recife+54400010	-8.1523991	-34.9203383
 brasil+para+Belem+66040020	-1.4521580	-48.4775893
 brasil+parana+Curitiba+81531990	-25.3923651	-49.2395867
 brasil+rio+de+janeiro+Rio+de+Janeiro+20230240	-22.9119999	-43.1927344
-brasil+rio+grande+do+norte+Mossoro+59607360	-5.1890631	-37.3684110
+brasil+sao+paulo+Sao+Paulo+04301902	-23.6455772	-46.6198608
 brasil+rio+de+janeiro+Campos+dos+Goytacazes+28013602	-21.7608463	-41.3050285
 brasil+rio+grande+do+sul+Hospital+de+Clinicas+Porto+Alegre+porto+alegre	-30.0386113	-51.2066262
 brasil+mato+grosso+do+sul+Dourados+79800000	-22.2174314	-54.7947701
@@ -292,6 +292,7 @@ brasil+sao+paulo+Sao+Jose+do+Rio+Preto+15030070	-20.8075788	-49.4027879
 brasil+sao+paulo+Santo+Andre+09210971	-23.6742228	-46.5436003
 brasil+rio+grande+do+sul+Canoas+92425900	-29.9001440	-51.2365642
 brasil+rio+de+janeiro+Rio+de+Janeiro+20051070	-22.9051321	-43.1808603
+brasil+sao+paulo+Araraquara+14807060	-21.8124154	-48.1548260
 brasil+sao+paulo+Sao+Caetano+do+Sul+09580900	-23.6391243	-46.5704437
 brasil+rio+grande+do+sul+Porto+Alegre+91590900	-30.0346471	-51.2176584
 brasil+goias+Inhumas+75400000	-16.3062209	-49.4872858
@@ -317,7 +318,7 @@ brasil+minas+gerais+Belo+Horizonte+30150260	-19.9227474	-43.9313558
 brasil+sao+paulo+Campinas+13083857	-22.8165519	-47.0683251
 brasil+sao+paulo+Ribeirao+Preto+14096160	-21.2056382	-47.7903276
 brasil+bahia+Jequie+45200000	-13.8590592	-40.0837763
-brasil+rio+grande+do+sul+Pelotas+96015000	-31.7675929	-52.3409320
+brasil+brasilia+Brasilia+70070914	-15.8013529	-47.8835959
 brasil+piaui+Teresina+64000128	-5.0734432	-42.8144010
 brasil+ceara+Fortaleza+60430372	-3.7499015	-38.5511815
 brasil+sao+paulo+Ribeirao+Preto+14040940	-21.1708247	-47.8575503
@@ -338,7 +339,7 @@ brasil+rio+de+janeiro+Rio+de+Janeiro+20550170	-22.9136667	-43.2341416
 brasil+rio+grande+do+sul+Itaqui+97650000	-29.1294007	-56.5481122
 brasil+parana+Pato+Branco+15054000	-26.2297202	-52.6711356
 brasil+sao+paulo+Sao+Paulo+04094050	-23.5867140	-46.6539607
-brasil+sao+paulo+Sao+Paulo+01454010	-23.5823683	-46.6867636
+brasil+rio+de+janeiro+Rio+de+Janeiro+22110340	-22.9196743	-43.1762397
 brasil+rio+de+janeiro+Rio+de+Janeiro+20091060	-22.9003099	-43.1769160
 brasil+sao+paulo+Sao+Paulo+01311000	-23.5699548	-46.6462049
 brasil+sao+paulo+Ribeirao+Preto+14096380	-21.2023804	-47.7829460
@@ -348,6 +349,7 @@ brasil+rio+grande+do+sul+Capao+do+Leao+96160000	-31.8369181	-52.5745556
 brasil+sao+paulo+Santo+Andre+09050430	-23.6752733	-46.5443348
 brasil+sao+paulo+Guaratingueta+12516410	-22.8004795	-45.1847569
 brasil+parana+Curitiba+80640040	-25.4333824	-49.2732506
+brasil+rio+grande+do+norte+Mossoro+59607360	-5.1890631	-37.3684110
 brasil+rio+grande+do+sul+Porto+Alegre+90430001	-30.0282925	-51.2033170
 brasil+amazonas+Manaus+69073270	-3.1336739	-59.9864906
 brasil+sao+paulo+Santo+Andre+09290520	-23.6458912	-46.5078390
@@ -424,7 +426,6 @@ brasil+rio+de+janeiro+Rio+de+Janeiro+20211901	-22.9127066	-43.1977170
 brasil+bahia+Salvador+41770235	-12.9839240	-38.4504421
 brasil+pernambuco+Recife+50070270	-8.0626349	-34.8934736
 brasil+parana+Campo+Mourao+87301899	-24.0497077	-52.3799686
-brasil+sao+paulo+Sao+Paulo+04301902	-23.6455772	-46.6198608
 brasil+sao+paulo+Piracicaba+13414040	-22.7011677	-47.6527224
 brasil+minas+gerais+Belo+Horizonte+30130100	-19.9244244	-43.9277541
 brasil+sao+paulo+Ribeirao+Preto+14019900	-23.5635905	-46.6498883
@@ -447,8 +448,8 @@ brasil+sao+paulo+Campinas+13059740	-22.9445350	-47.1508339
 brasil+minas+gerais+Uberaba+38025180	-19.7563939	-47.9317734
 brasil+minas+gerais+Alfenas+37130000	-21.4261129	-45.9481612
 brasil+para+Belem+66073005	-1.4566531	-48.4589367
-brasil+bahia+Salvador+41650010	-12.9413270	-38.3860947
 brasil+para+Belem+66073000	-1.4600474	-48.4624853
+brasil+sao+paulo+Sao+Jose+dos+Campos+12228901	-23.2237010	-45.9009074
 brasil+rio+grande+do+sul+Porto+Alegre+90610000	-30.0597056	-51.1768398
 brasil+rio+grande+do+sul+Porto+Alegre+90610001	-30.0542664	-51.1920055
 brasil+sao+paulo+Botucatu+18918970	-22.8822261	-48.4796907
@@ -527,7 +528,6 @@ brasil+ceara+Crato+63105000	-7.2393392	-39.4178572
 brasil+sao+paulo+Ribeirao+Pires+09404100	-23.6878964	-46.4269896
 brasil+rio+de+janeiro+Rio+de+Janeiro+22793080	-22.9999066	-43.3765126
 brasil+rio+grande+do+norte+Mossoro+59625620	-5.2111118	-37.3140969
-brasil+rio+grande+do+sul+Capao+do+Leao+96010900	-31.8369181	-52.5745556
 brasil+sao+paulo+Sao+Paulo+01314000	-23.5521928	-46.6459975
 brasil+rio+de+janeiro+Rio+de+Janeiro+20001970	-22.9068467	-43.1728965
 brasil+sao+paulo+Campinas+13010001	-22.9025112	-47.0570856
@@ -564,7 +564,6 @@ brasil+piaui+Teresina+64049550	-5.0624782	-42.8039103
 brasil+pernambuco+Recife+50100130	-8.0451146	-34.8879599
 brasil+tocantins+Palmas+77020120	-10.1857713	-48.3166134
 brasil+rio+de+janeiro+Seropedica+00000000	-22.7664588	-43.6483800
-brasil+minas+gerais+Belo+Horizonte+31270901	-19.8559785	-43.9555987
 brasil+sao+paulo+Sao+Paulo+14784400	-20.5918898	-48.5700233
 brasil+sao+paulo+Taquaritinga+15900000	-21.4069762	-48.5052392
 brasil+piaui+Teresina+64002150	-5.0796174	-42.8250362
@@ -747,7 +746,7 @@ brasil+pernambuco+Recife+50740521	-8.0434472	-34.9479062
 brasil+pernambuco+Recife+50100120	-8.0451146	-34.8879599
 brasil+sao+paulo+Campinas+13020000	-22.8978260	-47.0753348
 brasil+para+Belem+27255125	-6.7709486	-35.5007838
-brasil+sao+paulo+Salto+13320271	-23.1987835	-47.2985717
+brasil+santa+catarina+Chapeco+89813000	-27.1009343	-52.6156990
 brasil+rio+grande+do+sul+Tramandai+95590000	-29.9846105	-50.1326727
 brasil+parana+Maringa+87083240	-23.3857603	-51.9567578
 brasil+santa+catarina+Florianopolis+88040900	-27.6052801	-48.5237246
@@ -850,6 +849,7 @@ brasil+minas+gerais+Belo+Horizonte+30480000	-19.9257366	-43.9060517
 brasil+sao+paulo+Sao+Paulo+01508010	-23.5616809	-46.6364390
 brasil+sao+paulo+Sao+Paulo+05509900	-23.5791684	-46.7085727
 brasil+sao+paulo+Sao+Paulo+05304000	-23.5244609	-46.7354314
+brasil+sao+paulo+Tupa+17602496	-21.9260382	-50.4902763
 brasil+para+Ananindeua+67035000	-1.3382521	-48.3614021
 Paraguai+Sao+Carlos+	-21.9969440	-47.8775068
 brasil+minas+gerais+Belo+Horizonte+30730280	-19.9129460	-43.9841944
@@ -864,8 +864,7 @@ brasil+rio+grande+do+sul+Pelotas+96055630	-31.7410538	-52.3340010
 brasil+rio+grande+do+sul+Porto+Alegre+90010460	-30.0359927	-51.2344747
 brasil+sao+paulo+Sao+Paulo+04615000	-23.6162082	-46.6757921
 brasil+sao+paulo+Sao+Paulo+05513970	-23.5868700	-46.7248831
-brasil+piaui+Teresina+32155872	-5.0384193	-42.7435163
-brasil+sao+paulo+Sertaozinho+13872551	-23.7149173	-46.4587673
+brasil+bahia+Salvador+41650010	-12.9413270	-38.3860947
 brasil+rio+de+janeiro+Rio+de+Janeiro+22222222	-22.9123710	-43.1768060
 brasil+parana+Matinhos+86830000	-23.8053997	-51.4099625
 brasil+sao+paulo+Sao+Paulo+04532013	-23.5878033	-46.6745892
@@ -896,7 +895,6 @@ brasil+sao+paulo+Braganca+Paulista+13916900	-23.6416565	-46.7151624
 brasil+maranhao+Sao+Luis+65500000	-2.4967681	-44.2192936
 brasil+sao+paulo+Paulinia+13148218	-22.7730883	-47.1619467
 brasil+maranhao+Sao+Luis+65020460	-2.5291804	-44.2943116
-brasil+rio+de+janeiro+Niteroi+24030340	-22.8818275	-43.1106346
 brasil+minas+gerais+Belo+Horizonte+31275150	-19.8565910	-43.9646661
 brasil+bahia+Salvador+41920900	-13.0034590	-38.4810498
 brasil+sao+paulo+Sertaozinho+14160900	-21.1407707	-47.9886442
@@ -937,6 +935,7 @@ brasil+sao+paulo+Cotia+06703785	-23.5956120	-46.9081561
 brasil+rio+grande+do+sul+Ijui+98700000	-28.3417931	-53.8889200
 brasil+brasilia+Brasilia+70900910	-22.8611732	-43.4524950
 brasil+minas+gerais+Vicosa+36571000	-20.7489320	-42.8788301
+brasil+parana+Curitiba+80520250	-25.4054065	-49.2825913
 brasil+rio+grande+do+sul+Porto+Alegre+90020090	-30.0304162	-51.2237340
 brasil+sao+paulo+Sao+Paulo+01045000	-23.5434290	-46.6415072
 brasil+paraiba+Joao+Pessoa+58095230	-7.1137744	-34.8632573
@@ -956,7 +955,6 @@ brasil+sao+paulo+Ribeirao+Preto+14096900	-21.2703517	-47.8168037
 brasil+sao+paulo+Sao+Paulo+05538020	-23.5864415	-46.7385744
 brasil+minas+gerais+Belo+Horizonte+31270090	-19.8671964	-43.9518819
 brasil+minas+gerais+Belo+Horizonte+31270091	-19.9245018	-43.9352376
-brasil+sao+paulo+Sao+Paulo+04039060	-23.5985004	-46.6408507
 brasil+santa+catarina+Lages+88520000	-27.8157141	-50.3263964
 brasil+sao+paulo+Ribeirao+Preto+14900090	-23.5635905	-46.6498883
 brasil+parana+Toledo+85902532	-24.7298483	-53.7633058
@@ -1016,7 +1014,6 @@ brasil+santa+catarina+Sao+Jose+70390125	-27.5737807	-48.6210628
 Franca+Toulouse+	43.6046520	1.4442090
 brasil+rio+de+janeiro+Rio+de+Janeiro+20011901	-22.9053258	-43.1753216
 brasil+bahia+Salvador+41000170	-12.9777490	-38.5016301
-brasil+pernambuco+Recife+50070590	-8.0653933	-34.8903478
 brasil+amapa+Macapa+68902280	0.0120610	-51.0709008
 brasil+brasilia+BRASILIA+70910900	-15.7643606	-47.8578244
 brasil+rio+de+janeiro+Rio+de+Janeiro+21949590	-22.9196743	-43.1762397
@@ -1054,6 +1051,7 @@ brasil+pernambuco+Vitoria+de+Santo+Antao+52050480	-8.1255850	-35.2959453
 brasil+rio+de+janeiro+Arraial+do+Cabo+28930000	-22.9657374	-42.0279869
 brasil+mato+grosso+Cuiaba+78070000	-15.6163787	-56.0710458
 brasil+minas+gerais+Uberlandia+38400392	-18.9162944	-48.2937431
+brasil+rio+grande+do+sul+Pelotas+90620110	-31.7415519	-52.3018159
 brasil+sao+paulo+Estrela+DOeste+14049900	-20.2866742	-50.4009720
 brasil+rio+de+janeiro+Rio+de+Janeiro+20550000	-22.9208407	-43.2254672
 brasil+goias+Goiania+74605220	-16.6776138	-49.2436609
@@ -1177,6 +1175,7 @@ brasil+sao+paulo+Bauru+17015171	-22.3286030	-49.1284610
 Gra-Bretanha+York+	53.9599651	-1.0872979
 brasil+rio+de+janeiro+Rio+de+Janeiro+20550900	-22.9212265	-43.2255461
 brasil+sao+paulo+Sao+Paulo+01302907	-23.5558044	-46.6651023
+brasil+sao+paulo+Araraquara+14800900	-21.8022635	-48.1846440
 brasil+rio+grande+do+sul+Porto+Alegre+91500970	-30.0056799	-51.1995032
 brasil+rio+de+janeiro+Rio+de+Janeiro+20599900	-22.9196703	-43.1762439
 brasil+sao+paulo+Ribeirao+Preto+14048090	-21.1626194	-47.8518302
@@ -1246,7 +1245,7 @@ brasil+rio+de+janeiro+Nova+Iguacu+26020740	-22.7398025	-43.4569375
 brasil+rio+grande+do+sul+Sao+Leopoldo+93030220	-29.7722622	-51.1388832
 brasil+sao+paulo+Campinas+13081878	-22.8626919	-47.0704677
 brasil+sao+paulo+Sertaozinho+14177293	-21.1256504	-48.0183705
-brasil+bahia+Salvador+40295001	-13.0020848	-38.4889345
+brasil+amazonas+Manaus+69075351	-3.1330881	-59.9749003
 brasil+rio+de+janeiro+Angra+dos+Reis+23914360	-22.9952996	-44.2381667
 brasil+sao+paulo+Sao+Carlos+sao+paulo	-22.0087086	-47.8909142
 brasil+rio+grande+do+sul+Osorio+95520000	-29.9194588	-50.2244429
@@ -1265,11 +1264,12 @@ brasil+rio+de+janeiro+Niteroi+24015110	-22.9868949	-43.2011832
 brasil+ceara+Fortaleza+60455760	-3.7427083	-38.5611667
 brasil+tocantins+Palmas+77001090	-10.1848112	-48.3467161
 brasil+parana+Curitiba+88035050	-25.4333824	-49.2732506
+brasil+pernambuco+Recife+99999999	-8.0621205	-34.8782022
 brasil+brasilia+Brasilia+70770200	-15.7437752	-47.8977314
 brasil+ceara+Fortaleza+60416030	-3.7531980	-38.5443330
 brasil+amazonas+Manaus+69040010	-3.0826320	-60.0403217
 brasil+sergipe+Aracaju+49015330	-10.9252282	-37.0561853
-brasil+parana+Curitiba+80520250	-25.4054065	-49.2825913
+brasil+sao+paulo+Campinas+13084970	-22.8243704	-47.0893135
 brasil+parana+Londrina+86057970	-23.3300276	-51.2134555
 brasil+bahia+Salvador+40111000	-12.2288470	-38.9646923
 brasil+rio+de+janeiro+Rio+de+Janeiro+20021040	-22.9152278	-43.1765081
@@ -1411,7 +1411,6 @@ brasil+ceara+Fortaleza+60740003	-3.7795450	-38.5559162
 brasil+ceara+Fortaleza+60740000	-3.7795450	-38.5559162
 brasil+rio+de+janeiro+Duque+de+Caxias+25250020	-22.6011130	-43.2944237
 brasil+pernambuco+Recife+52050000	-8.0417333	-34.9031725
-brasil+rio+de+janeiro+Rio+de+Janeiro+22110340	-22.9196743	-43.1762397
 brasil+bahia+Jequie+45208091	-13.8590592	-40.0837763
 brasil+sao+paulo+Sao+Paulo+02377000	-23.4595464	-46.6312974
 brasil+ceara+Fortaleza+60430140	-3.7479707	-38.5541985
@@ -1440,6 +1439,7 @@ brasil+sao+paulo+Sao+Paulo+04038010	-23.5962350	-46.6377533
 brasil+pernambuco+Recife+50739000	-8.0621205	-34.8782022
 brasil+sao+paulo+Araraquara+13566590	-21.8303365	-48.1531299
 brasil+ceara+Fortaleza+60455750	-3.7427083	-38.5611667
+brasil+ceara+Fortaleza+60135101	-3.7440673	-38.5072651
 brasil+rio+grande+do+sul+Porto+Alegre+00000000	-30.0346471	-51.2176584
 brasil+piaui+Parnaiba+64204020	-2.9073144	-41.7382504
 brasil+sao+paulo+Sao+Carlos+13566590	-22.0045064	-47.8929895
@@ -1470,7 +1470,6 @@ brasil+sao+paulo+Sao+Paulo+01223906	-23.5452274	-46.6500172
 brasil+parana+Curitiba+80215370	-25.4557498	-49.2511995
 brasil+rio+de+janeiro+Rio+de+Janeiro+22451100	-22.9749062	-43.2348615
 brasil+sergipe+Sao+Cristovao+49000100	-11.0146033	-37.2058806
-brasil+sao+paulo+Jaboticabal+18444900	-21.2525138	-48.3256762
 brasil+sao+paulo+Sao+Paulo+05402000	-23.5618603	-46.6745388
 brasil+minas+gerais+Itabira+35900373	-19.6381113	-43.2309783
 brasil+rio+grande+do+sul+Porto+Alegre+90410000	-30.0401572	-51.1976137
@@ -1547,14 +1546,14 @@ brasil+sao+paulo+Taboao+da+Serra+06780110	-23.6199378	-46.7927267
 brasil+rio+de+janeiro+Niteroi+24030221	-22.8863485	-43.1151148
 brasil+para+Braganca+68600000	-1.0616193	-46.7830109
 brasil+sao+paulo+Sao+Paulo+04038032	-23.5967788	-46.6465229
-brasil+rio+grande+do+sul+Pelotas+90620110	-31.7415519	-52.3018159
+brasil+rio+de+janeiro+Niteroi+24030340	-22.8818275	-43.1106346
 brasil+sao+paulo+Campinas+99999999	-22.9058318	-47.0467776
 brasil+rio+de+janeiro+Niteroi+24030215	-22.8939409	-43.1134073
 brasil+rio+grande+do+sul+Pelotas+96010280	-31.7701008	-52.3367935
 brasil+sao+paulo+Sao+Paulo+82700070	-23.5847163	-46.6547497
 brasil+goias+Goiania+74210250	-16.6947464	-49.2778063
 brasil+sao+paulo+Sao+Paulo+01509900	-23.5672363	-46.6361430
-brasil+sao+paulo+Sao+Bernardo+do+Campo+09895400	-23.7073357	-46.5646003
+brasil+rio+grande+do+sul+Porto+Alegre+90450010	-30.0281608	-51.1855245
 brasil+bahia+Itabuna+45600970	-14.7880327	-39.2784178
 brasil+sergipe+Nossa+Senhora+da+Gloria+49680000	-10.2156554	-37.4212807
 brasil+sao+paulo+Ribeirao+Preto+14051140	-21.1669835	-47.8408116
@@ -1640,7 +1639,7 @@ Espanha+Barcelona+	41.3850639	2.1734035
 brasil+rio+de+janeiro+Rio+de+Janeiro+22290240	-22.9517643	-43.1743733
 brasil+rio+de+janeiro+Nova+Iguacu+26210210	-22.7544538	-43.4548455
 brasil+sao+paulo+Ribeirao+Preto+14100000	-23.5635905	-46.6498883
-brasil+ceara+Fortaleza+60135101	-3.7440673	-38.5072651
+brasil+piaui+Teresina+32155872	-5.0384193	-42.7435163
 brasil+rio+de+janeiro+Rio+de+Janeiro+22180180	-22.9196703	-43.1762439
 brasil+rio+de+janeiro+Niteroi+24030900	-22.8894370	-43.1177743
 brasil+amazonas+Manaus+69010330	-3.1304995	-60.0292490
@@ -1662,7 +1661,7 @@ brasil+parana+Maringa+87030121	-23.4158195	-51.9223484
 brasil+rio+grande+do+norte+Natal+59012570	-5.7807234	-35.1983023
 brasil+goias+Goiania+74000000	-16.6488964	-49.1565948
 brasil+rio+de+janeiro+Rio+de+Janeiro+21210440	-22.8389530	-43.2904850
-brasil+sao+paulo+Tupa+17602496	-21.9260382	-50.4902763
+brasil+sao+paulo+Jaboticabal+18444900	-21.2525138	-48.3256762
 brasil+goias+Goiania+74605010	-16.6761130	-49.2406575
 brasil+bahia+Salvador+40210730	-13.0079321	-38.5099557
 brasil+parana+Curitiba+80040240	-25.4149238	-49.2461329
@@ -1684,7 +1683,7 @@ brasil+rio+grande+do+sul+Rio+Grande+96200400	-32.0297685	-52.1011789
 brasil+espirito+santo+Vitoria+29042755	-20.3076796	-40.3143859
 brasil+sao+paulo+Sao+Paulo+01064970	-23.5847163	-46.6547497
 brasil+minas+gerais+Belo+Horizonte+30110934	-19.9167575	-43.9340150
-brasil+sao+paulo+Araraquara+14800900	-21.8022635	-48.1846440
+brasil+rio+de+janeiro+Volta+Redonda+27213415	-22.5060001	-44.0841459
 brasil+sao+paulo+Campinas+13045755	-22.9390203	-47.0266848
 brasil+mato+grosso+do+sul+Campo+Grande+79070900	-20.5131237	-54.6122371
 brasil+sao+paulo+Campinas+13083861	-22.8194662	-47.0671824
@@ -1700,7 +1699,7 @@ brasil+sao+paulo+Sao+Jose+dos+Campos+12245000	-23.1999359	-45.8890506
 brasil+ceara+Fortaleza+60811905	-3.7711938	-38.4823640
 brasil+rio+grande+do+sul+Porto+Alegre+90560030	-30.0259063	-51.2114099
 brasil+santa+catarina+Florianopolis+88049900	-27.6870576	-48.5562465
-brasil+sao+paulo+Sao+Jose+dos+Campos+12228901	-23.2237010	-45.9009074
+brasil+minas+gerais+Belo+Horizonte+31270901	-19.8559785	-43.9555987
 brasil+bahia+Salvador+41027032	-12.2288470	-38.9646923
 brasil+sao+paulo+Sao+Jose+dos+Campos+12228904	-23.2237010	-45.9009074
 brasil+sao+paulo+Sao+Paulo+01101080	-23.5246689	-46.6309765
@@ -1781,7 +1780,6 @@ brasil+rio+grande+do+sul+Santa+Maria+97960600	-29.6872500	-53.8154499
 brasil+parana+Fazenda+Rio+Grande+83833090	-25.6492043	-49.3137574
 brasil+sao+paulo+Sao+Paulo+03828080	-23.4814979	-46.4941927
 brasil+mato+grosso+do+sul+Campo+Grande+79080190	-20.4984401	-54.6168550
-brasil+amazonas+Manaus+69075351	-3.1330881	-59.9749003
 brasil+bahia+Salvador+40110040	-12.9947874	-38.5242102
 brasil+pernambuco+Petrolina+56302970	-9.3890830	-40.5030961
 brasil+rio+de+janeiro+Rio+de+Janeiro+24220590	-22.9068467	-43.1728965
@@ -1789,7 +1787,7 @@ brasil+rio+grande+do+norte+Natal+59000000	-5.8009005	-35.2155810
 brasil+minas+gerais+Pouso+Alegre+37550010	-22.2212323	-45.9304315
 brasil+brasilia+Brasilia+45600970	-14.7918149	-39.2842930
 brasil+rio+de+janeiro+Niteroi+24220300	-22.9048348	-43.1031965
-brasil+rio+grande+do+sul+Porto+Alegre+90450010	-30.0281608	-51.1855245
+brasil+sao+paulo+Sao+Bernardo+do+Campo+09895400	-23.7073357	-46.5646003
 brasil+rio+de+janeiro+Rio+de+Janeiro+21949972	-22.9068467	-43.1728965
 brasil+sao+paulo+Sao+Paulo+04017030	-23.5881635	-46.6388825
 brasil+sao+paulo+Sao+Paulo+03444090	-23.5485277	-46.5323418
@@ -1823,13 +1821,13 @@ brasil+rio+grande+do+norte+Caico+59300000	-6.4599655	-37.0936867
 brasil+minas+gerais+Belo+Horizonte+30150100	-19.9170885	-43.9294276
 brasil+sao+paulo+Sorocaba+18050000	-23.5184350	-47.5103597
 brasil+rio+grande+do+sul+Santa+Maria+97015372	-29.6867955	-53.8093351
-brasil+santa+catarina+Chapeco+89813000	-27.1009343	-52.6156990
+brasil+sao+paulo+Campinas+17021005	-22.9098833	-47.0625812
 brasil+sao+paulo+Sao+Jose+dos+Campos+12288900	-23.2237010	-45.9009074
 brasil+tocantins+Gurupi+77404970	-11.7210956	-49.0640337
 brasil+maranhao+Codo+65400000	-4.4605557	-43.8894500
 brasil+sao+paulo+Sao+Paulo+05503900	-23.5704638	-46.7109888
 brasil+ceara+Juazeiro+do+Norte+63010970	-7.2290365	-39.3124461
-brasil+sao+paulo+Araraquara+14807060	-21.8124154	-48.1548260
+brasil+sao+paulo+Sertaozinho+13872551	-23.7149173	-46.4587673
 brasil+sao+paulo+Sao+Carlos+13656905	-23.5671919	-46.6040373
 brasil+sergipe+Aracaju+49032490	-10.9697477	-37.0578453
 brasil+sao+paulo+Sao+Paulo+13081970	-22.8626919	-47.0704677
@@ -1867,6 +1865,7 @@ brasil+rio+de+janeiro+Rio+de+Janeiro+22260001	-22.9497180	-43.1898046
 brasil+santa+catarina+Sao+Bento+do+Sul+89290000	-26.2612809	-49.3703919
 brasil+parana+Maringa+85015430	-23.4209794	-51.9392966
 brasil+sao+paulo+Indaiatuba+13100002	-23.5839322	-46.6811744
+Australia+Departamento+de+Odontologia+Lagoa+Nova+Natal+	-5.8159883	-35.2057313
 brasil+bahia+Feira+de+Santana+44031460	-12.2154830	-38.9798496
 brasil+parana+Curitiba+80060160	-25.4323785	-49.2573379
 brasil+sao+paulo+Braganca+Paulista+12916900	-22.9898605	-46.5283059
@@ -1885,7 +1884,7 @@ brasil+rio+de+janeiro+Rio+de+Janeiro+21910270	-22.8032431	-43.1825532
 Estados+Unidos+North+Carolina,+Raleigh+	35.7795897	-78.6381787
 brasil+sao+paulo+Sao+Paulo+05015901	-23.5372708	-46.6735519
 brasil+parana+Ponta+Grossa+84010919	-25.0946428	-50.1600938
-brasil+brasilia+Brasilia+70070914	-15.8013529	-47.8835959
+brasil+rio+grande+do+sul+Pelotas+96015000	-31.7675929	-52.3409320
 brasil+sao+paulo+Sao+Paulo+05422060	-23.5681655	-46.6853732
 brasil+pernambuco+Recife+50372970	-8.0475622	-34.8769643
 brasil+paraiba+Joao+Pessoa+58071160	-7.1573582	-34.8729700
@@ -1899,7 +1898,7 @@ brasil+rio+grande+do+sul+Sao+Borja+97670000	-28.6583059	-56.0041451
 brasil+rio+grande+do+sul+Porto+Alegre+13083870	-30.1296489	-51.2038030
 brasil+sao+paulo+Sao+Paulo+05455000	-23.5409262	-46.7119944
 brasil+sao+paulo+Sao+Paulo+04138001	-23.6081033	-46.6370801
-Australia+Departamento+de+Odontologia+Lagoa+Nova+Natal+	-5.8159883	-35.2057313
+brasil+bahia+Salvador+40295001	-13.0020848	-38.4889345
 brasil+rio+grande+do+sul+Porto+Alegre+90050382	-30.0344374	-51.2226813
 brasil+maranhao+Sao+Luis+65060645	-2.5560578	-44.2277590
 brasil+sao+paulo+Sao+Paulo+08410130	-23.5462200	-46.4178940
@@ -1988,7 +1987,7 @@ brasil+espirito+santo+Vitoria+29100000	-20.3321939	-40.2897153
 brasil+sao+paulo+Engenheiro+Coelho+13165000	-22.4893927	-47.2130215
 brasil+rio+de+janeiro+Rio+de+Janeiro+29559900	-22.9068467	-43.1728965
 brasil+mato+grosso+do+sul+Campo+Grande+79400000	-18.5060000	-54.7522301
-brasil+sao+paulo+Campinas+17021005	-22.9098833	-47.0625812
+brasil+rio+grande+do+sul+Capao+do+Leao+96010900	-31.8369181	-52.5745556
 brasil+parana+Ponta+Grossa+84100000	-25.0971426	-50.1604518
 brasil+sao+paulo+Araraquara+14801970	-21.7922199	-48.2070182
 brasil+sao+paulo+Diadema+09972270	-23.7187960	-46.6260111
@@ -2060,8 +2059,8 @@ brasil+ceara+Fortaleza+60192345	-3.7478591	-38.4821300
 brasil+bahia+Ilheus+45660000	-14.8138759	-39.0317973
 brasil+sao+paulo+Sao+Paulo+04578000	-23.6005666	-46.6948118
 brasil+rio+de+janeiro+Rio+de+Janeiro+20511130	-22.9187769	-43.2393300
-brasil+pernambuco+Recife+99999999	-8.0621205	-34.8782022
-brasil+sao+paulo+Campinas+13084970	-22.8243704	-47.0893135
+brasil+sao+paulo+Sao+Paulo+04039060	-23.5985004	-46.6408507
+brasil+pernambuco+Recife+50070590	-8.0653933	-34.8903478
 brasil+santa+catarina+Curitibanos+88040900	-27.2828550	-50.5821037
 brasil+sao+paulo+Campinas+13084100	-22.8261875	-47.0850848
 brasil+parana+Curitiba+80730000	-25.4291860	-49.2898409
@@ -2179,6 +2178,7 @@ brasil+sao+paulo+Sao+Paulo+04016032	-23.5871514	-46.6406620
 brasil+ceara+Fortaleza+60430275	-3.7478212	-38.5519750
 brasil+ceara+Fortaleza+60430270	-3.7414131	-38.5461787
 brasil+ceara+Fortaleza+60416200	-3.7484554	-38.5538839
+brasil+sao+paulo+Salto+13320271	-23.1987835	-47.2985717
 brasil+para+Belem+66063010	-1.4602729	-48.4724789
 Estados+Unidos+San+Diego.+Depatment+of+Mathematics+San+Diego+San+Diego+	32.8800604	-117.2340135
 brasil+sao+paulo+Sao+Caetano+do+Sul+09521160	-23.6118214	-46.5732542

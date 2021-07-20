@@ -60,7 +60,6 @@ class Grupo:
     matrizResumoExpandidoEmCongresso = None
     matrizResumoEmCongresso = None
     matrizArtigoAceito = None
-    matrizApresentacaoDeTrabalho = None
     matrizOutroTipoDeProducaoBibliografica = None
     matrizSoftwareComPatente = None
     matrizSoftwareSemPatente = None
@@ -68,6 +67,9 @@ class Grupo:
     matrizProcessoOuTecnica = None
     matrizTrabalhoTecnico = None
     matrizOutroTipoDeProducaoTecnica = None
+    matrizApresentacaoDeTrabalho = None
+    matrizCursoDeCurtaDuracaoMinistrado = None
+    matrizDesenvolvimentoDeMaterialDidaticoOuInstrucional = None
     matrizProducaoArtistica = None
 
     matrizPatente = None
@@ -573,7 +575,6 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaResumoExpandidoEmCongresso, 'PB5', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaResumoEmCongresso, 'PB6', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaArtigoAceito, 'PB7', 'Numero de publicacoes')
-        gBarra.criarGrafico(self.compilador.listaCompletaApresentacaoDeTrabalho, 'PB8', 'Numero de publicacoes')
         gBarra.criarGrafico(self.compilador.listaCompletaOutroTipoDeProducaoBibliografica, 'PB9',
                             'Numero de publicacoes')
 
@@ -582,8 +583,10 @@ class Grupo:
         gBarra.criarGrafico(self.compilador.listaCompletaProdutoTecnologico, 'PT2', u'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaProcessoOuTecnica, 'PT3', 'Numero de producoes tecnicas')
         gBarra.criarGrafico(self.compilador.listaCompletaTrabalhoTecnico, 'PT4', 'Numero de producoes tecnicas')
-        gBarra.criarGrafico(self.compilador.listaCompletaOutroTipoDeProducaoTecnica, 'PT5',
-                            'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaOutroTipoDeProducaoTecnica, 'PT5', 'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaApresentacaoDeTrabalho, 'PT6', 'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaCursoDeCurtaDuracaoMinistrado, 'PT7', 'Numero de producoes tecnicas')
+        gBarra.criarGrafico(self.compilador.listaCompletaDesenvolvimentoDeMaterialDidaticoOuInstrucional, 'PT8', 'Numero de producoes tecnicas')
 
         gBarra.criarGrafico(self.compilador.listaCompletaPatente, 'PR0', 'Numero de patentes')
         gBarra.criarGrafico(self.compilador.listaCompletaProgramaComputador, 'PR1', 'Numero de programa de computador')
@@ -740,6 +743,8 @@ class Grupo:
         self.listaDeParametros.append(['relatorio-incluir_processo_ou_tecnica', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_trabalho_tecnico', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_outro_tipo_de_producao_tecnica', 'sim'])
+        self.listaDeParametros.append(['relatorio-incluir_curso_de_curta_duracao_ministrado', 'sim'])
+        self.listaDeParametros.append(['relatorio-incluir_desenvolvimento_de_material_didatico_ou_instrucional', 'sim'])
 
         self.listaDeParametros.append(['relatorio-incluir_patente', 'sim'])
         self.listaDeParametros.append(['relatorio-incluir_programa_computador', 'sim'])
@@ -792,6 +797,8 @@ class Grupo:
         self.listaDeParametros.append(['grafo-incluir_processo_ou_tecnica', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_trabalho_tecnico', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_outro_tipo_de_producao_tecnica', 'sim'])
+        self.listaDeParametros.append(['grafo-incluir_curso_de_curta_duracao_ministrado', 'sim'])
+        self.listaDeParametros.append(['grafo-incluir_desenvolvimento_de_material_didatico_ou_instrucional', 'sim'])
 
         self.listaDeParametros.append(['grafo-incluir_patente', 'sim'])
         self.listaDeParametros.append(['grafo-incluir_programa_computador', 'sim'])
